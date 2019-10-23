@@ -149,6 +149,14 @@
   <ItemGroup>
     <Content Include="icons8-mot-de-passe-96b.ico" />
     <Content Include="Password_96px.ico" />
+    <None Include="Resources\roundsquarewhite.png" />
+    <None Include="Resources\roundsquareblack.png" />
+    <None Include="Resources\roundbuttonwhite.png" />
+    <None Include="Resources\roundbuttonblack.png" />
+    <None Include="Resources\Graph Report Script_96pxb.png" />
+    <None Include="Resources\icons8-mot-de-passe-96b.png" />
+    <None Include="Resources\icons8-available-updates-100.png" />
+    <None Include="Resources\PWR Generator.png" />
     <None Include="Resources\roundwhite.png" />
     <None Include="Resources\roundrblack.png" />
     <None Include="Resources\Annotation 2019-03-16 104306.png" />
