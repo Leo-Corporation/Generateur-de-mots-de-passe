@@ -46,14 +46,14 @@ Public Class Preset
     Private Sub Preset_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If My.Settings.Thème = "1" Then
             Me.BackColor = Color.FromArgb(50, 50, 62)
-            PictureBox1.Image = My.Resources.roundrblack
-            PictureBox2.Image = My.Resources.roundrblack
-            PictureBox3.Image = My.Resources.roundrblack
+            PictureBox1.Image = My.Resources.roundsquareblack
+            PictureBox2.Image = My.Resources.roundsquareblack
+            PictureBox3.Image = My.Resources.roundsquareblack
         Else
             Me.BackColor = Color.White
-            PictureBox1.Image = My.Resources.roundwhite
-            PictureBox2.Image = My.Resources.roundwhite
-            PictureBox3.Image = My.Resources.roundwhite
+            PictureBox1.Image = My.Resources.roundsquarewhite
+            PictureBox2.Image = My.Resources.roundsquarewhite
+            PictureBox3.Image = My.Resources.roundsquarewhite
         End If
     End Sub
 End Class

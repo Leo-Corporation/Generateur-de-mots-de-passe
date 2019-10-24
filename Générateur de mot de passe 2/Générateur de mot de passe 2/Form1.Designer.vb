@@ -45,7 +45,7 @@ Partial Class Form1
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.White
         Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
@@ -59,20 +59,21 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Calibri", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(70, 16)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(70, 15)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(352, 33)
+        Me.Label1.Size = New System.Drawing.Size(368, 32)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Générateur de mot de passe 2"
+        Me.Label1.Text = "Générateur de mots de passe 2"
         '
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.White
         Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.TextBox1.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.TextBox1.Location = New System.Drawing.Point(0, 153)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
@@ -85,8 +86,8 @@ Partial Class Form1
         Me.TextBox2.BackColor = System.Drawing.Color.White
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox2.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.TextBox2.Location = New System.Drawing.Point(209, 80)
+        Me.TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.TextBox2.Location = New System.Drawing.Point(222, 80)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(113, 24)
         Me.TextBox2.TabIndex = 2
@@ -97,11 +98,11 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(8, 81)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(195, 23)
+        Me.Label2.Size = New System.Drawing.Size(209, 25)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Nombre de caractères :"
         '
@@ -109,22 +110,22 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(-1, 131)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(433, 19)
+        Me.Label3.Size = New System.Drawing.Size(438, 20)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Copyright © 2019 Léo Peyronnet Corporation - Version 2.3.0.1903"
+        Me.Label3.Text = "Copyright © 2019 Léo Corporation - Version 2.3.1.1910 - Uiful 1.0"
         '
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.CheckBox1.Location = New System.Drawing.Point(442, 131)
+        Me.CheckBox1.Font = New System.Drawing.Font("Segoe UI", 10.25!, System.Drawing.FontStyle.Bold)
+        Me.CheckBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.CheckBox1.Location = New System.Drawing.Point(442, 129)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(120, 22)
+        Me.CheckBox1.Size = New System.Drawing.Size(128, 23)
         Me.CheckBox1.TabIndex = 5
         Me.CheckBox1.Text = "Thème sombre"
         Me.ToolTip1.SetToolTip(Me.CheckBox1, "Mettre le thème sombre.")
@@ -132,8 +133,8 @@ Partial Class Form1
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.Panel2.Location = New System.Drawing.Point(209, 101)
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Panel2.Location = New System.Drawing.Point(222, 101)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(113, 2)
         Me.Panel2.TabIndex = 6
@@ -141,27 +142,29 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.BackgroundImage = Global.Générateur_de_mot_de_passe_2.My.Resources.Resources.tb
+        Me.Button1.BackgroundImage = Global.Générateur_de_mot_de_passe_2.My.Resources.Resources.roundbuttonwhite
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(328, 75)
+        Me.Button1.Location = New System.Drawing.Point(343, 75)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(225, 34)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Générer le mot de passe"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.ToolTip1.SetToolTip(Me.Button1, "Générer le mot de passe")
         Me.Button1.UseVisualStyleBackColor = False
         '
         'PictureBox3
         '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Image = Global.Générateur_de_mot_de_passe_2.My.Resources.Resources.Graph_Report_Script_96pxb
         Me.PictureBox3.Location = New System.Drawing.Point(511, 5)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(54, 54)
@@ -172,8 +175,9 @@ Partial Class Form1
         '
         'PictureBox2
         '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Image = Global.Générateur_de_mot_de_passe_2.My.Resources.Resources.icons8_available_updates_100
         Me.PictureBox2.Location = New System.Drawing.Point(571, 5)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(54, 54)
@@ -184,7 +188,8 @@ Partial Class Form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.Générateur_de_mot_de_passe_2.My.Resources.Resources.PWR_Generator
         Me.PictureBox1.Location = New System.Drawing.Point(3, 5)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(54, 54)
@@ -211,7 +216,7 @@ Partial Class Form1
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Générateur de mot de passe 2"
+        Me.Text = "Générateur de mots de passe 2"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
