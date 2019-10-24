@@ -136,9 +136,6 @@
   <data name="icons8-available-updates-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-available-updates-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="roundbuttonblack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\roundbuttonblack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="roundrblack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roundrblack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,5 +150,8 @@
   </data>
   <data name="roundsquarewhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roundsquarewhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="roudnbuttonblack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roudnbuttondark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

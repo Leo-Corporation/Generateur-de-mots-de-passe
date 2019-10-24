@@ -47,14 +47,16 @@ Public Class Form1
             Me.BackColor = Color.FromArgb(50, 50, 62)
             TextBox1.BackColor = Color.FromArgb(50, 50, 62)
             TextBox2.BackColor = Color.FromArgb(50, 50, 62)
-            Button1.BackgroundImage = My.Resources.roundbuttonblack
+            Button1.BackgroundImage = My.Resources.roudnbuttonblack
             Button1.BackColor = Color.FromArgb(50, 50, 62)
+            Panel1.BackColor = Color.FromArgb(50, 50, 62)
             My.Settings.Thème = "1"
         Else
             Me.BackColor = Color.White
             TextBox1.BackColor = Color.White
             TextBox2.BackColor = Color.White
             Button1.BackColor = Color.White
+            Panel1.BackColor = Color.White
             Button1.BackgroundImage = My.Resources.roundbuttonwhite
             My.Settings.Thème = "0"
         End If
@@ -65,12 +67,14 @@ Public Class Form1
             Me.BackColor = Color.FromArgb(50, 50, 62)
             TextBox1.BackColor = Color.FromArgb(50, 50, 62)
             TextBox2.BackColor = Color.FromArgb(50, 50, 62)
-            Button1.BackgroundImage = My.Resources.roundbuttonblack
+            Button1.BackgroundImage = My.Resources.roudnbuttonblack
+            Panel1.BackColor = Color.FromArgb(50, 50, 62)
             CheckBox1.Checked = True
         Else
             Me.BackColor = Color.White
             TextBox1.BackColor = Color.White
             Button1.BackgroundImage = My.Resources.roundbuttonwhite
+            Panel1.BackColor = Color.White
             TextBox2.BackColor = Color.White
             CheckBox1.Checked = False
         End If

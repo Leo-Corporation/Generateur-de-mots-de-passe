@@ -149,6 +149,7 @@
   <ItemGroup>
     <Content Include="icons8-mot-de-passe-96b.ico" />
     <Content Include="Password_96px.ico" />
+    <None Include="Resources\roudnbuttondark.png" />
     <None Include="Resources\roundsquarewhite.png" />
     <None Include="Resources\roundsquareblack.png" />
     <None Include="Resources\roundbuttonwhite.png" />
