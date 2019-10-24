@@ -9,11 +9,11 @@ Imports System.Runtime.InteropServices
 ' Vérifiez les valeurs des attributs de l'assembly
 
 <Assembly: AssemblyTitle("Générateur de mot de passe 2")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyDescription("Ce logiciel permet de générer aléatoirement des mots de passe.")>
+<Assembly: AssemblyCompany("Léo Corporation")>
 <Assembly: AssemblyProduct("Générateur de mot de passe 2")>
 <Assembly: AssemblyCopyright("Copyright ©  2019")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTrademark("Léo Corporation")>
 
 <Assembly: ComVisible(False)>
 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' en utilisant '*', comme indiqué ci-dessous :
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("2.3.0.1903")>
-<Assembly: AssemblyFileVersion("2.3.0.1903")>
+<Assembly: AssemblyVersion("2.3.1.1910")>
+<Assembly: AssemblyFileVersion("2.3.1.1910")>

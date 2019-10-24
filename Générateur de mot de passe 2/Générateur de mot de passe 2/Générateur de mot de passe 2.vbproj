@@ -62,7 +62,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Password_96px.ico</ApplicationIcon>
+    <ApplicationIcon>PWR Generator.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -149,6 +149,7 @@
   <ItemGroup>
     <Content Include="icons8-mot-de-passe-96b.ico" />
     <Content Include="Password_96px.ico" />
+    <Content Include="PWR Generator.ico" />
     <None Include="Resources\roudnbuttondark.png" />
     <None Include="Resources\roundsquarewhite.png" />
     <None Include="Resources\roundsquareblack.png" />
