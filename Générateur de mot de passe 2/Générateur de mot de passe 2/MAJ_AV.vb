@@ -26,7 +26,8 @@ Public Class MAJ_AV
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        'Lancer LCU
+        Dim start = Application.StartupPath
+        Process.Start(start & "\GMDPUpdater.exe")
         Application.Exit()
     End Sub
 
