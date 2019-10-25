@@ -98,6 +98,18 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MAJ_AV.Designer.vb">
+      <DependentUpon>MAJ_AV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAJ_AV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAJ_UN.Designer.vb">
+      <DependentUpon>MAJ_UN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAJ_UN.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -130,6 +142,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MAJ_AV.resx">
+      <DependentUpon>MAJ_AV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAJ_UN.resx">
+      <DependentUpon>MAJ_UN.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -159,6 +177,8 @@
     <Content Include="icons8-mot-de-passe-96b.ico" />
     <Content Include="Password_96px.ico" />
     <Content Include="PWR Generator.ico" />
+    <None Include="Resources\Settings_Button_Second_Black.png" />
+    <None Include="Resources\Settings_Button_Second_White.png" />
     <None Include="Resources\icons8-checkmark-512.png" />
     <None Include="Resources\icons8-electronics-96.png" />
     <None Include="Resources\icons8-smartphone-ram-96.png" />

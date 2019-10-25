@@ -43,18 +43,18 @@ Public Class Form1
         CheckUpdate()
     End Sub
     Sub CheckUpdate()
+        'LABS Custom Update System for VB
+        'By Leo Corporation
+        '(c) 2020
         Dim MAJ As New WebClient
         Dim Four As New WebClient
-        Dim versionActuelle As String = "2.3.1.1910"
+        Dim versionActuelle As String = "2.4.0.1910"
         Dim derniereVersion As String = MAJ.DownloadString("https://dl.dropboxusercontent.com/s/yoy7s7ej25i03um/Version.txt")
         Dim FourMaj As String = Four.DownloadString("https://dl.dropboxusercontent.com/s/hwh2sldew5nhr07/fournisseur%20de%20la%20mise%20%C3%A0%20jour.txt")
         If versionActuelle = derniereVersion Then
-            MsgBox("Tout est à jour !")
+            MAJ_UN.Show()
         Else
-            MsgBox("Des mises à jour sont disponibles." & vbNewLine & "La dernière version est : " & derniereVersion & vbNewLine & "Fournit par : " & FourMaj, vbOKOnly + MsgBoxStyle.Information, "Mise à jour du logiciel")
-            Dim MAJ2 As New WebClient
-            Dim downloadLink As String = MAJ2.DownloadString("https://dl.dropboxusercontent.com/s/m1wwpz5ielscsyb/Download.txt")
-            Process.Start(downloadLink)
+            MAJ_AV.Show()
         End If
     End Sub
 

@@ -157,13 +157,19 @@
   <data name="roundbuttonwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roundbuttonwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-checkmark-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-checkmark-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Graph Report Script_96pxb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Graph Report Script_96pxb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-available-updates-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-available-updates-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-checkmark-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-checkmark-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Settings_Button_Second_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings_Button_Second_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings_Button_Second_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings_Button_Second_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
