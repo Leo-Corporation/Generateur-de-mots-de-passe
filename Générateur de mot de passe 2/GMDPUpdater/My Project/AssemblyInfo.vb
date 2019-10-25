@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Vérifiez les valeurs des attributs de l'assembly
 
-<Assembly: AssemblyTitle("Générateur de mot de passe 2")>
-<Assembly: AssemblyDescription("Ce logiciel permet de générer aléatoirement des mots de passe.")>
-<Assembly: AssemblyCompany("Léo Corporation")>
-<Assembly: AssemblyProduct("Générateur de mot de passe 2")>
+<Assembly: AssemblyTitle("GMDPUpdater")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("GMDPUpdater")>
 <Assembly: AssemblyCopyright("Copyright ©  2019")>
-<Assembly: AssemblyTrademark("Léo Corporation")>
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'Le GUID suivant est pour l'ID de la typelib si ce projet est exposé à COM
-<Assembly: Guid("62e8940c-b32a-470f-a462-e295ac0a9587")>
+<Assembly: Guid("c2b32957-8e9e-4b64-ab4e-5cd865f2c9b4")>
 
 ' Les informations de version pour un assembly se composent des quatre valeurs suivantes :
 '
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' en utilisant '*', comme indiqué ci-dessous :
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("2.4.0.1910")>
-<Assembly: AssemblyFileVersion("2.4.0.1910")>
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>
