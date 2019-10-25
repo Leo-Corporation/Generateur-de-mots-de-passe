@@ -8,18 +8,34 @@ Public Class Form1
     Dim Number As Integer = 0
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        UsableChar = Split(CharList, ",")
-        FinalPassword = ""
-        Number = 0
-        If TextBox2.Text > 0 Then
-            For i As Integer = 1 To TextBox2.Text
-                Number = RandomClass.Next(0, 65)
-                FinalPassword = FinalPassword + UsableChar(Number)
-            Next
-            TextBox1.Text = FinalPassword
+        If My.Settings.GenSimpleMode = True Then
+            UsableChar = Split(CharList, ",")
+            FinalPassword = ""
+            Number = 0
+            If TextBox2.Text > 0 Then
+                For i As Integer = 1 To TextBox2.Text
+                    Number = RandomClass.Next(0, 60)
+                    FinalPassword = FinalPassword + UsableChar(Number)
+                Next
+                TextBox1.Text = FinalPassword
+            Else
+                MsgBox("Impossible de générer le mot de passe.")
+            End If
         Else
-            MsgBox("Impossible de générer le mot de passe.")
+            UsableChar = Split(CharList, ",")
+            FinalPassword = ""
+            Number = 0
+            If TextBox2.Text > 0 Then
+                For i As Integer = 1 To TextBox2.Text
+                    Number = RandomClass.Next(0, 65)
+                    FinalPassword = FinalPassword + UsableChar(Number)
+                Next
+                TextBox1.Text = FinalPassword
+            Else
+                MsgBox("Impossible de générer le mot de passe.")
+            End If
         End If
+
 
     End Sub
 
@@ -50,6 +66,7 @@ Public Class Form1
             Button1.BackgroundImage = My.Resources.roudnbuttonblack
             Button1.BackColor = Color.FromArgb(50, 50, 62)
             Panel1.BackColor = Color.FromArgb(50, 50, 62)
+            SettingsMenu1.BackColor = Color.FromArgb(50, 50, 62)
             My.Settings.Thème = "1"
         Else
             Me.BackColor = Color.White
@@ -57,6 +74,7 @@ Public Class Form1
             TextBox2.BackColor = Color.White
             Button1.BackColor = Color.White
             Panel1.BackColor = Color.White
+            SettingsMenu1.BackColor = Color.White
             Button1.BackgroundImage = My.Resources.roundbuttonwhite
             My.Settings.Thème = "0"
         End If
@@ -69,6 +87,7 @@ Public Class Form1
             TextBox2.BackColor = Color.FromArgb(50, 50, 62)
             Button1.BackgroundImage = My.Resources.roudnbuttonblack
             Panel1.BackColor = Color.FromArgb(50, 50, 62)
+            SettingsMenu1.BackColor = Color.FromArgb(50, 50, 62)
             CheckBox1.Checked = True
         Else
             Me.BackColor = Color.White
@@ -76,11 +95,26 @@ Public Class Form1
             Button1.BackgroundImage = My.Resources.roundbuttonwhite
             Panel1.BackColor = Color.White
             TextBox2.BackColor = Color.White
+            SettingsMenu1.BackColor = Color.White
             CheckBox1.Checked = False
         End If
+        If My.Settings.GenSimpleMode = True Then
+            SettingsMenu1.PictureBox3.Visible = True
+            SettingsMenu1.PictureBox4.Visible = False
+        Else
+            SettingsMenu1.PictureBox3.Visible = False
+            SettingsMenu1.PictureBox4.Visible = True
+        End If
     End Sub
-
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Preset.Show()
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        If SettingsMenu1.Visible = True Then
+            SettingsMenu1.Visible = False
+        Else
+            SettingsMenu1.Visible = True
+        End If
     End Sub
 End Class

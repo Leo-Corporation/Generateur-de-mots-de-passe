@@ -119,6 +119,12 @@
     <Compile Include="Preset.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SettingsMenu.Designer.vb">
+      <DependentUpon>SettingsMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Preset.resx">
       <DependentUpon>Preset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsMenu.resx">
+      <DependentUpon>SettingsMenu.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +159,10 @@
     <Content Include="icons8-mot-de-passe-96b.ico" />
     <Content Include="Password_96px.ico" />
     <Content Include="PWR Generator.ico" />
+    <None Include="Resources\icons8-checkmark-512.png" />
+    <None Include="Resources\icons8-electronics-96.png" />
+    <None Include="Resources\icons8-smartphone-ram-96.png" />
+    <None Include="Resources\icons8-settings-512.png" />
     <None Include="Resources\roudnbuttondark.png" />
     <None Include="Resources\roundsquarewhite.png" />
     <None Include="Resources\roundsquareblack.png" />
