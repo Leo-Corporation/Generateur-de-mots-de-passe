@@ -31,13 +31,13 @@ Le framework contient de nombreux contrôles intéressants comme :
 ## 3. "Cahier des charges"
 Cette version 3.0 devra comporter des changements majeurs liés à l'interface.
 Voici donc "To Do List" des changements à effectuer : 
-- [ ] Ajouter Guna.UI
-- [ ] Embellir l'interface
-- [ ] Ajouter le contrôle "GunaShadowForm"
-- [ ] Ajouter le contrôle "GunaElipse"
-- [ ] Rendre le thème sombre compatible
-- [ ] Modifier la propriété `FormBorderStyle` à `None`
-- [ ] Ajouter le contrôle GunaDragControl
-- [ ] Ajouter le contrôle GunaControlBox (Close & minimize)
+- [ ] Ajouter Guna.UI (#21)
+- [ ] Embellir l'interface (#22)
+- [ ] Ajouter le contrôle "GunaShadowForm" (#23)
+- [ ] Ajouter le contrôle "GunaElipse" (#23)
+- [ ] Rendre le thème sombre compatible (#24)
+- [ ] Modifier la propriété `FormBorderStyle` à `None` (#23)
+- [ ] Ajouter le contrôle GunaDragControl (#23)
+- [ ] Ajouter le contrôle GunaControlBox (Close & minimize)(#23)
 - [ ] ...
 Cette liste pourra être modifiée à tout moment.
