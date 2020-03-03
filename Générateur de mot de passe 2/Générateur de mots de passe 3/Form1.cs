@@ -21,5 +21,12 @@ namespace Générateur_de_mots_de_passe_3
         {
             Guna.UI.Lib.GraphicsHelper.ShadowForm(this);
         }
+
+        private void gunaAdvenceButton4_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            int number = random.Next(10, 20);
+            gunaLineTextBox1.Text = number.ToString();
+        }
     }
 }
