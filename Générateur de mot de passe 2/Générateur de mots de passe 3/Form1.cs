@@ -71,5 +71,10 @@ namespace Générateur_de_mots_de_passe_3
                 MessageBox.Show("Impossible de générer le mot de passe." + Environment.NewLine + ex, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void gunaAdvenceButton3_Click(object sender, EventArgs e)
+        {
+            new About().Show();
+        }
     }
 }

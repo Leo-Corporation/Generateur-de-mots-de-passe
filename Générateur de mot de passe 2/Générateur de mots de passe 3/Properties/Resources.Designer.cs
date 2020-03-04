@@ -63,6 +63,26 @@ namespace Générateur_de_mots_de_passe_3.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_github_100px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_github_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_github_100px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_github_100px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_info_100px {
             get {
                 object obj = ResourceManager.GetObject("icons8_info_100px", resourceCulture);
@@ -76,6 +96,16 @@ namespace Générateur_de_mots_de_passe_3.Properties {
         internal static System.Drawing.Bitmap icons8_light_on_100px {
             get {
                 object obj = ResourceManager.GetObject("icons8_light_on_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_refresh_100px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_refresh_100px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +136,16 @@ namespace Générateur_de_mots_de_passe_3.Properties {
         internal static System.Drawing.Bitmap icons8_settings_100px {
             get {
                 object obj = ResourceManager.GetObject("icons8_settings_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Leo_Corp_long {
+            get {
+                object obj = ResourceManager.GetObject("Leo Corp long", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
