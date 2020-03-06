@@ -85,6 +85,7 @@
             this.gunaControlBox2.Animated = true;
             this.gunaControlBox2.AnimationHoverSpeed = 0.07F;
             this.gunaControlBox2.AnimationSpeed = 0.03F;
+            this.gunaControlBox2.BackColor = System.Drawing.Color.Transparent;
             this.gunaControlBox2.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
             this.gunaControlBox2.IconColor = System.Drawing.Color.Black;
             this.gunaControlBox2.IconSize = 15F;
@@ -102,6 +103,7 @@
             this.gunaControlBox1.Animated = true;
             this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
             this.gunaControlBox1.AnimationSpeed = 0.03F;
+            this.gunaControlBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaControlBox1.IconColor = System.Drawing.Color.Black;
             this.gunaControlBox1.IconSize = 15F;
             this.gunaControlBox1.Location = new System.Drawing.Point(491, 5);
@@ -123,6 +125,7 @@
             // 
             // gunaPanel2
             // 
+            this.gunaPanel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaPanel2.Controls.Add(this.gunaAdvenceButton3);
             this.gunaPanel2.Controls.Add(this.gunaAdvenceButton2);
             this.gunaPanel2.Controls.Add(this.gunaAdvenceButton1);
@@ -200,6 +203,7 @@
             // 
             // gunaSeparator1
             // 
+            this.gunaSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.gunaSeparator1.LineColor = System.Drawing.Color.Silver;
             this.gunaSeparator1.Location = new System.Drawing.Point(0, 117);
             this.gunaSeparator1.Name = "gunaSeparator1";
@@ -208,6 +212,7 @@
             // 
             // gunaSeparator2
             // 
+            this.gunaSeparator2.BackColor = System.Drawing.Color.Transparent;
             this.gunaSeparator2.LineColor = System.Drawing.Color.Silver;
             this.gunaSeparator2.Location = new System.Drawing.Point(0, 74);
             this.gunaSeparator2.Name = "gunaSeparator2";
@@ -284,6 +289,7 @@
             this.gunaAdvenceButton2.TabIndex = 0;
             this.gunaAdvenceButton2.Text = "Paramètres";
             this.gunaAdvenceButton2.TextOffsetX = -4;
+            this.gunaAdvenceButton2.Click += new System.EventHandler(this.gunaAdvenceButton2_Click);
             // 
             // gunaAdvenceButton1
             // 

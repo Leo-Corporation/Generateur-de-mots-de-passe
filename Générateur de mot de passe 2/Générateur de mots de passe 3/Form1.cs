@@ -25,6 +25,40 @@ namespace Générateur_de_mots_de_passe_3
         private void Form1_Load(object sender, EventArgs e)
         {
             Guna.UI.Lib.GraphicsHelper.ShadowForm(this); // Ajout de l'ombre sur Form1 (this)
+            if (Properties.Settings.Default.DarkTheme == true)
+            {
+                ChangeTheme(1);
+            }
+            else
+            {
+                ChangeTheme(0);
+            }
+        }
+
+        public void ChangeTheme(int themeID)
+        {
+            // themeID 0 = White
+            // themeID 1 = Dark
+            if (themeID == 1)
+            {
+                BackColor = Color.FromArgb(50, 50, 72);
+                gunaLabel1.ForeColor = Color.White;
+                gunaTextBox1.BaseColor = Color.FromArgb(50, 50, 72);
+                gunaTextBox1.FocusedBaseColor = Color.FromArgb(50, 50, 72);
+                gunaLineTextBox1.BackColor = Color.FromArgb(50, 50, 72);
+                gunaControlBox1.IconColor = Color.White;
+                gunaControlBox2.IconColor = Color.White;
+            }
+            else
+            {
+                BackColor = Color.White;
+                gunaLabel1.ForeColor = Color.Black;
+                gunaTextBox1.BaseColor = Color.White;
+                gunaTextBox1.FocusedBaseColor = Color.White;
+                gunaLineTextBox1.BackColor = Color.White;
+                gunaControlBox1.IconColor = Color.Black;
+                gunaControlBox2.IconColor = Color.Black;
+            }
         }
 
         private void gunaAdvenceButton4_Click(object sender, EventArgs e)
@@ -75,6 +109,11 @@ namespace Générateur_de_mots_de_passe_3
         private void gunaAdvenceButton3_Click(object sender, EventArgs e)
         {
             new About().Show();
+        }
+
+        private void gunaAdvenceButton2_Click(object sender, EventArgs e)
+        {
+            new Settings(this).Show();
         }
     }
 }
