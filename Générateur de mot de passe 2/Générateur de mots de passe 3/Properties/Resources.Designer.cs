@@ -73,6 +73,16 @@ namespace Générateur_de_mots_de_passe_3.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_electronics_100px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_electronics_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_github_100px {
             get {
                 object obj = ResourceManager.GetObject("icons8_github_100px", resourceCulture);
@@ -156,6 +166,26 @@ namespace Générateur_de_mots_de_passe_3.Properties {
         internal static System.Drawing.Bitmap icons8_settings_100px {
             get {
                 object obj = ResourceManager.GetObject("icons8_settings_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_slider_100px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_slider_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_smartphone_ram_100px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_smartphone_ram_100px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

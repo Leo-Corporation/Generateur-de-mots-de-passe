@@ -25,6 +25,7 @@ namespace Générateur_de_mots_de_passe_3
             if (Properties.Settings.Default.DarkTheme == true)
             {
                 gunaWinSwitch1.Checked = true;
+                // Change le thème de Form1
                 BackColor = Color.FromArgb(50, 50, 72);
                 gunaLabel1.ForeColor = Color.White;
                 gunaControlBox1.IconColor = Color.White;
@@ -32,6 +33,7 @@ namespace Générateur_de_mots_de_passe_3
             else
             {
                 gunaWinSwitch1.Checked = false;
+                // Change le thème de Form1
                 BackColor = Color.White;
                 gunaLabel1.ForeColor = Color.Black;
                 gunaControlBox1.IconColor = Color.Black;

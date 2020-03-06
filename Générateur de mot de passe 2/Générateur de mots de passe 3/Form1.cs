@@ -71,22 +71,23 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton5_Click(object sender, EventArgs e)
         {
-            GeneratePassword();
+            int textBoxNumber = int.Parse(gunaLineTextBox1.Text); // Conversion de 'string' en 'int'
+            GeneratePassword(textBoxNumber, 60);
         }
 
-        public void GeneratePassword()
+        public void GeneratePassword(int passwordLenght, int charLenght)
         {
+            gunaLineTextBox1.Text = passwordLenght.ToString();
             UsableChar = CharList.Split(new string[] { "," }, StringSplitOptions.None);
             FinalPassword = "";
             Number = 0;
             try //Essai
             {
-                int textBoxNumber = int.Parse(gunaLineTextBox1.Text); // Conversion de 'string' en 'int'
-                if (textBoxNumber > 0)
+                if (passwordLenght > 0)
                 {
-                    for (int i = 1; i < textBoxNumber; i++) // Tant que i < longueur du mot de passe
+                    for (int i = 1; i < passwordLenght; i++) // Tant que i < longueur du mot de passe
                     {
-                        Number = RandomClass.Next(0, 60); // Générer un nombre aléatoire entre 0 et 60
+                        Number = RandomClass.Next(0, charLenght); // Générer un nombre aléatoire entre 0 et 60
                         FinalPassword = FinalPassword + UsableChar[Number]; // Ajouter au mot de passe un élément tiré au hasard de UsableChar.
                     }
                     gunaTextBox1.Text = FinalPassword;
@@ -114,6 +115,11 @@ namespace Générateur_de_mots_de_passe_3
         private void gunaAdvenceButton2_Click(object sender, EventArgs e)
         {
             new Settings(this).Show();
+        }
+
+        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        {
+            new Presets(this).Show();
         }
     }
 }

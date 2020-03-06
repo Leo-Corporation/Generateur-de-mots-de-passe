@@ -173,7 +173,7 @@
             this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
             this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox1.FocusedForeColor = System.Drawing.Color.CornflowerBlue;
             this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox1.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.gunaTextBox1.Location = new System.Drawing.Point(12, 156);
@@ -325,6 +325,7 @@
             this.gunaAdvenceButton1.TabIndex = 0;
             this.gunaAdvenceButton1.Text = "Préréglages";
             this.gunaAdvenceButton1.TextOffsetX = -4;
+            this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
             // 
             // gunaAdvenceButton5
             // 
