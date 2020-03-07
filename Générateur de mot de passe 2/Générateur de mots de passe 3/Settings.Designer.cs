@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
@@ -46,6 +46,10 @@
             this.gunaWinSwitch2 = new Guna.UI.WinForms.GunaWinSwitch();
             this.gunaAdvenceButton5 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLinkLabel1 = new Guna.UI.WinForms.GunaLinkLabel();
+            this.gunaLinkLabel2 = new Guna.UI.WinForms.GunaLinkLabel();
+            this.gunaLinkLabel3 = new Guna.UI.WinForms.GunaLinkLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +63,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(368, 34);
             this.panel1.TabIndex = 0;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.Location = new System.Drawing.Point(12, 6);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(100, 23);
+            this.gunaLabel1.TabIndex = 2;
+            this.gunaLabel1.Text = "Paramètres";
             // 
             // gunaControlBox1
             // 
@@ -85,17 +100,6 @@
             // 
             this.gunaElipse1.Radius = 6;
             this.gunaElipse1.TargetControl = this;
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.Location = new System.Drawing.Point(12, 6);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(100, 23);
-            this.gunaLabel1.TabIndex = 2;
-            this.gunaLabel1.Text = "Paramètres";
             // 
             // gunaDragControl2
             // 
@@ -223,7 +227,7 @@
             this.gunaAdvenceButton5.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_checkmark_100px;
             this.gunaAdvenceButton5.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton5.LineColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaAdvenceButton5.Location = new System.Drawing.Point(67, 175);
+            this.gunaAdvenceButton5.Location = new System.Drawing.Point(67, 242);
             this.gunaAdvenceButton5.Name = "gunaAdvenceButton5";
             this.gunaAdvenceButton5.OnHoverBaseColor = System.Drawing.Color.RoyalBlue;
             this.gunaAdvenceButton5.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -259,7 +263,7 @@
             this.gunaAdvenceButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_multiply_100px;
             this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(25, 25);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(193, 175);
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(193, 242);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
             this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.Crimson;
             this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -274,12 +278,78 @@
             this.gunaAdvenceButton1.TextOffsetX = -4;
             this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
             // 
+            // gunaLabel8
+            // 
+            this.gunaLabel8.AutoSize = true;
+            this.gunaLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel8.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLabel8.Location = new System.Drawing.Point(12, 146);
+            this.gunaLabel8.Name = "gunaLabel8";
+            this.gunaLabel8.Size = new System.Drawing.Size(78, 23);
+            this.gunaLabel8.TabIndex = 2;
+            this.gunaLabel8.Text = "Données";
+            // 
+            // gunaLinkLabel1
+            // 
+            this.gunaLinkLabel1.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
+            this.gunaLinkLabel1.AutoSize = true;
+            this.gunaLinkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaLinkLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLinkLabel1.LinkColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLinkLabel1.Location = new System.Drawing.Point(14, 170);
+            this.gunaLinkLabel1.Name = "gunaLinkLabel1";
+            this.gunaLinkLabel1.Size = new System.Drawing.Size(110, 17);
+            this.gunaLinkLabel1.TabIndex = 5;
+            this.gunaLinkLabel1.TabStop = true;
+            this.gunaLinkLabel1.Text = "Voir les données";
+            this.gunaLinkLabel1.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLinkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.gunaLinkLabel1_LinkClicked);
+            // 
+            // gunaLinkLabel2
+            // 
+            this.gunaLinkLabel2.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
+            this.gunaLinkLabel2.AutoSize = true;
+            this.gunaLinkLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLinkLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaLinkLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLinkLabel2.LinkColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLinkLabel2.Location = new System.Drawing.Point(14, 189);
+            this.gunaLinkLabel2.Name = "gunaLinkLabel2";
+            this.gunaLinkLabel2.Size = new System.Drawing.Size(241, 17);
+            this.gunaLinkLabel2.TabIndex = 5;
+            this.gunaLinkLabel2.TabStop = true;
+            this.gunaLinkLabel2.Text = "Réinitialiser les données (irréversible)";
+            this.gunaLinkLabel2.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLinkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.gunaLinkLabel2_LinkClicked);
+            // 
+            // gunaLinkLabel3
+            // 
+            this.gunaLinkLabel3.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
+            this.gunaLinkLabel3.AutoSize = true;
+            this.gunaLinkLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLinkLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaLinkLabel3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLinkLabel3.LinkColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLinkLabel3.Location = new System.Drawing.Point(14, 208);
+            this.gunaLinkLabel3.Name = "gunaLinkLabel3";
+            this.gunaLinkLabel3.Size = new System.Drawing.Size(228, 17);
+            this.gunaLinkLabel3.TabIndex = 5;
+            this.gunaLinkLabel3.TabStop = true;
+            this.gunaLinkLabel3.Text = "Réinitialiser le logiciel (irréversible)";
+            this.gunaLinkLabel3.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLinkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.gunaLinkLabel3_LinkClicked);
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(368, 217);
+            this.ClientSize = new System.Drawing.Size(368, 282);
+            this.Controls.Add(this.gunaLinkLabel3);
+            this.Controls.Add(this.gunaLinkLabel2);
+            this.Controls.Add(this.gunaLinkLabel1);
             this.Controls.Add(this.gunaAdvenceButton1);
             this.Controls.Add(this.gunaAdvenceButton5);
             this.Controls.Add(this.gunaWinSwitch2);
@@ -288,6 +358,7 @@
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaLabel6);
             this.Controls.Add(this.gunaLabel3);
+            this.Controls.Add(this.gunaLabel8);
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.panel1);
@@ -322,5 +393,9 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton5;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
+        private Guna.UI.WinForms.GunaLinkLabel gunaLinkLabel3;
+        private Guna.UI.WinForms.GunaLinkLabel gunaLinkLabel2;
+        private Guna.UI.WinForms.GunaLinkLabel gunaLinkLabel1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel8;
     }
 }

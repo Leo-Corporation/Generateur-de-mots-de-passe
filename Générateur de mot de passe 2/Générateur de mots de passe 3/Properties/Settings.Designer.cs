@@ -46,5 +46,90 @@ namespace Générateur_de_mots_de_passe_3.Properties {
                 this["NotifyUpdate"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,j,k,l,m,n,o,p" +
+            ",q,r,s,t,u,v,w,x,y,z,0,1,2,3,4,5,6,7,8,9,/,é,&,ç,à")]
+        public string CustomChar {
+            get {
+                return ((string)(this["CustomChar"]));
+            }
+            set {
+                this["CustomChar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CustomNumber {
+            get {
+                return ((int)(this["CustomNumber"]));
+            }
+            set {
+                this["CustomNumber"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CustomRandom1 {
+            get {
+                return ((int)(this["CustomRandom1"]));
+            }
+            set {
+                this["CustomRandom1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CustomRandom2 {
+            get {
+                return ((int)(this["CustomRandom2"]));
+            }
+            set {
+                this["CustomRandom2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool RandomGeneration {
+            get {
+                return ((bool)(this["RandomGeneration"]));
+            }
+            set {
+                this["RandomGeneration"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CustomSet {
+            get {
+                return ((bool)(this["CustomSet"]));
+            }
+            set {
+                this["CustomSet"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CharLenght {
+            get {
+                return ((int)(this["CharLenght"]));
+            }
+            set {
+                this["CharLenght"] = value;
+            }
+        }
     }
 }

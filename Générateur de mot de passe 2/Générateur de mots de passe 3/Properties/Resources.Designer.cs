@@ -73,6 +73,16 @@ namespace Générateur_de_mots_de_passe_3.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_edit_100px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_edit_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_electronics_100px {
             get {
                 object obj = ResourceManager.GetObject("icons8_electronics_100px", resourceCulture);

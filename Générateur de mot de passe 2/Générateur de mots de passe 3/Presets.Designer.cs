@@ -31,11 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Presets));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceTileButton3 = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.gunaAdvenceTileButton2 = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.gunaAdvenceTileButton1 = new Guna.UI.WinForms.GunaAdvenceTileButton();
@@ -51,10 +52,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(454, 36);
             this.panel1.TabIndex = 0;
-            // 
-            // gunaDragControl1
-            // 
-            this.gunaDragControl1.TargetControl = this.panel1;
             // 
             // gunaLabel1
             // 
@@ -84,6 +81,10 @@
             this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
             this.gunaControlBox1.TabIndex = 2;
             // 
+            // gunaDragControl1
+            // 
+            this.gunaDragControl1.TargetControl = this.panel1;
+            // 
             // gunaElipse1
             // 
             this.gunaElipse1.Radius = 6;
@@ -100,6 +101,40 @@
             this.gunaLabel2.Size = new System.Drawing.Size(178, 20);
             this.gunaLabel2.TabIndex = 3;
             this.gunaLabel2.Text = "Choisissez un préréglage";
+            // 
+            // gunaAdvenceButton1
+            // 
+            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton1.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.CheckedImage")));
+            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.gunaAdvenceButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_edit_100px;
+            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(303, 180);
+            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
+            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.RoyalBlue;
+            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton1.OnHoverImage = null;
+            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.Radius = 6;
+            this.gunaAdvenceButton1.Size = new System.Drawing.Size(139, 29);
+            this.gunaAdvenceButton1.TabIndex = 4;
+            this.gunaAdvenceButton1.Text = "Modifier";
+            this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
             // 
             // gunaAdvenceTileButton3
             // 
@@ -131,9 +166,10 @@
             this.gunaAdvenceTileButton3.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceTileButton3.OnPressedColor = System.Drawing.Color.Black;
             this.gunaAdvenceTileButton3.Radius = 6;
-            this.gunaAdvenceTileButton3.Size = new System.Drawing.Size(140, 140);
+            this.gunaAdvenceTileButton3.Size = new System.Drawing.Size(140, 105);
             this.gunaAdvenceTileButton3.TabIndex = 1;
             this.gunaAdvenceTileButton3.Text = "Personnalisé";
+            this.gunaAdvenceTileButton3.Click += new System.EventHandler(this.gunaAdvenceTileButton3_Click);
             // 
             // gunaAdvenceTileButton2
             // 
@@ -211,6 +247,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(454, 226);
+            this.Controls.Add(this.gunaAdvenceButton1);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.gunaAdvenceTileButton3);
             this.Controls.Add(this.gunaAdvenceTileButton2);
@@ -240,5 +277,6 @@
         private Guna.UI.WinForms.GunaAdvenceTileButton gunaAdvenceTileButton2;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaAdvenceTileButton gunaAdvenceTileButton3;
+        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
     }
 }

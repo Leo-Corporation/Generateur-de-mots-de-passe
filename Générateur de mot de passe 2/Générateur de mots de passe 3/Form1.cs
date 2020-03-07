@@ -71,14 +71,21 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton5_Click(object sender, EventArgs e)
         {
-            int textBoxNumber = int.Parse(gunaLineTextBox1.Text); // Conversion de 'string' en 'int'
-            GeneratePassword(textBoxNumber, 60);
+            if (!string.IsNullOrWhiteSpace(gunaLineTextBox1.Text))
+            {
+                int textBoxNumber = int.Parse(gunaLineTextBox1.Text); // Conversion de 'string' en 'int'
+                GeneratePassword(textBoxNumber, 60, CharList);
+            }
+            else
+            {
+                MessageBox.Show("Veuillez entrer un nombre");
+            }
         }
 
-        public void GeneratePassword(int passwordLenght, int charLenght)
+        public void GeneratePassword(int passwordLenght, int charLenght, string charList)
         {
             gunaLineTextBox1.Text = passwordLenght.ToString();
-            UsableChar = CharList.Split(new string[] { "," }, StringSplitOptions.None);
+            UsableChar = charList.Split(new string[] { "," }, StringSplitOptions.None);
             FinalPassword = "";
             Number = 0;
             try //Essai
