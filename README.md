@@ -35,11 +35,11 @@ Voici donc "To Do List" des changements à effectuer :
 - [X] Embellir l'interface
 - [X] Ajouter le contrôle "GunaShadowForm"
 - [X] Ajouter le contrôle "GunaElipse"
-- [X] Rendre le thème sombre compatible
+- [ ] Rendre le thème sombre compatible (en cours)
 - [X] Modifier la propriété `FormBorderStyle` à `None`
 - [X] Ajouter le contrôle GunaDragControl
 - [X] Ajouter le contrôle GunaControlBox (Close & minimize)
-- [ ] Définir un préréglage par défaut #29
+- [ ] Définir un préréglage par défaut (#29)
 - [ ] Corriger les bugs
 - [ ] ...
 Cette liste pourra être modifiée à tout moment.
