@@ -38,26 +38,29 @@ namespace Générateur_de_mots_de_passe_3
                 if (preset == "Simple") // Si le preset est simple (valeur par défaut)
                 {
                     Properties.Settings.Default.DefaultPreset = "Simple"; // Update Settings
+                    Close();
                 }
                 else if (preset == "Complexe") // Si le preset est complexe
                 {
                     Properties.Settings.Default.DefaultPreset = "Complexe"; // Update Settings
+                    Close();
                 }
                 else if (preset == "Personnalisé") // Si le preset est personnalisé
                 {
                     if (Properties.Settings.Default.CustomSet) // Vérification si le preset perso est défini
                     {
                         Properties.Settings.Default.DefaultPreset = "Personnalisé"; // Update Settings
+                        Close();
                     }
                     else
                     {
-                        MessageBox.Show("Pas de préréglage personnalisé trouvé, veuillez en créer un.");
+                        MessageBox.Show("Pas de préréglage personnalisé trouvé, veuillez en créer un."); // Lors que le preset perso n'est pas set
                         new EditCustomPreset().Show();
                     }
                 }
                 else // Si aucun preset n'est sélectionné
                 {
-                    MessageBox.Show("Veuillez sélectionner un préréglage");
+                    MessageBox.Show("Veuillez sélectionner un préréglage"); // Si aucun préréglage n'est sélectionné
                 }
             }
         }
