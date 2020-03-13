@@ -29,5 +29,8 @@
     <Setting Name="CharLenght" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="DefaultPreset" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Simple</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

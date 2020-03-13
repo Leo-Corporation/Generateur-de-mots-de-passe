@@ -131,5 +131,17 @@ namespace Générateur_de_mots_de_passe_3.Properties {
                 this["CharLenght"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Simple")]
+        public string DefaultPreset {
+            get {
+                return ((string)(this["DefaultPreset"]));
+            }
+            set {
+                this["DefaultPreset"] = value;
+            }
+        }
     }
 }

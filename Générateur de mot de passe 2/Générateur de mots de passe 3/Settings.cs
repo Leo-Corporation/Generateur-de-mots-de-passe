@@ -132,5 +132,10 @@ namespace Générateur_de_mots_de_passe_3
             gunaWinSwitch2.Checked = true;
             MessageBox.Show("Le logiciel a été réinitialisé");
         }
+
+        private void gunaLinkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new SetDefaultPreset().Show();
+        }
     }
 }
