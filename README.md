@@ -10,6 +10,9 @@ master est la branche de base, tandis que la branche Version_Next sert à héber
 ## Contribuer
 Pour prendre connaissance des règles de contribution, cliquez [ici](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/blob/master/CONTRIBUTING.md).
 
+## Documentation
+Cliquez [ici](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/wiki) pour accèder à la documentation.
+
 # Version 3.0
 ## 1. Introduction
 Générateur de mots de passe est un logiciel qui permet de générer des mots de passe simplement.
