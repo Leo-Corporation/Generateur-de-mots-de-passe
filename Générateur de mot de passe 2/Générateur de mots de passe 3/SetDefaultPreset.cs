@@ -29,25 +29,25 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton5_Click(object sender, EventArgs e)
         {
-
+            SavePreference(gunaComboBox1.Text);
         }
         private void SavePreference(string preset)
         {
-            if (!string.IsNullOrWhiteSpace(preset))
+            if (!string.IsNullOrWhiteSpace(preset)) // Si le preset n'est pas vide ou 'null'
             {
-                if (preset == "Simple")
+                if (preset == "Simple") // Si le preset est simple (valeur par défaut)
                 {
-                    Properties.Settings.Default.DefaultPreset = "Simple";
+                    Properties.Settings.Default.DefaultPreset = "Simple"; // Update Settings
                 }
-                else if (preset == "Complexe")
+                else if (preset == "Complexe") // Si le preset est complexe
                 {
-                    Properties.Settings.Default.DefaultPreset = "Complexe";
+                    Properties.Settings.Default.DefaultPreset = "Complexe"; // Update Settings
                 }
-                else if (preset == "Personnalisé")
+                else if (preset == "Personnalisé") // Si le preset est personnalisé
                 {
-                    if (Properties.Settings.Default.CustomSet)
+                    if (Properties.Settings.Default.CustomSet) // Vérification si le preset perso est défini
                     {
-                        Properties.Settings.Default.DefaultPreset = "Personnalisé";
+                        Properties.Settings.Default.DefaultPreset = "Personnalisé"; // Update Settings
                     }
                     else
                     {
@@ -55,7 +55,7 @@ namespace Générateur_de_mots_de_passe_3
                         new EditCustomPreset().Show();
                     }
                 }
-                else
+                else // Si aucun preset n'est sélectionné
                 {
                     MessageBox.Show("Veuillez sélectionner un préréglage");
                 }
