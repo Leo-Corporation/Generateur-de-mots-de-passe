@@ -73,8 +73,22 @@ namespace Générateur_de_mots_de_passe_3
         {
             if (!string.IsNullOrWhiteSpace(gunaLineTextBox1.Text))
             {
-                int textBoxNumber = int.Parse(gunaLineTextBox1.Text); // Conversion de 'string' en 'int'
-                GeneratePassword(textBoxNumber, 60, CharList);
+                if (Properties.Settings.Default.DefaultPreset == "Simple")
+                {
+                    int textBoxNumber = int.Parse(gunaLineTextBox1.Text); // Conversion de 'string' en 'int'
+                    GeneratePassword(textBoxNumber, 60, CharList);
+                }
+                else if (Properties.Settings.Default.DefaultPreset == "Complexe")
+                {
+                    int textBoxNumber = int.Parse(gunaLineTextBox1.Text); // Conversion de 'string' en 'int'
+                    GeneratePassword(textBoxNumber, 65, CharList);
+                }
+                else if (Properties.Settings.Default.DefaultPreset == "Personnalisé")
+                {
+                    Random random = new Random();
+                    int pwrLenght = random.Next(Properties.Settings.Default.CustomRandom1, Properties.Settings.Default.CustomRandom2);
+                    GeneratePassword(pwrLenght, Properties.Settings.Default.CharLenght, Properties.Settings.Default.CustomChar);
+                }
             }
             else
             {

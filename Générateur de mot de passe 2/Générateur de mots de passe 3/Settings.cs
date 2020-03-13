@@ -107,7 +107,7 @@ namespace Générateur_de_mots_de_passe_3
             string theme = "Thème sombre : " + Properties.Settings.Default.DarkTheme;
             string notifyUpdate = "Notifier des mises à jour : " + Properties.Settings.Default.NotifyUpdate;
             string presetSet = "Préréglage personnalisé configuré : " + Properties.Settings.Default.CustomSet;
-            string presetChar = "Charactères personnalisées : " + Properties.Settings.Default.CustomChar;
+            string presetChar = "Caractères personnalisées : " + Properties.Settings.Default.CustomChar;
             MessageBox.Show("Voici vos données" + Environment.NewLine + theme + Environment.NewLine + notifyUpdate + Environment.NewLine + presetSet + Environment.NewLine + presetChar, "Vos données", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
