@@ -83,5 +83,10 @@ namespace Générateur_de_mots_de_passe_3
             }
             Close();
         }
+
+        private void gunaLinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

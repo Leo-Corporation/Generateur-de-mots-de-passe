@@ -50,6 +50,8 @@
             this.gunaLinkLabel1 = new Guna.UI.WinForms.GunaLinkLabel();
             this.gunaLinkLabel2 = new Guna.UI.WinForms.GunaLinkLabel();
             this.gunaLinkLabel3 = new Guna.UI.WinForms.GunaLinkLabel();
+            this.gunaLinkLabel4 = new Guna.UI.WinForms.GunaLinkLabel();
+            this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -208,6 +210,7 @@
             // 
             // gunaAdvenceButton5
             // 
+            this.gunaAdvenceButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaAdvenceButton5.Animated = true;
             this.gunaAdvenceButton5.AnimationHoverSpeed = 0.07F;
             this.gunaAdvenceButton5.AnimationSpeed = 0.03F;
@@ -227,7 +230,7 @@
             this.gunaAdvenceButton5.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_checkmark_100px;
             this.gunaAdvenceButton5.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton5.LineColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaAdvenceButton5.Location = new System.Drawing.Point(67, 242);
+            this.gunaAdvenceButton5.Location = new System.Drawing.Point(67, 291);
             this.gunaAdvenceButton5.Name = "gunaAdvenceButton5";
             this.gunaAdvenceButton5.OnHoverBaseColor = System.Drawing.Color.RoyalBlue;
             this.gunaAdvenceButton5.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -244,6 +247,7 @@
             // 
             // gunaAdvenceButton1
             // 
+            this.gunaAdvenceButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaAdvenceButton1.Animated = true;
             this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
             this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
@@ -263,7 +267,7 @@
             this.gunaAdvenceButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_multiply_100px;
             this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(25, 25);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(193, 242);
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(193, 291);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
             this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.Crimson;
             this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -341,12 +345,42 @@
             this.gunaLinkLabel3.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
             this.gunaLinkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.gunaLinkLabel3_LinkClicked);
             // 
+            // gunaLinkLabel4
+            // 
+            this.gunaLinkLabel4.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
+            this.gunaLinkLabel4.AutoSize = true;
+            this.gunaLinkLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLinkLabel4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaLinkLabel4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLinkLabel4.LinkColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLinkLabel4.Location = new System.Drawing.Point(15, 259);
+            this.gunaLinkLabel4.Name = "gunaLinkLabel4";
+            this.gunaLinkLabel4.Size = new System.Drawing.Size(209, 17);
+            this.gunaLinkLabel4.TabIndex = 7;
+            this.gunaLinkLabel4.TabStop = true;
+            this.gunaLinkLabel4.Text = "Définir un préréglage par défaut";
+            this.gunaLinkLabel4.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
+            // 
+            // gunaLabel9
+            // 
+            this.gunaLabel9.AutoSize = true;
+            this.gunaLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel9.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel9.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLabel9.Location = new System.Drawing.Point(13, 235);
+            this.gunaLabel9.Name = "gunaLabel9";
+            this.gunaLabel9.Size = new System.Drawing.Size(104, 23);
+            this.gunaLabel9.TabIndex = 6;
+            this.gunaLabel9.Text = "Préréglages";
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(368, 282);
+            this.ClientSize = new System.Drawing.Size(368, 329);
+            this.Controls.Add(this.gunaLinkLabel4);
+            this.Controls.Add(this.gunaLabel9);
             this.Controls.Add(this.gunaLinkLabel3);
             this.Controls.Add(this.gunaLinkLabel2);
             this.Controls.Add(this.gunaLinkLabel1);
@@ -397,5 +431,7 @@
         private Guna.UI.WinForms.GunaLinkLabel gunaLinkLabel2;
         private Guna.UI.WinForms.GunaLinkLabel gunaLinkLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel8;
+        private Guna.UI.WinForms.GunaLinkLabel gunaLinkLabel4;
+        private Guna.UI.WinForms.GunaLabel gunaLabel9;
     }
 }

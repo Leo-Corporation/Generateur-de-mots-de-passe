@@ -40,6 +40,7 @@
             this.gunaAdvenceTileButton3 = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.gunaAdvenceTileButton2 = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.gunaAdvenceTileButton1 = new Guna.UI.WinForms.GunaAdvenceTileButton();
+            this.gunaLinkLabel1 = new Guna.UI.WinForms.GunaLinkLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -241,12 +242,30 @@
             this.gunaAdvenceTileButton1.Text = "Simple";
             this.gunaAdvenceTileButton1.Click += new System.EventHandler(this.gunaAdvenceTileButton1_Click);
             // 
+            // gunaLinkLabel1
+            // 
+            this.gunaLinkLabel1.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
+            this.gunaLinkLabel1.AutoSize = true;
+            this.gunaLinkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaLinkLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLinkLabel1.LinkColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLinkLabel1.Location = new System.Drawing.Point(13, 213);
+            this.gunaLinkLabel1.Name = "gunaLinkLabel1";
+            this.gunaLinkLabel1.Size = new System.Drawing.Size(179, 17);
+            this.gunaLinkLabel1.TabIndex = 6;
+            this.gunaLinkLabel1.TabStop = true;
+            this.gunaLinkLabel1.Text = "Mettre un preset par défaut";
+            this.gunaLinkLabel1.VisitedLinkColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLinkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.gunaLinkLabel1_LinkClicked);
+            // 
             // Presets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(454, 226);
+            this.ClientSize = new System.Drawing.Size(454, 239);
+            this.Controls.Add(this.gunaLinkLabel1);
             this.Controls.Add(this.gunaAdvenceButton1);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.gunaAdvenceTileButton3);
@@ -278,5 +297,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaAdvenceTileButton gunaAdvenceTileButton3;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
+        private Guna.UI.WinForms.GunaLinkLabel gunaLinkLabel1;
     }
 }
