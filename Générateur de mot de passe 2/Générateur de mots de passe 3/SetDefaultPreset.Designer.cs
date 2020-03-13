@@ -116,7 +116,7 @@
             "Simple",
             "Complexe",
             "Personnalisé"});
-            this.gunaComboBox1.Location = new System.Drawing.Point(13, 74);
+            this.gunaComboBox1.Location = new System.Drawing.Point(13, 70);
             this.gunaComboBox1.Name = "gunaComboBox1";
             this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.CornflowerBlue;
             this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;

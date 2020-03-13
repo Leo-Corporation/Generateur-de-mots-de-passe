@@ -121,6 +121,7 @@ namespace Générateur_de_mots_de_passe_3
             Properties.Settings.Default.CustomSet = false;
             Properties.Settings.Default.CharLenght = 0;
             Properties.Settings.Default.RandomGeneration = false;
+            Properties.Settings.Default.DefaultPreset = "Simple";
             MessageBox.Show("Données réinitialisées");
         }
 
