@@ -38,20 +38,20 @@
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -136,71 +136,6 @@
             this.gunaPanel1.Size = new System.Drawing.Size(257, 120);
             this.gunaPanel1.TabIndex = 5;
             // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(12, 165);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(295, 20);
-            this.gunaLabel4.TabIndex = 2;
-            this.gunaLabel4.Text = "© 2020 - Léo Corporation + Contributeurs";
-            // 
-            // gunaPanel2
-            // 
-            this.gunaPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPanel2.Controls.Add(this.gunaPictureBox2);
-            this.gunaPanel2.Controls.Add(this.gunaLabel5);
-            this.gunaPanel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaPanel2.Location = new System.Drawing.Point(11, 188);
-            this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(186, 77);
-            this.gunaPanel2.TabIndex = 6;
-            this.gunaPanel2.Click += new System.EventHandler(this.gunaPanel2_Click);
-            // 
-            // gunaLabel5
-            // 
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaLabel5.Location = new System.Drawing.Point(76, 22);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(98, 32);
-            this.gunaLabel5.TabIndex = 2;
-            this.gunaLabel5.Text = "GitHub";
-            this.gunaLabel5.Click += new System.EventHandler(this.gunaPanel2_Click);
-            // 
-            // gunaPictureBox3
-            // 
-            this.gunaPictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaPictureBox3.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.logo_carre;
-            this.gunaPictureBox3.Location = new System.Drawing.Point(1, 0);
-            this.gunaPictureBox3.Name = "gunaPictureBox3";
-            this.gunaPictureBox3.Size = new System.Drawing.Size(81, 77);
-            this.gunaPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox3.TabIndex = 3;
-            this.gunaPictureBox3.TabStop = false;
-            this.gunaPictureBox3.Click += new System.EventHandler(this.gunaPictureBox3_Click);
-            // 
-            // gunaPictureBox2
-            // 
-            this.gunaPictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaPictureBox2.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_github_100px_1;
-            this.gunaPictureBox2.Location = new System.Drawing.Point(3, 5);
-            this.gunaPictureBox2.Name = "gunaPictureBox2";
-            this.gunaPictureBox2.Size = new System.Drawing.Size(67, 67);
-            this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox2.TabIndex = 3;
-            this.gunaPictureBox2.TabStop = false;
-            this.gunaPictureBox2.Click += new System.EventHandler(this.gunaPanel2_Click);
-            // 
             // gunaAdvenceButton1
             // 
             this.gunaAdvenceButton1.Animated = true;
@@ -235,6 +170,72 @@
             this.gunaAdvenceButton1.TabIndex = 4;
             this.gunaAdvenceButton1.Text = "Rechercher des mises à jour";
             this.gunaAdvenceButton1.TextOffsetX = -4;
+            this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.Location = new System.Drawing.Point(12, 165);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(295, 20);
+            this.gunaLabel4.TabIndex = 2;
+            this.gunaLabel4.Text = "© 2020 - Léo Corporation + Contributeurs";
+            // 
+            // gunaPanel2
+            // 
+            this.gunaPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPanel2.Controls.Add(this.gunaPictureBox2);
+            this.gunaPanel2.Controls.Add(this.gunaLabel5);
+            this.gunaPanel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaPanel2.Location = new System.Drawing.Point(11, 188);
+            this.gunaPanel2.Name = "gunaPanel2";
+            this.gunaPanel2.Size = new System.Drawing.Size(186, 77);
+            this.gunaPanel2.TabIndex = 6;
+            this.gunaPanel2.Click += new System.EventHandler(this.gunaPanel2_Click);
+            // 
+            // gunaPictureBox2
+            // 
+            this.gunaPictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaPictureBox2.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_github_100px_1;
+            this.gunaPictureBox2.Location = new System.Drawing.Point(3, 5);
+            this.gunaPictureBox2.Name = "gunaPictureBox2";
+            this.gunaPictureBox2.Size = new System.Drawing.Size(67, 67);
+            this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox2.TabIndex = 3;
+            this.gunaPictureBox2.TabStop = false;
+            this.gunaPictureBox2.Click += new System.EventHandler(this.gunaPanel2_Click);
+            // 
+            // gunaLabel5
+            // 
+            this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel5.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLabel5.Location = new System.Drawing.Point(76, 22);
+            this.gunaLabel5.Name = "gunaLabel5";
+            this.gunaLabel5.Size = new System.Drawing.Size(98, 32);
+            this.gunaLabel5.TabIndex = 2;
+            this.gunaLabel5.Text = "GitHub";
+            this.gunaLabel5.Click += new System.EventHandler(this.gunaPanel2_Click);
+            // 
+            // gunaPictureBox3
+            // 
+            this.gunaPictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPictureBox3.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaPictureBox3.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.logo_carre;
+            this.gunaPictureBox3.Location = new System.Drawing.Point(1, 0);
+            this.gunaPictureBox3.Name = "gunaPictureBox3";
+            this.gunaPictureBox3.Size = new System.Drawing.Size(81, 77);
+            this.gunaPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox3.TabIndex = 3;
+            this.gunaPictureBox3.TabStop = false;
+            this.gunaPictureBox3.Click += new System.EventHandler(this.gunaPictureBox3_Click);
             // 
             // gunaPictureBox1
             // 
@@ -297,8 +298,8 @@
             this.gunaPanel1.PerformLayout();
             this.gunaPanel2.ResumeLayout(false);
             this.gunaPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

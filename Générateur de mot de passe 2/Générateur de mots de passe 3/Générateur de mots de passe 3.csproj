@@ -92,6 +92,18 @@
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateAv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAv.Designer.cs">
+      <DependentUpon>UpdateAv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateUn.Designer.cs">
+      <DependentUpon>UpdateUn.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +131,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAv.resx">
+      <DependentUpon>UpdateAv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateUn.resx">
+      <DependentUpon>UpdateUn.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -171,6 +189,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PWR Generator.ico" />
+    <None Include="Resources\icons8_download_32px.png" />
     <None Include="Resources\icons8_edit_100px.png" />
     <None Include="Resources\icons8_slider_100px.png" />
     <None Include="Resources\icons8_smartphone_ram_100px.png" />

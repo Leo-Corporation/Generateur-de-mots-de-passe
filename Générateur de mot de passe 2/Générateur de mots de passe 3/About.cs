@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -51,6 +52,33 @@ namespace Générateur_de_mots_de_passe_3
                 gunaLabel6.ForeColor = Color.Black;
                 gunaControlBox1.IconColor = Color.Black;
             }
+        }
+
+        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        {
+            if (UpdateAvailable("3.0.0.2003"))
+            {
+                new UpdateAv().Show();
+            }
+            else
+            {
+                new UpdateUn().Show();
+            }
+        }
+        public bool UpdateAvailable(string version)
+        {
+            WebClient webClient = new WebClient();
+            string lastVersion = webClient.DownloadString("https://www.dropbox.com/s/vznptlc9no896z1/Version.txt?dl=0"); // Dernière version
+            bool res; // Résultat final
+            if (version == lastVersion)
+            {
+                res = false; // Pas de MAJs dispos
+            }
+            else
+            {
+                res = true; // MAJs dispos
+            }
+            return res;
         }
     }
 }
