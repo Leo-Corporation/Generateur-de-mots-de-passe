@@ -101,6 +101,7 @@ namespace Générateur_de_mots_de_passe_3
                 gunaLineTextBox1.BackColor = Color.FromArgb(50, 50, 72);
                 gunaLineTextBox2.BackColor = Color.FromArgb(50, 50, 72);
                 gunaLineTextBox3.BackColor = Color.FromArgb(50, 50, 72);
+                gunaTextBox1.FocusedBaseColor = Color.FromArgb(50, 50, 72);
                 gunaLabel1.ForeColor = Color.White;
                 gunaControlBox1.IconColor = Color.White;
             }
@@ -111,6 +112,7 @@ namespace Générateur_de_mots_de_passe_3
                 gunaLineTextBox1.BackColor = Color.White;
                 gunaLineTextBox2.BackColor = Color.White;
                 gunaLineTextBox3.BackColor = Color.White;
+                gunaTextBox1.FocusedBaseColor = Color.White;
                 gunaLabel1.ForeColor = Color.Black;
                 gunaControlBox1.IconColor = Color.Black;
             }

@@ -20,6 +20,22 @@ namespace Générateur_de_mots_de_passe_3
         private void SetDefaultPreset_Load(object sender, EventArgs e)
         {
             Guna.UI.Lib.GraphicsHelper.ShadowForm(this);
+            if (Properties.Settings.Default.DarkTheme)
+            {
+                BackColor = Color.FromArgb(50, 50, 72);
+                gunaLabel1.ForeColor = Color.White;
+                gunaControlBox1.IconColor = Color.White;
+                gunaComboBox1.BaseColor = Color.FromArgb(50, 50, 72);
+                gunaComboBox1.ForeColor = Color.White;
+            }
+            else
+            {
+                BackColor = Color.White;
+                gunaLabel1.ForeColor = Color.Black;
+                gunaControlBox1.IconColor = Color.Black;
+                gunaComboBox1.BaseColor = Color.White;
+                gunaComboBox1.ForeColor = Color.Black;
+            }
         }
 
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
