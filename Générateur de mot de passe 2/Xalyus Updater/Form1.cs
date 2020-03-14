@@ -46,7 +46,7 @@ namespace Xalyus_Updater
         {
             Invoke(new MethodInvoker(delegate ()
             {
-                Process.Start(Application.StartupPath + "/Générateur de mots de passe.exe");
+                Process.Start(Application.StartupPath + "/Générateur de mots de passe 3.exe");
                 Close();
             }));
         }
