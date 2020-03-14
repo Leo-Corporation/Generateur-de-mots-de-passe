@@ -10,6 +10,11 @@ master est la branche de base, tandis que la branche Version_Next sert à héber
 ## Contribuer
 Pour prendre connaissance des règles de contribution, cliquez [ici](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/blob/master/CONTRIBUTING.md).
 
+## Documentation
+Cliquez [ici](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/wiki) pour accèder à la documentation.
+
+Vous recherchez peut-être un moyen d'employer le système de génération de mots de passe ? [LéoCorpLib](https://github.com/Leo-Corporation/LeoCorpLibrary) est la solution !
+
 # Version 3.0
 ## 1. Introduction
 Générateur de mots de passe est un logiciel qui permet de générer des mots de passe simplement.
@@ -30,14 +35,4 @@ Le framework contient de nombreux contrôles intéressants comme :
 - etc...
 ## 3. "Cahier des charges"
 Cette version 3.0 devra comporter des changements majeurs liés à l'interface.
-Voici donc "To Do List" des changements à effectuer : 
-- [X] Ajouter Guna.UI
-- [ ] Embellir l'interface
-- [X] Ajouter le contrôle "GunaShadowForm"
-- [X] Ajouter le contrôle "GunaElipse"
-- [ ] Rendre le thème sombre compatible
-- [X] Modifier la propriété `FormBorderStyle` à `None`
-- [X] Ajouter le contrôle GunaDragControl
-- [X] Ajouter le contrôle GunaControlBox (Close & minimize)
-- [ ] ...
-Cette liste pourra être modifiée à tout moment.
+Cliquez [ici](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/projects/3) pour voir l'avancé de cette version.
