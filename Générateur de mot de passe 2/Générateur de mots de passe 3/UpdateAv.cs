@@ -63,7 +63,8 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton5_Click(object sender, EventArgs e)
         {
-            // TODO : Système de mise à jour
+            System.Diagnostics.Process.Start(Application.StartupPath + "/Xalyus Updater.exe");
+            Application.Exit();
         }
     }
 }
