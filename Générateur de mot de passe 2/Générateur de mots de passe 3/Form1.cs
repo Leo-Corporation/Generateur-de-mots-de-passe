@@ -85,9 +85,17 @@ namespace Générateur_de_mots_de_passe_3
                 }
                 else if (Properties.Settings.Default.DefaultPreset == "Personnalisé")
                 {
-                    Random random = new Random();
-                    int pwrLenght = random.Next(Properties.Settings.Default.CustomRandom1, Properties.Settings.Default.CustomRandom2);
-                    GeneratePassword(pwrLenght, Properties.Settings.Default.CharLenght, Properties.Settings.Default.CustomChar);
+                    if (Properties.Settings.Default.RandomGeneration) // Si la génération de nombre aléatoire est activée
+                    {
+                        Random random = new Random(); // Génère un nombre aléatoire
+                        int pwrLenght = random.Next(Properties.Settings.Default.CustomRandom1, Properties.Settings.Default.CustomRandom2);
+                        GeneratePassword(pwrLenght, Properties.Settings.Default.CharLenght, Properties.Settings.Default.CustomChar);
+                    }
+                    else // Dans le cas contraire
+                    {
+                        int pwrLenght = Properties.Settings.Default.CustomNumber;
+                        GeneratePassword(pwrLenght, Properties.Settings.Default.CharLenght, Properties.Settings.Default.CustomChar);
+                    }
                 }
             }
             else
