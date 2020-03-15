@@ -56,7 +56,7 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
         {
-            if (UpdateAvailable("3.0.0.2003"))
+            if (UpdateAvailable("3.0.1.2003"))
             {
                 new UpdateAv().Show();
             }
@@ -68,7 +68,7 @@ namespace Générateur_de_mots_de_passe_3
         public bool UpdateAvailable(string version)
         {
             WebClient webClient = new WebClient();
-            string lastVersion = webClient.DownloadString("https://www.dropbox.com/s/vznptlc9no896z1/Version.txt?dl=0"); // Dernière version
+            string lastVersion = webClient.DownloadString("https://dl.dropboxusercontent.com/s/vznptlc9no896z1/Version.txt"); // Dernière version
             bool res; // Résultat final
             if (version == lastVersion)
             {

@@ -122,9 +122,9 @@
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.Location = new System.Drawing.Point(64, 42);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(132, 20);
+            this.gunaLabel3.Size = new System.Drawing.Size(130, 20);
             this.gunaLabel3.TabIndex = 2;
-            this.gunaLabel3.Text = "Version 3.0.0.2003";
+            this.gunaLabel3.Text = "Version 3.0.1.2003";
             // 
             // gunaPanel1
             // 
