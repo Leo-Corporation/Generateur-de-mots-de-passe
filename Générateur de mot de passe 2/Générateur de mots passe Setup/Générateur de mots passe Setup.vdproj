@@ -15,8 +15,26 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_8F8A1E043D474250BA0942160CE00FB9"
+        "MsmKey" = "8:_3632E0646A0B4FF0951ED2479672B307"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_549411B18D0D493B9E967E66FB807839"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_72A72BF6CF5C0D11ADCEB927FDA085D0"
+        "OwnerKey" = "8:_3632E0646A0B4FF0951ED2479672B307"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_72A72BF6CF5C0D11ADCEB927FDA085D0"
+        "OwnerKey" = "8:_549411B18D0D493B9E967E66FB807839"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -27,32 +45,38 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_AFD8EE84DF6E402C828233C7CDCA0CAC"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_EF762D05E7C162A109559914DF80644F"
+        "OwnerKey" = "8:_3632E0646A0B4FF0951ED2479672B307"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_E34EA26D06423560C5F1020461476027"
-        "OwnerKey" = "8:_AFD8EE84DF6E402C828233C7CDCA0CAC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_AFD8EE84DF6E402C828233C7CDCA0CAC"
+        "MsmKey" = "8:_EF762D05E7C162A109559914DF80644F"
+        "OwnerKey" = "8:_549411B18D0D493B9E967E66FB807839"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8F8A1E043D474250BA0942160CE00FB9"
+        "OwnerKey" = "8:_72A72BF6CF5C0D11ADCEB927FDA085D0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E34EA26D06423560C5F1020461476027"
+        "OwnerKey" = "8:_549411B18D0D493B9E967E66FB807839"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3632E0646A0B4FF0951ED2479672B307"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_EF762D05E7C162A109559914DF80644F"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -80,6 +104,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -142,20 +174,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8F8A1E043D474250BA0942160CE00FB9"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_72A72BF6CF5C0D11ADCEB927FDA085D0"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GMDPUpdater, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
-                    "_8F8A1E043D474250BA0942160CE00FB9"
+                    "_72A72BF6CF5C0D11ADCEB927FDA085D0"
                     {
-                    "Name" = "8:GMDPUpdater.exe"
+                    "Name" = "8:System.Net.Http.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:..\\GMDPUpdater\\bin\\Release\\GMDPUpdater.exe"
+            "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_0138529737AB4D7BA6C3C2081F3ACA37"
@@ -170,7 +202,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9A0DB5F0A1604964AE7015FB49209516"
@@ -193,20 +225,20 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E34EA26D06423560C5F1020461476027"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_EF762D05E7C162A109559914DF80644F"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+            "AssemblyAsmDisplayName" = "8:Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_E34EA26D06423560C5F1020461476027"
+                    "_EF762D05E7C162A109559914DF80644F"
                     {
-                    "Name" = "8:System.Net.Http.dll"
+                    "Name" = "8:Guna.UI.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:System.Net.Http.dll"
+            "SourcePath" = "8:Guna.UI.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_0138529737AB4D7BA6C3C2081F3ACA37"
@@ -290,20 +322,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Générateur de mots de passe"
-        "ProductCode" = "8:{530FBB70-182E-4263-9C3F-888099272A7F}"
-        "PackageCode" = "8:{A6575FDA-4474-4EE1-9047-D2FB5846C335}"
+        "ProductName" = "8:Générateur de mots de passe 3"
+        "ProductCode" = "8:{FAA96980-E64B-4625-867F-4DEE71480E9C}"
+        "PackageCode" = "8:{02A5CADC-DED2-4066-996C-12222FF01494}"
         "UpgradeCode" = "8:{AEA91FBC-2575-44C1-AD3D-E4568ABD3641}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:2.4.0"
+        "ProductVersion" = "8:3.0.0"
         "Manufacturer" = "8:Léo Corporation"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://leopeyronnet.wixsite.com/leopeyronnetcorp"
-        "Title" = "8:Générateur de mots de passe Setup"
+        "Title" = "8:Générateur de mots de passe 3"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Léo Corporation"
         "Keywords" = "8:"
@@ -414,13 +446,13 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_4A2D278B3E9445E4874C47EEBD5F9884"
             {
-            "Name" = "8:Générateur de mots de passe"
+            "Name" = "8:Générateur de mots de passe 3"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_AFD8EE84DF6E402C828233C7CDCA0CAC"
+            "Target" = "8:_3632E0646A0B4FF0951ED2479672B307"
             "Folder" = "8:_D68CFB0F70FE49ECA78552F386F1A785"
             "WorkingFolder" = "8:_0138529737AB4D7BA6C3C2081F3ACA37"
             "Icon" = "8:_9A0DB5F0A1604964AE7015FB49209516"
@@ -428,13 +460,13 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_98CD8B5410E44B279BF2C2846A215EB1"
             {
-            "Name" = "8:Générateur de mots de passe"
+            "Name" = "8:Générateur de mots de passe 3"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_AFD8EE84DF6E402C828233C7CDCA0CAC"
+            "Target" = "8:_3632E0646A0B4FF0951ED2479672B307"
             "Folder" = "8:_E8ED22731C6A4EED9C963B393866B0E1"
             "WorkingFolder" = "8:_0138529737AB4D7BA6C3C2081F3ACA37"
             "Icon" = "8:_9A0DB5F0A1604964AE7015FB49209516"
@@ -839,9 +871,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_AFD8EE84DF6E402C828233C7CDCA0CAC"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3632E0646A0B4FF0951ED2479672B307"
             {
-            "SourcePath" = "8:..\\Générateur de mot de passe 2\\obj\\Release\\Générateur de mot de passe 2.exe"
+            "SourcePath" = "8:..\\Générateur de mots de passe 3\\obj\\Release\\Générateur de mots de passe 3.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_0138529737AB4D7BA6C3C2081F3ACA37"
@@ -861,7 +893,35 @@
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
-            "OutputProjectGuid" = "8:{589D5099-17C1-4B78-8607-048E5A4E1206}"
+            "OutputProjectGuid" = "8:{014BAB7C-4C33-427E-8A73-242A45EBA9C5}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_549411B18D0D493B9E967E66FB807839"
+            {
+            "SourcePath" = "8:..\\Xalyus Updater\\obj\\Release\\Xalyus Updater.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_0138529737AB4D7BA6C3C2081F3ACA37"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{0641C89D-2C4A-42DB-A8D6-A42C72523BBB}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {
