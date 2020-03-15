@@ -47,6 +47,7 @@
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
@@ -193,6 +194,7 @@
             this.gunaPanel2.Name = "gunaPanel2";
             this.gunaPanel2.Size = new System.Drawing.Size(186, 77);
             this.gunaPanel2.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.gunaPanel2, "Répertoire GitHub");
             this.gunaPanel2.Click += new System.EventHandler(this.gunaPanel2_Click);
             // 
             // gunaPictureBox2
@@ -207,6 +209,7 @@
             this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gunaPictureBox2.TabIndex = 3;
             this.gunaPictureBox2.TabStop = false;
+            this.toolTip1.SetToolTip(this.gunaPictureBox2, "Répertoire GitHub");
             this.gunaPictureBox2.Click += new System.EventHandler(this.gunaPanel2_Click);
             // 
             // gunaLabel5
@@ -221,6 +224,7 @@
             this.gunaLabel5.Size = new System.Drawing.Size(98, 32);
             this.gunaLabel5.TabIndex = 2;
             this.gunaLabel5.Text = "GitHub";
+            this.toolTip1.SetToolTip(this.gunaLabel5, "Répertoire GitHub");
             this.gunaLabel5.Click += new System.EventHandler(this.gunaPanel2_Click);
             // 
             // gunaPictureBox3
@@ -235,6 +239,7 @@
             this.gunaPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gunaPictureBox3.TabIndex = 3;
             this.gunaPictureBox3.TabStop = false;
+            this.toolTip1.SetToolTip(this.gunaPictureBox3, "Site Léo Corporation");
             this.gunaPictureBox3.Click += new System.EventHandler(this.gunaPictureBox3_Click);
             // 
             // gunaPictureBox1
@@ -261,6 +266,7 @@
             this.gunaLabel6.Size = new System.Drawing.Size(117, 32);
             this.gunaLabel6.TabIndex = 2;
             this.gunaLabel6.Text = "Léo Corp";
+            this.toolTip1.SetToolTip(this.gunaLabel6, "Site Léo Corporation");
             this.gunaLabel6.Click += new System.EventHandler(this.gunaPictureBox3_Click);
             // 
             // panel2
@@ -273,6 +279,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(204, 77);
             this.panel2.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.panel2, "Site Léo Corporation");
             this.panel2.Click += new System.EventHandler(this.gunaPictureBox3_Click);
             // 
             // About
@@ -327,5 +334,6 @@
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox3;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
