@@ -8,8 +8,10 @@ Il existe deux branches :
 master est la branche de base, tandis que la branche Version_Next sert à héberger les versions instables, qui sont destinées à remplacer la version stable.
 
 ## Contribuer
+### Règles
 Pour prendre connaissance des règles de contribution, cliquez [ici](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/blob/master/CONTRIBUTING.md).
-
+### Code
+Cliquez [ici](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/tree/master/G%C3%A9n%C3%A9rateur%20de%20mot%20de%20passe%202/G%C3%A9n%C3%A9rateur%20de%20mots%20de%20passe%203) pour aller directement au code.
 ## Documentation
 Cliquez [ici](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/wiki) pour accèder à la documentation.
 
