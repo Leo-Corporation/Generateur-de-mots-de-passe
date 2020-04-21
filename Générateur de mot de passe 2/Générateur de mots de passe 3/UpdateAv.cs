@@ -34,7 +34,7 @@ namespace Générateur_de_mots_de_passe_3
         private string CheckVersion()
         {
             WebClient webClient = new WebClient();
-            string version = webClient.DownloadString("https://dl.dropboxusercontent.com/s/vznptlc9no896z1/Version.txt"); // Télécharger le numéro de version
+            string version = webClient.DownloadString("https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Liens/Update%20System/G%C3%A9n%C3%A9rateur%20de%20mots%20de%20passe%203/Version.txt"); // Télécharger le numéro de version
             return version; // Retourne la version
         }
         private void ChangeTheme(int themeID)

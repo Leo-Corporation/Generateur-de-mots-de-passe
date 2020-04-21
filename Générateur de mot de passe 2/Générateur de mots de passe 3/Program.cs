@@ -12,11 +12,18 @@ namespace Générateur_de_mots_de_passe_3
         /// Point d'entrée principal de l'application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            if (args.Length > 0)
+            {
+                Application.Run(new UpdateXalyusUpdater(true));
+            }
+            else
+            {
+                Application.Run(new Form1());
+            }
         }
     }
 }
