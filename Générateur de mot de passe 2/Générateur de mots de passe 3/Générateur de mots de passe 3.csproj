@@ -104,6 +104,12 @@
     <Compile Include="UpdateUn.Designer.cs">
       <DependentUpon>UpdateUn.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateXalyusUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateXalyusUpdater.Designer.cs">
+      <DependentUpon>UpdateXalyusUpdater.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateUn.resx">
       <DependentUpon>UpdateUn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateXalyusUpdater.resx">
+      <DependentUpon>UpdateXalyusUpdater.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

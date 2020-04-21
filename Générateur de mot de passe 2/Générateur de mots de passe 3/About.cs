@@ -56,19 +56,27 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
         {
-            if (UpdateAvailable("3.0.1.2003"))
+            if (IsUpdaterNeedUpdate())
             {
-                new UpdateAv().Show();
+                new UpdateXalyusUpdater(false).Show();
             }
             else
             {
-                new UpdateUn().Show();
+                if (UpdateAvailable("3.1.0.2004"))
+                {
+
+                    new UpdateAv().Show();
+                }
+                else
+                {
+                    new UpdateUn().Show();
+                }
             }
         }
         public bool UpdateAvailable(string version)
         {
             WebClient webClient = new WebClient();
-            string lastVersion = webClient.DownloadString("https://dl.dropboxusercontent.com/s/vznptlc9no896z1/Version.txt"); // Dernière version
+            string lastVersion = webClient.DownloadString("https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Liens/Update%20System/G%C3%A9n%C3%A9rateur%20de%20mots%20de%20passe%203/Version.txt"); // Dernière version
             bool res; // Résultat final
             if (version == lastVersion)
             {
@@ -79,6 +87,23 @@ namespace Générateur_de_mots_de_passe_3
                 res = true; // MAJs dispos
             }
             return res;
+        }
+        public bool IsUpdaterNeedUpdate()
+        {
+            bool result;
+            WebClient webClient = new WebClient();
+            var fileVersionInfo =  FileVersionInfo.GetVersionInfo(Application.StartupPath + "/Xalyus Updater.exe");
+            string version = fileVersionInfo.FileVersion;
+            string lastVersion = webClient.DownloadString("https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Liens/Update%20System/G%C3%A9n%C3%A9rateur%20de%20mots%20de%20passe%203/Xalyus%20Updater/Version.txt");
+            if (version != lastVersion)
+            {
+                result = true;
+            }
+            else
+            {
+                result = false;
+            }
+            return result;
         }
     }
 }
