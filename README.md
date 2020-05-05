@@ -1,4 +1,4 @@
-# Générateur de mots de passe
+# Générateur de mots de passe ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Leo-Corporation/Generateur-de-mots-de-passe) ![GitHub issues](https://img.shields.io/github/issues-raw/Leo-Corporation/Generateur-de-mots-de-passe?label=issues)
 Générateur de mots de passe, comme indique son nom, ce programme sert à générer des mots de passe plus ou moins complexes.
 ## Branches
 Il existe deux branches :
