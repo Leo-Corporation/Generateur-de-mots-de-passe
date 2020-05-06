@@ -41,15 +41,15 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton5_Click(object sender, EventArgs e)
         {
-            if (IsGenRandom)
+            if (IsGenRandom) // Si la génération est aléatoire
             {
                 try
                 {
-                    int randomNumber1 = int.Parse(gunaLineTextBox2.Text);
+                    int randomNumber1 = int.Parse(gunaLineTextBox2.Text); // Essayer de convertir le texte en nombre
                     int randomNumber2 = int.Parse(gunaLineTextBox3.Text);
-                    if (randomNumber1 > 0 && randomNumber2 > 0)
+                    if (randomNumber1 > 0 && randomNumber2 > 0) // Si les nombres sont supérieur à 0
                     {
-                        if (randomNumber1 < randomNumber2)
+                        if (randomNumber1 < randomNumber2) // Si le premier nombre est plus petit que le deuxième
                         {
                             string[] UsableChar;
                             UsableChar = gunaTextBox1.Text.Split(new string[] { "," }, StringSplitOptions.None);
@@ -59,14 +59,15 @@ namespace Générateur_de_mots_de_passe_3
                             Properties.Settings.Default.RandomGeneration = true;
                             Properties.Settings.Default.CustomChar = gunaTextBox1.Text;
                             Properties.Settings.Default.CustomSet = true;
-                            Properties.Settings.Default.Save();
+                            Properties.Settings.Default.Save(); // Sauvegarder les paramètres
+                            Close(); // Fermer la fenêtre
                         }
-                        else
+                        else // En cas d'erreur
                         {
                             MessageBox.Show("Le premier nombre doit être inférieur au second", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
-                    else
+                    else // En cas d'erreur
                     {
                         MessageBox.Show("Le nombre sélectionné doit être plus grand que 0.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -80,11 +81,11 @@ namespace Générateur_de_mots_de_passe_3
                     MessageBox.Show("Erreur :" + Environment.NewLine + ex, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else
+            else // Si la génération n'est pas aléatoire
             {
                 try
                 {
-                    int number = int.Parse(gunaLineTextBox1.Text);
+                    int number = int.Parse(gunaLineTextBox1.Text); // Convertir le texte en nombre
                     if (number > 0) // Si le nombre de caractères est plus grand que 0
                     {
                         string[] UsableChar;
@@ -94,9 +95,10 @@ namespace Générateur_de_mots_de_passe_3
                         Properties.Settings.Default.CustomChar = gunaTextBox1.Text;
                         Properties.Settings.Default.CustomSet = true;
                         Properties.Settings.Default.RandomGeneration = false;
-                        Properties.Settings.Default.Save();
+                        Properties.Settings.Default.Save(); // Sauvegarder les paramètres
+                        Close(); // Fermer la fenêtre
                     }
-                    else
+                    else // En cas d'erreur
                     {
                         MessageBox.Show("La longueur du mot de passe doit être plus grande que 0.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -110,7 +112,6 @@ namespace Générateur_de_mots_de_passe_3
                     MessageBox.Show("Erreur :" + Environment.NewLine + ex, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            Close();
         }
 
         private void EditCustomPreset_Load(object sender, EventArgs e)
