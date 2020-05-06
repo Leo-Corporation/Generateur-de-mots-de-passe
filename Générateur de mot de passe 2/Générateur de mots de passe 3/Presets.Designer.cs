@@ -105,6 +105,7 @@
             // 
             // gunaAdvenceButton1
             // 
+            this.gunaAdvenceButton1.Animated = true;
             this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
             this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
             this.gunaAdvenceButton1.BackColor = System.Drawing.Color.Transparent;

@@ -56,15 +56,14 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
         {
-            if (IsUpdaterNeedUpdate())
+            if (IsUpdaterNeedUpdate()) // SI Xalyus Updater a besoin d'une mise à jour
             {
                 new UpdateXalyusUpdater(false).Show();
             }
             else
             {
-                if (UpdateAvailable("3.1.0.2004"))
+                if (UpdateAvailable("3.2.0.2005")) // Si le logiciel a besoin d'une mise à jour
                 {
-
                     new UpdateAv().Show();
                 }
                 else
