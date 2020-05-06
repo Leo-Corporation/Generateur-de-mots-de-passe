@@ -47,15 +47,29 @@ namespace Générateur_de_mots_de_passe_3
                 {
                     int randomNumber1 = int.Parse(gunaLineTextBox2.Text);
                     int randomNumber2 = int.Parse(gunaLineTextBox3.Text);
-                    string[] UsableChar;
-                    UsableChar = gunaTextBox1.Text.Split(new string[] { "," }, StringSplitOptions.None);
-                    Properties.Settings.Default.CharLenght = UsableChar.Length;
-                    Properties.Settings.Default.CustomRandom1 = randomNumber1;
-                    Properties.Settings.Default.CustomRandom2 = randomNumber2;
-                    Properties.Settings.Default.RandomGeneration = true;
-                    Properties.Settings.Default.CustomChar = gunaTextBox1.Text;
-                    Properties.Settings.Default.CustomSet = true;
-                    Properties.Settings.Default.Save();
+                    if (randomNumber1 > 0 && randomNumber2 > 0)
+                    {
+                        if (randomNumber1 < randomNumber2)
+                        {
+                            string[] UsableChar;
+                            UsableChar = gunaTextBox1.Text.Split(new string[] { "," }, StringSplitOptions.None);
+                            Properties.Settings.Default.CharLenght = UsableChar.Length;
+                            Properties.Settings.Default.CustomRandom1 = randomNumber1;
+                            Properties.Settings.Default.CustomRandom2 = randomNumber2;
+                            Properties.Settings.Default.RandomGeneration = true;
+                            Properties.Settings.Default.CustomChar = gunaTextBox1.Text;
+                            Properties.Settings.Default.CustomSet = true;
+                            Properties.Settings.Default.Save();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Le premier nombre doit être inférieur au second", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Le nombre sélectionné doit être plus grand que 0.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 catch (FormatException ex) // En cas d'erreur
                 {
@@ -71,14 +85,21 @@ namespace Générateur_de_mots_de_passe_3
                 try
                 {
                     int number = int.Parse(gunaLineTextBox1.Text);
-                    string[] UsableChar;
-                    UsableChar = gunaTextBox1.Text.Split(new string[] { "," }, StringSplitOptions.None);
-                    Properties.Settings.Default.CharLenght = UsableChar.Length;
-                    Properties.Settings.Default.CustomNumber = number;
-                    Properties.Settings.Default.CustomChar = gunaTextBox1.Text;
-                    Properties.Settings.Default.CustomSet = true;
-                    Properties.Settings.Default.RandomGeneration = false;
-                    Properties.Settings.Default.Save();
+                    if (number > 0) // Si le nombre de caractères est plus grand que 0
+                    {
+                        string[] UsableChar;
+                        UsableChar = gunaTextBox1.Text.Split(new string[] { "," }, StringSplitOptions.None);
+                        Properties.Settings.Default.CharLenght = UsableChar.Length;
+                        Properties.Settings.Default.CustomNumber = number;
+                        Properties.Settings.Default.CustomChar = gunaTextBox1.Text;
+                        Properties.Settings.Default.CustomSet = true;
+                        Properties.Settings.Default.RandomGeneration = false;
+                        Properties.Settings.Default.Save();
+                    }
+                    else
+                    {
+                        MessageBox.Show("La longueur du mot de passe doit être plus grande que 0.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 catch (FormatException ex) // En cas d'erreur
                 {
