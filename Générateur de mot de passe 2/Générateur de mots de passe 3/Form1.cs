@@ -114,7 +114,7 @@ namespace Générateur_de_mots_de_passe_3
             {
                 if (passwordLenght > 0)
                 {
-                    for (int i = 1; i < passwordLenght; i++) // Tant que i < longueur du mot de passe
+                    for (int i = 0; i < passwordLenght; i++) // Tant que i < longueur du mot de passe
                     {
                         Number = RandomClass.Next(0, charLenght); // Générer un nombre aléatoire entre 0 et 60
                         FinalPassword = FinalPassword + UsableChar[Number]; // Ajouter au mot de passe un élément tiré au hasard de UsableChar.
