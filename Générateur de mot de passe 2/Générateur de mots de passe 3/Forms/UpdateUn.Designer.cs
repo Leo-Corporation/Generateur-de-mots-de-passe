@@ -32,8 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateUn));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
@@ -57,17 +57,6 @@
             this.panel1.Size = new System.Drawing.Size(320, 35);
             this.panel1.TabIndex = 0;
             // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.Location = new System.Drawing.Point(3, 6);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(265, 23);
-            this.gunaLabel1.TabIndex = 2;
-            this.gunaLabel1.Text = "Aucune mises à jour disponibles";
-            // 
             // gunaControlBox1
             // 
             this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -84,6 +73,17 @@
             this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
             this.gunaControlBox1.TabIndex = 3;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.Location = new System.Drawing.Point(3, 6);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(265, 23);
+            this.gunaLabel1.TabIndex = 2;
+            this.gunaLabel1.Text = "Aucune mises à jour disponibles";
             // 
             // gunaLabel2
             // 
@@ -123,8 +123,8 @@
             this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_multiply_100px;
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(25, 25);
+            this.gunaAdvenceButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.close_white;
+            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.CornflowerBlue;
             this.gunaAdvenceButton1.Location = new System.Drawing.Point(106, 93);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";

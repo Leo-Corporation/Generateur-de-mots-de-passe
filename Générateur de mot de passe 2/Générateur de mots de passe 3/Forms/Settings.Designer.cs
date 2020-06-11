@@ -319,8 +319,8 @@
             this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_multiply_100px;
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(25, 25);
+            this.gunaAdvenceButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.close_white;
+            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.CornflowerBlue;
             this.gunaAdvenceButton1.Location = new System.Drawing.Point(193, 291);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
@@ -356,7 +356,7 @@
             this.gunaAdvenceButton5.FocusedColor = System.Drawing.Color.Empty;
             this.gunaAdvenceButton5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceButton5.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton5.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_checkmark_100px;
+            this.gunaAdvenceButton5.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.checkmark;
             this.gunaAdvenceButton5.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton5.LineColor = System.Drawing.Color.CornflowerBlue;
             this.gunaAdvenceButton5.Location = new System.Drawing.Point(67, 291);

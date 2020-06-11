@@ -169,7 +169,7 @@
             this.gunaAdvenceButton5.FocusedColor = System.Drawing.Color.Empty;
             this.gunaAdvenceButton5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceButton5.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton5.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_download_32px;
+            this.gunaAdvenceButton5.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.download;
             this.gunaAdvenceButton5.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton5.LineColor = System.Drawing.Color.CornflowerBlue;
             this.gunaAdvenceButton5.Location = new System.Drawing.Point(176, 196);

@@ -31,22 +31,22 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditCustomPreset));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.gunaRadioButton1 = new Guna.UI.WinForms.GunaRadioButton();
-            this.gunaRadioButton2 = new Guna.UI.WinForms.GunaRadioButton();
             this.gunaLineTextBox1 = new Guna.UI.WinForms.GunaLineTextBox();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaRadioButton1 = new Guna.UI.WinForms.GunaRadioButton();
+            this.gunaRadioButton2 = new Guna.UI.WinForms.GunaRadioButton();
             this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
-            this.gunaLineTextBox2 = new Guna.UI.WinForms.GunaLineTextBox();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLineTextBox3 = new Guna.UI.WinForms.GunaLineTextBox();
+            this.gunaLineTextBox2 = new Guna.UI.WinForms.GunaLineTextBox();
+            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -67,17 +67,6 @@
             this.panel1.Size = new System.Drawing.Size(542, 35);
             this.panel1.TabIndex = 0;
             // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.Location = new System.Drawing.Point(8, 7);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(198, 23);
-            this.gunaLabel1.TabIndex = 2;
-            this.gunaLabel1.Text = "Modifier un préréglage";
-            // 
             // gunaControlBox1
             // 
             this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -94,6 +83,17 @@
             this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
             this.gunaControlBox1.TabIndex = 3;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.Location = new System.Drawing.Point(8, 7);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(198, 23);
+            this.gunaLabel1.TabIndex = 2;
+            this.gunaLabel1.Text = "Modifier un préréglage";
             // 
             // gunaElipse1
             // 
@@ -135,38 +135,6 @@
             this.gunaGroupBox1.TabIndex = 3;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
-            // gunaRadioButton1
-            // 
-            this.gunaRadioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaRadioButton1.BaseColor = System.Drawing.SystemColors.Control;
-            this.gunaRadioButton1.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaRadioButton1.CheckedOnColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaRadioButton1.FillColor = System.Drawing.Color.White;
-            this.gunaRadioButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaRadioButton1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaRadioButton1.Location = new System.Drawing.Point(12, 64);
-            this.gunaRadioButton1.Name = "gunaRadioButton1";
-            this.gunaRadioButton1.Size = new System.Drawing.Size(51, 20);
-            this.gunaRadioButton1.TabIndex = 4;
-            this.gunaRadioButton1.Text = "Fixe";
-            this.gunaRadioButton1.CheckedChanged += new System.EventHandler(this.gunaRadioButton1_CheckedChanged);
-            // 
-            // gunaRadioButton2
-            // 
-            this.gunaRadioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaRadioButton2.BaseColor = System.Drawing.SystemColors.Control;
-            this.gunaRadioButton2.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaRadioButton2.CheckedOnColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaRadioButton2.FillColor = System.Drawing.Color.White;
-            this.gunaRadioButton2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaRadioButton2.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaRadioButton2.Location = new System.Drawing.Point(69, 64);
-            this.gunaRadioButton2.Name = "gunaRadioButton2";
-            this.gunaRadioButton2.Size = new System.Drawing.Size(88, 21);
-            this.gunaRadioButton2.TabIndex = 4;
-            this.gunaRadioButton2.Text = "Aléatoire";
-            this.gunaRadioButton2.CheckedChanged += new System.EventHandler(this.gunaRadioButton1_CheckedChanged);
-            // 
             // gunaLineTextBox1
             // 
             this.gunaLineTextBox1.Animated = true;
@@ -197,6 +165,38 @@
             this.gunaLabel3.TabIndex = 3;
             this.gunaLabel3.Text = "Nombre de caractères :";
             // 
+            // gunaRadioButton1
+            // 
+            this.gunaRadioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaRadioButton1.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaRadioButton1.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaRadioButton1.CheckedOnColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaRadioButton1.FillColor = System.Drawing.Color.White;
+            this.gunaRadioButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaRadioButton1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaRadioButton1.Location = new System.Drawing.Point(12, 64);
+            this.gunaRadioButton1.Name = "gunaRadioButton1";
+            this.gunaRadioButton1.Size = new System.Drawing.Size(56, 21);
+            this.gunaRadioButton1.TabIndex = 4;
+            this.gunaRadioButton1.Text = "Fixe";
+            this.gunaRadioButton1.CheckedChanged += new System.EventHandler(this.gunaRadioButton1_CheckedChanged);
+            // 
+            // gunaRadioButton2
+            // 
+            this.gunaRadioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaRadioButton2.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaRadioButton2.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaRadioButton2.CheckedOnColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaRadioButton2.FillColor = System.Drawing.Color.White;
+            this.gunaRadioButton2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaRadioButton2.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaRadioButton2.Location = new System.Drawing.Point(69, 64);
+            this.gunaRadioButton2.Name = "gunaRadioButton2";
+            this.gunaRadioButton2.Size = new System.Drawing.Size(88, 21);
+            this.gunaRadioButton2.TabIndex = 4;
+            this.gunaRadioButton2.Text = "Aléatoire";
+            this.gunaRadioButton2.CheckedChanged += new System.EventHandler(this.gunaRadioButton1_CheckedChanged);
+            // 
             // gunaGroupBox2
             // 
             this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
@@ -213,6 +213,24 @@
             this.gunaGroupBox2.Size = new System.Drawing.Size(223, 46);
             this.gunaGroupBox2.TabIndex = 3;
             this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // gunaLineTextBox3
+            // 
+            this.gunaLineTextBox3.Animated = true;
+            this.gunaLineTextBox3.BackColor = System.Drawing.Color.White;
+            this.gunaLineTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaLineTextBox3.FocusedLineColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLineTextBox3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLineTextBox3.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLineTextBox3.LineColor = System.Drawing.Color.Gainsboro;
+            this.gunaLineTextBox3.LineSize = 2;
+            this.gunaLineTextBox3.Location = new System.Drawing.Point(153, 3);
+            this.gunaLineTextBox3.MaxLength = 4;
+            this.gunaLineTextBox3.Name = "gunaLineTextBox3";
+            this.gunaLineTextBox3.PasswordChar = '\0';
+            this.gunaLineTextBox3.Size = new System.Drawing.Size(55, 30);
+            this.gunaLineTextBox3.TabIndex = 4;
+            this.gunaLineTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gunaLineTextBox2
             // 
@@ -232,18 +250,6 @@
             this.gunaLineTextBox2.TabIndex = 4;
             this.gunaLineTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel4.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaLabel4.Location = new System.Drawing.Point(3, 9);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(54, 20);
-            this.gunaLabel4.TabIndex = 3;
-            this.gunaLabel4.Text = "Entre :";
-            // 
             // gunaLabel5
             // 
             this.gunaLabel5.AutoSize = true;
@@ -256,23 +262,17 @@
             this.gunaLabel5.TabIndex = 3;
             this.gunaLabel5.Text = "et";
             // 
-            // gunaLineTextBox3
+            // gunaLabel4
             // 
-            this.gunaLineTextBox3.Animated = true;
-            this.gunaLineTextBox3.BackColor = System.Drawing.Color.White;
-            this.gunaLineTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaLineTextBox3.FocusedLineColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaLineTextBox3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLineTextBox3.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaLineTextBox3.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaLineTextBox3.LineSize = 2;
-            this.gunaLineTextBox3.Location = new System.Drawing.Point(153, 3);
-            this.gunaLineTextBox3.MaxLength = 4;
-            this.gunaLineTextBox3.Name = "gunaLineTextBox3";
-            this.gunaLineTextBox3.PasswordChar = '\0';
-            this.gunaLineTextBox3.Size = new System.Drawing.Size(55, 30);
-            this.gunaLineTextBox3.TabIndex = 4;
-            this.gunaLineTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel4.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLabel4.Location = new System.Drawing.Point(3, 9);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(54, 20);
+            this.gunaLabel4.TabIndex = 3;
+            this.gunaLabel4.Text = "Entre :";
             // 
             // gunaLabel6
             // 
@@ -323,8 +323,8 @@
             this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_multiply_100px;
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(25, 25);
+            this.gunaAdvenceButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.close_white;
+            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.CornflowerBlue;
             this.gunaAdvenceButton1.Location = new System.Drawing.Point(281, 284);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
@@ -359,7 +359,7 @@
             this.gunaAdvenceButton5.FocusedColor = System.Drawing.Color.Empty;
             this.gunaAdvenceButton5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceButton5.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton5.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_checkmark_100px;
+            this.gunaAdvenceButton5.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.save;
             this.gunaAdvenceButton5.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton5.LineColor = System.Drawing.Color.CornflowerBlue;
             this.gunaAdvenceButton5.Location = new System.Drawing.Point(152, 284);
