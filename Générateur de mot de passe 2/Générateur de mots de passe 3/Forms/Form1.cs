@@ -25,6 +25,7 @@ namespace Générateur_de_mots_de_passe_3
         private void Form1_Load(object sender, EventArgs e)
         {
             Guna.UI.Lib.GraphicsHelper.ShadowForm(this); // Ajout de l'ombre sur Form1 (this)
+            Guna.UI.Lib.GraphicsHelper.DrawLineShadow(menu1, Color.Black, 20, 10, Guna.UI.WinForms.VerHorAlign.HorizontalBottom); // Ombre
             if (Properties.Settings.Default.DarkTheme == true)
             {
                 ChangeTheme(1);
@@ -149,6 +150,18 @@ namespace Générateur_de_mots_de_passe_3
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
         {
             new Presets(this).Show();
+        }
+
+        private void gunaAdvenceButton6_Click(object sender, EventArgs e)
+        {
+            if (menu1.Visible) // Si le menu est visible
+            {
+                menu1.Visible = false; // Cacher
+            }
+            else
+            {
+                menu1.Visible = true; // Montrer
+            }
         }
     }
 }

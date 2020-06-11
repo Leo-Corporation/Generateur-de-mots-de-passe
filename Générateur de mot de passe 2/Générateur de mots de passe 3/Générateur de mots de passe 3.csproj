@@ -110,6 +110,12 @@
     <Compile Include="Forms\UpdateXalyusUpdater.Designer.cs">
       <DependentUpon>UpdateXalyusUpdater.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UpdateXalyusUpdater.resx">
       <DependentUpon>UpdateXalyusUpdater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -198,6 +207,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PWR Generator.ico" />
+    <None Include="Resources\edit black.png" />
+    <None Include="Resources\processor black.png" />
+    <None Include="Resources\advanced processor black.png" />
+    <None Include="Resources\more white.png" />
     <None Include="Resources\save.png" />
     <None Include="Resources\close white.png" />
     <None Include="Resources\checkmark.png" />
