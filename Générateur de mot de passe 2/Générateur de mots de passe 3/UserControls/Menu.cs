@@ -70,6 +70,11 @@ namespace Générateur_de_mots_de_passe_3.UserControls
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            Init();
+        }
+
+        public void Init()
+        {
             if (!Properties.Settings.Default.CustomSet)
             {
                 gunaAdvenceButton2.Checked = false; // Décocher
@@ -89,6 +94,19 @@ namespace Générateur_de_mots_de_passe_3.UserControls
                     gunaAdvenceButton2.Checked = true;
                     gunaAdvenceButton2.ImageSize = new Size(15, 15); // Changer la taille de l'image
                     break;
+            }
+            foreach (GunaAdvenceButton advenceButton in Controls)
+            {
+                if (advenceButton.Checked)
+                {
+                    advenceButton.ImageSize = new Size(15, 15);
+                    advenceButton.ImageOffsetX = -4;
+                }
+                else
+                {
+                    advenceButton.ImageSize = new Size(25, 25);
+                    advenceButton.ImageOffsetX = -4;
+                }
             }
         }
 
