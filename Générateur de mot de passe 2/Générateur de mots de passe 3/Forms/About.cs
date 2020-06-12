@@ -62,7 +62,7 @@ namespace Générateur_de_mots_de_passe_3
             }
             else
             {
-                if (UpdateAvailable("3.2.0.2005")) // Si le logiciel a besoin d'une mise à jour
+                if (UpdateAvailable("3.3.0.2006")) // Si le logiciel a besoin d'une mise à jour
                 {
                     new UpdateAv().Show();
                 }
