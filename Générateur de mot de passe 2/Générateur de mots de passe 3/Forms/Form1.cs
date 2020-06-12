@@ -40,6 +40,7 @@ namespace Générateur_de_mots_de_passe_3
         {
             // themeID 0 = White
             // themeID 1 = Dark
+            menu1.ThemeSet = themeID;
             if (themeID == 1)
             {
                 BackColor = Color.FromArgb(50, 50, 72);
@@ -64,6 +65,7 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton4_Click(object sender, EventArgs e)
         {
+            menu1.Visible = false; // Cacher le menu
             // Système de génération d'un nombre aléatoire entre 9 et 20
             Random random = new Random();
             int number = random.Next(9, 20);
@@ -72,6 +74,7 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton5_Click(object sender, EventArgs e)
         {
+            menu1.Visible = false; // Cacher le menu
             if (!string.IsNullOrWhiteSpace(gunaLineTextBox1.Text))
             {
                 if (Properties.Settings.Default.DefaultPreset == "Simple")
@@ -139,16 +142,19 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton3_Click(object sender, EventArgs e)
         {
+            menu1.Visible = false; // Cacher le menu
             new About().Show();
         }
 
         private void gunaAdvenceButton2_Click(object sender, EventArgs e)
         {
+            menu1.Visible = false; // Cacher le menu
             new Settings(this).Show();
         }
 
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
         {
+            menu1.Visible = false; // Cacher le menu
             new Presets(this).Show();
         }
 
@@ -162,6 +168,16 @@ namespace Générateur_de_mots_de_passe_3
             {
                 menu1.Visible = true; // Montrer
             }
+        }
+
+        private void gunaTextBox1_Click(object sender, EventArgs e)
+        {
+            menu1.Visible = false; // Cacher le menu
+        }
+
+        private void gunaLineTextBox1_Click(object sender, EventArgs e)
+        {
+            menu1.Visible = false; // Cacher le menu
         }
     }
 }
