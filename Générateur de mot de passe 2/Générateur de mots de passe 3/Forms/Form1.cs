@@ -25,6 +25,7 @@ namespace Générateur_de_mots_de_passe_3
         private void Form1_Load(object sender, EventArgs e)
         {
             Guna.UI.Lib.GraphicsHelper.ShadowForm(this); // Ajout de l'ombre sur Form1 (this)
+            Guna.UI.Lib.GraphicsHelper.DrawLineShadow(menu1, Color.Black, 20, 10, Guna.UI.WinForms.VerHorAlign.HorizontalBottom); // Ombre
             if (Properties.Settings.Default.DarkTheme == true)
             {
                 ChangeTheme(1);
@@ -39,6 +40,7 @@ namespace Générateur_de_mots_de_passe_3
         {
             // themeID 0 = White
             // themeID 1 = Dark
+            menu1.ThemeSet = themeID;
             if (themeID == 1)
             {
                 BackColor = Color.FromArgb(50, 50, 72);
@@ -63,6 +65,7 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton4_Click(object sender, EventArgs e)
         {
+            menu1.Visible = false; // Cacher le menu
             // Système de génération d'un nombre aléatoire entre 9 et 20
             Random random = new Random();
             int number = random.Next(9, 20);
@@ -71,36 +74,44 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton5_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(gunaLineTextBox1.Text))
+            menu1.Visible = false; // Cacher le menu
+            if (Properties.Settings.Default.DefaultPreset == "Simple")
             {
-                if (Properties.Settings.Default.DefaultPreset == "Simple")
+                if (!string.IsNullOrWhiteSpace(gunaLineTextBox1.Text))
                 {
                     int textBoxNumber = int.Parse(gunaLineTextBox1.Text); // Conversion de 'string' en 'int'
                     GeneratePassword(textBoxNumber, 60, CharList);
                 }
-                else if (Properties.Settings.Default.DefaultPreset == "Complexe")
+                else
+                {
+                    MessageBox.Show("Veuillez entrer un nombre");
+                }
+            }
+            else if (Properties.Settings.Default.DefaultPreset == "Complexe")
+            {
+                if (!string.IsNullOrWhiteSpace(gunaLineTextBox1.Text))
                 {
                     int textBoxNumber = int.Parse(gunaLineTextBox1.Text); // Conversion de 'string' en 'int'
                     GeneratePassword(textBoxNumber, 65, CharList);
                 }
-                else if (Properties.Settings.Default.DefaultPreset == "Personnalisé")
+                else
                 {
-                    if (Properties.Settings.Default.RandomGeneration) // Si la génération de nombre aléatoire est activée
-                    {
-                        Random random = new Random(); // Génère un nombre aléatoire
-                        int pwrLenght = random.Next(Properties.Settings.Default.CustomRandom1, Properties.Settings.Default.CustomRandom2);
-                        GeneratePassword(pwrLenght, Properties.Settings.Default.CharLenght, Properties.Settings.Default.CustomChar);
-                    }
-                    else // Dans le cas contraire
-                    {
-                        int pwrLenght = Properties.Settings.Default.CustomNumber;
-                        GeneratePassword(pwrLenght, Properties.Settings.Default.CharLenght, Properties.Settings.Default.CustomChar);
-                    }
+                    MessageBox.Show("Veuillez entrer un nombre");
                 }
             }
-            else
+            else if (Properties.Settings.Default.DefaultPreset == "Personnalisé")
             {
-                MessageBox.Show("Veuillez entrer un nombre");
+                if (Properties.Settings.Default.RandomGeneration) // Si la génération de nombre aléatoire est activée
+                {
+                    Random random = new Random(); // Génère un nombre aléatoire
+                    int pwrLenght = random.Next(Properties.Settings.Default.CustomRandom1, Properties.Settings.Default.CustomRandom2);
+                    GeneratePassword(pwrLenght, Properties.Settings.Default.CharLenght, Properties.Settings.Default.CustomChar);
+                }
+                else // Dans le cas contraire
+                {
+                    int pwrLenght = Properties.Settings.Default.CustomNumber;
+                    GeneratePassword(pwrLenght, Properties.Settings.Default.CharLenght, Properties.Settings.Default.CustomChar);
+                }
             }
         }
 
@@ -138,17 +149,43 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton3_Click(object sender, EventArgs e)
         {
+            menu1.Visible = false; // Cacher le menu
             new About().Show();
         }
 
         private void gunaAdvenceButton2_Click(object sender, EventArgs e)
         {
+            menu1.Visible = false; // Cacher le menu
             new Settings(this).Show();
         }
 
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
         {
+            menu1.Visible = false; // Cacher le menu
             new Presets(this).Show();
+        }
+
+        private void gunaAdvenceButton6_Click(object sender, EventArgs e)
+        {
+            menu1.Init();
+            if (menu1.Visible) // Si le menu est visible
+            {
+                menu1.Visible = false; // Cacher
+            }
+            else
+            {
+                menu1.Visible = true; // Montrer
+            }
+        }
+
+        private void gunaTextBox1_Click(object sender, EventArgs e)
+        {
+            menu1.Visible = false; // Cacher le menu
+        }
+
+        private void gunaLineTextBox1_Click(object sender, EventArgs e)
+        {
+            menu1.Visible = false; // Cacher le menu
         }
     }
 }

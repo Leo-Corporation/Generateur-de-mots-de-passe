@@ -121,7 +121,7 @@
             this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_edit_100px;
+            this.gunaAdvenceButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.edit;
             this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceButton1.Location = new System.Drawing.Point(303, 180);
@@ -156,7 +156,7 @@
             this.gunaAdvenceTileButton3.FocusedColor = System.Drawing.Color.Empty;
             this.gunaAdvenceTileButton3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.gunaAdvenceTileButton3.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceTileButton3.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_slider_100px;
+            this.gunaAdvenceTileButton3.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.dev;
             this.gunaAdvenceTileButton3.ImageSize = new System.Drawing.Size(52, 52);
             this.gunaAdvenceTileButton3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceTileButton3.Location = new System.Drawing.Point(303, 69);
@@ -191,7 +191,7 @@
             this.gunaAdvenceTileButton2.FocusedColor = System.Drawing.Color.Empty;
             this.gunaAdvenceTileButton2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceTileButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceTileButton2.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_smartphone_ram_100px;
+            this.gunaAdvenceTileButton2.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.advanced_processor;
             this.gunaAdvenceTileButton2.ImageSize = new System.Drawing.Size(52, 52);
             this.gunaAdvenceTileButton2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceTileButton2.Location = new System.Drawing.Point(157, 69);
@@ -226,7 +226,7 @@
             this.gunaAdvenceTileButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaAdvenceTileButton1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceTileButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceTileButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_electronics_100px;
+            this.gunaAdvenceTileButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.processor;
             this.gunaAdvenceTileButton1.ImageSize = new System.Drawing.Size(52, 52);
             this.gunaAdvenceTileButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceTileButton1.Location = new System.Drawing.Point(11, 69);
