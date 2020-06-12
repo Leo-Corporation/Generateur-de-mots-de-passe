@@ -2,8 +2,8 @@
 Générateur de mots de passe, comme indique son nom, ce programme sert à générer des mots de passe plus ou moins complexes.
 ## Branches
 Il existe deux branches :
-* master
-* Version_Next
+* master ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Leo-Corporation/Generateur-de-mots-de-passe)
+* Version_Next ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Leo-Corporation/Generateur-de-mots-de-passe?include_prereleases)
 
 master est la branche de base, tandis que la branche Version_Next sert à héberger les versions instables, qui sont destinées à remplacer la version stable.
 
