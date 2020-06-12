@@ -84,14 +84,17 @@ namespace Générateur_de_mots_de_passe_3.UserControls
             {
                 case "Simple": // Si "Simple"
                     gunaAdvenceButton5.Checked = true;
+                    gunaAdvenceButton2.Enabled = false;
                     gunaAdvenceButton5.ImageSize = new Size(15, 15); // Changer la taille de l'image
                     break;
                 case "Complexe": // Si "Complexe"
                     gunaAdvenceButton1.Checked = true;
+                    gunaAdvenceButton2.Enabled = false;
                     gunaAdvenceButton1.ImageSize = new Size(15, 15); // Changer la taille de l'image
                     break;
                 case "Personnalisé": // Si "Personnalisé"
                     gunaAdvenceButton2.Checked = true;
+                    gunaAdvenceButton2.Enabled = true;
                     gunaAdvenceButton2.ImageSize = new Size(15, 15); // Changer la taille de l'image
                     break;
             }
