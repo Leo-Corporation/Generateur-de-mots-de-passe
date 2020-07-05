@@ -66,6 +66,12 @@
     <Compile Include="Forms\EditCustomPreset.Designer.cs">
       <DependentUpon>EditCustomPreset.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ErrorDialog.Designer.cs">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditCustomPreset.resx">
       <DependentUpon>EditCustomPreset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.resx">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -207,6 +216,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PWR Generator.ico" />
+    <None Include="Resources\hugo-internet-security.png" />
+    <None Include="Resources\hugo-no-connection.png" />
+    <None Include="Resources\hugo-fatal-error.png" />
     <None Include="Resources\edit black.png" />
     <None Include="Resources\processor black.png" />
     <None Include="Resources\advanced processor black.png" />
