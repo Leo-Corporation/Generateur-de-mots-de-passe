@@ -38,23 +38,23 @@
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.panel1.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.gunaPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -122,9 +122,9 @@
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.Location = new System.Drawing.Point(62, 154);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(132, 20);
+            this.gunaLabel3.Size = new System.Drawing.Size(133, 20);
             this.gunaLabel3.TabIndex = 2;
-            this.gunaLabel3.Text = "Version 3.3.0.2006";
+            this.gunaLabel3.Text = "Version 3.4.0.2007";
             // 
             // gunaPanel1
             // 
@@ -137,6 +137,73 @@
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(257, 221);
             this.gunaPanel1.TabIndex = 5;
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.Location = new System.Drawing.Point(278, 297);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(58, 20);
+            this.gunaLabel4.TabIndex = 2;
+            this.gunaLabel4.Text = "© 2020";
+            // 
+            // gunaPanel2
+            // 
+            this.gunaPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPanel2.Controls.Add(this.gunaPictureBox2);
+            this.gunaPanel2.Controls.Add(this.gunaLabel5);
+            this.gunaPanel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaPanel2.Location = new System.Drawing.Point(2, 284);
+            this.gunaPanel2.Name = "gunaPanel2";
+            this.gunaPanel2.Size = new System.Drawing.Size(117, 36);
+            this.gunaPanel2.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.gunaPanel2, "Répertoire GitHub");
+            this.gunaPanel2.Click += new System.EventHandler(this.gunaPanel2_Click);
+            // 
+            // gunaLabel5
+            // 
+            this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel5.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaLabel5.Location = new System.Drawing.Point(36, 6);
+            this.gunaLabel5.Name = "gunaLabel5";
+            this.gunaLabel5.Size = new System.Drawing.Size(77, 25);
+            this.gunaLabel5.TabIndex = 2;
+            this.gunaLabel5.Text = "GitHub";
+            this.toolTip1.SetToolTip(this.gunaLabel5, "Répertoire GitHub");
+            this.gunaLabel5.Click += new System.EventHandler(this.gunaPanel2_Click);
+            // 
+            // gunaLabel6
+            // 
+            this.gunaLabel6.AutoSize = true;
+            this.gunaLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel6.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel6.Location = new System.Drawing.Point(36, 6);
+            this.gunaLabel6.Name = "gunaLabel6";
+            this.gunaLabel6.Size = new System.Drawing.Size(93, 25);
+            this.gunaLabel6.TabIndex = 2;
+            this.gunaLabel6.Text = "Léo Corp";
+            this.toolTip1.SetToolTip(this.gunaLabel6, "Site Léo Corporation");
+            this.gunaLabel6.Click += new System.EventHandler(this.gunaPictureBox3_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.gunaPictureBox3);
+            this.panel2.Controls.Add(this.gunaLabel6);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel2.Location = new System.Drawing.Point(121, 284);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(130, 36);
+            this.panel2.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.panel2, "Site Léo Corporation");
+            this.panel2.Click += new System.EventHandler(this.gunaPictureBox3_Click);
             // 
             // gunaAdvenceButton1
             // 
@@ -186,29 +253,20 @@
             this.gunaPictureBox1.TabIndex = 3;
             this.gunaPictureBox1.TabStop = false;
             // 
-            // gunaLabel4
+            // gunaPictureBox3
             // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(278, 297);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(58, 20);
-            this.gunaLabel4.TabIndex = 2;
-            this.gunaLabel4.Text = "© 2020";
-            // 
-            // gunaPanel2
-            // 
-            this.gunaPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPanel2.Controls.Add(this.gunaPictureBox2);
-            this.gunaPanel2.Controls.Add(this.gunaLabel5);
-            this.gunaPanel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaPanel2.Location = new System.Drawing.Point(2, 284);
-            this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(117, 36);
-            this.gunaPanel2.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.gunaPanel2, "Répertoire GitHub");
-            this.gunaPanel2.Click += new System.EventHandler(this.gunaPanel2_Click);
+            this.gunaPictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPictureBox3.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaPictureBox3.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.logo_carre;
+            this.gunaPictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.gunaPictureBox3.Name = "gunaPictureBox3";
+            this.gunaPictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.gunaPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox3.TabIndex = 3;
+            this.gunaPictureBox3.TabStop = false;
+            this.toolTip1.SetToolTip(this.gunaPictureBox3, "Site Léo Corporation");
+            this.gunaPictureBox3.Click += new System.EventHandler(this.gunaPictureBox3_Click);
             // 
             // gunaPictureBox2
             // 
@@ -224,64 +282,6 @@
             this.gunaPictureBox2.TabStop = false;
             this.toolTip1.SetToolTip(this.gunaPictureBox2, "Répertoire GitHub");
             this.gunaPictureBox2.Click += new System.EventHandler(this.gunaPanel2_Click);
-            // 
-            // gunaLabel5
-            // 
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel5.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaLabel5.Location = new System.Drawing.Point(36, 6);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(77, 25);
-            this.gunaLabel5.TabIndex = 2;
-            this.gunaLabel5.Text = "GitHub";
-            this.toolTip1.SetToolTip(this.gunaLabel5, "Répertoire GitHub");
-            this.gunaLabel5.Click += new System.EventHandler(this.gunaPanel2_Click);
-            // 
-            // gunaLabel6
-            // 
-            this.gunaLabel6.AutoSize = true;
-            this.gunaLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel6.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel6.Location = new System.Drawing.Point(36, 6);
-            this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(93, 25);
-            this.gunaLabel6.TabIndex = 2;
-            this.gunaLabel6.Text = "Léo Corp";
-            this.toolTip1.SetToolTip(this.gunaLabel6, "Site Léo Corporation");
-            this.gunaLabel6.Click += new System.EventHandler(this.gunaPictureBox3_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.gunaPictureBox3);
-            this.panel2.Controls.Add(this.gunaLabel6);
-            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel2.Location = new System.Drawing.Point(121, 284);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(130, 36);
-            this.panel2.TabIndex = 7;
-            this.toolTip1.SetToolTip(this.panel2, "Site Léo Corporation");
-            this.panel2.Click += new System.EventHandler(this.gunaPictureBox3_Click);
-            // 
-            // gunaPictureBox3
-            // 
-            this.gunaPictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaPictureBox3.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.logo_carre;
-            this.gunaPictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.gunaPictureBox3.Name = "gunaPictureBox3";
-            this.gunaPictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.gunaPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox3.TabIndex = 3;
-            this.gunaPictureBox3.TabStop = false;
-            this.toolTip1.SetToolTip(this.gunaPictureBox3, "Site Léo Corporation");
-            this.gunaPictureBox3.Click += new System.EventHandler(this.gunaPictureBox3_Click);
             // 
             // About
             // 
@@ -303,13 +303,13 @@
             this.panel1.PerformLayout();
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.gunaPanel2.ResumeLayout(false);
             this.gunaPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
