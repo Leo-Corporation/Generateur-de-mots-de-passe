@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Générateur_de_mots_de_passe_3.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -139,11 +140,11 @@ namespace Générateur_de_mots_de_passe_3
             }
             catch (FormatException ex) // En cas d'erreur où le nombre spécifié n'est pas valide
             {
-                MessageBox.Show("Impossible de générer le mot de passe, car le nombre spécifié est invalide.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                new ErrorDialog("Impossible de générer le mot de passe, car le nombre spécifié est invalide.", new FormatException(), Properties.Resources.hugo_internet_security).Show();
             }
             catch (Exception ex) // En cas d'erreur inconnue
             {
-                MessageBox.Show("Impossible de générer le mot de passe." + Environment.NewLine + ex, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                new ErrorDialog("Impossibile de générer le mot de passe.", new Exception(), Properties.Resources.hugo_fatal_error).Show();
             }
         }
 
