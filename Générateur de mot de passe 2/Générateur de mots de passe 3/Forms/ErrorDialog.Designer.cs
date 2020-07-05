@@ -34,11 +34,11 @@
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -77,16 +77,6 @@
             this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
             this.gunaControlBox1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.hugo_internet_security;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(188, 144);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // gunaLabel1
             // 
@@ -132,6 +122,16 @@
             this.gunaLabel4.TabIndex = 3;
             this.gunaLabel4.Text = "Erreur";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.hugo_internet_security;
+            this.pictureBox1.Location = new System.Drawing.Point(22, 48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(188, 144);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // ErrorDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,6 +149,7 @@
             this.Name = "ErrorDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Erreur";
+            this.Load += new System.EventHandler(this.ErrorDialog_Load);
             this.gunaPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -118,12 +118,12 @@ namespace Générateur_de_mots_de_passe_3
 
         public void GeneratePassword(int passwordLenght, int charLenght, string charList)
         {
-            gunaLineTextBox1.Text = passwordLenght.ToString();
-            UsableChar = charList.Split(new string[] { "," }, StringSplitOptions.None);
-            FinalPassword = "";
-            Number = 0;
             try //Essai
             {
+                gunaLineTextBox1.Text = passwordLenght.ToString();
+                UsableChar = charList.Split(new string[] { "," }, StringSplitOptions.None);
+                FinalPassword = "";
+                Number = 0;
                 if (passwordLenght > 0)
                 {
                     for (int i = 0; i < passwordLenght; i++) // Tant que i < longueur du mot de passe
@@ -135,16 +135,16 @@ namespace Générateur_de_mots_de_passe_3
                 }
                 else
                 {
-                    MessageBox.Show("Le mot de passe doit être au moins long d'un caractère.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    new ErrorDialog("Le mot de passe doit être au moins long d'un caractère.", new Exception(), Properties.Resources.hugo_internet_security).Show();
                 }
             }
             catch (FormatException ex) // En cas d'erreur où le nombre spécifié n'est pas valide
             {
-                new ErrorDialog("Impossible de générer le mot de passe, car le nombre spécifié est invalide.", new FormatException(), Properties.Resources.hugo_internet_security).Show();
+                new ErrorDialog("Impossible de générer le mot de passe, car le nombre spécifié est invalide.", ex, Properties.Resources.hugo_internet_security).Show();
             }
             catch (Exception ex) // En cas d'erreur inconnue
             {
-                new ErrorDialog("Impossibile de générer le mot de passe.", new Exception(), Properties.Resources.hugo_fatal_error).Show();
+                new ErrorDialog("Impossibile de générer le mot de passe.", ex, Properties.Resources.hugo_fatal_error).Show();
             }
         }
 

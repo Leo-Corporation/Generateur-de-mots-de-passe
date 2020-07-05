@@ -16,8 +16,13 @@ namespace Générateur_de_mots_de_passe_3.Forms
         {
             InitializeComponent();
             gunaLabel3.Text = message; // Afficher le message
-            gunaLabel4.Text = exception.ToString(); // Afficher l'erreur
+            gunaLabel4.Text = exception.GetType().FullName; // Afficher l'erreur
             pictureBox1.Image = image; // Mettre l'image
+        }
+
+        private void ErrorDialog_Load(object sender, EventArgs e)
+        {
+            Guna.UI.Lib.GraphicsHelper.ShadowForm(this);
         }
     }
 }
