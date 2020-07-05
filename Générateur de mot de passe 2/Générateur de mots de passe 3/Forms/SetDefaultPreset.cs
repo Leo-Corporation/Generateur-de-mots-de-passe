@@ -25,16 +25,12 @@ namespace Générateur_de_mots_de_passe_3
                 BackColor = Color.FromArgb(50, 50, 72);
                 gunaLabel1.ForeColor = Color.White;
                 gunaControlBox1.IconColor = Color.White;
-                gunaComboBox1.BaseColor = Color.FromArgb(50, 50, 72);
-                gunaComboBox1.ForeColor = Color.White;
             }
             else
             {
                 BackColor = Color.White;
                 gunaLabel1.ForeColor = Color.Black;
                 gunaControlBox1.IconColor = Color.Black;
-                gunaComboBox1.BaseColor = Color.White;
-                gunaComboBox1.ForeColor = Color.Black;
             }
         }
 
@@ -43,10 +39,6 @@ namespace Générateur_de_mots_de_passe_3
             Close();
         }
 
-        private void gunaAdvenceButton5_Click(object sender, EventArgs e)
-        {
-            SavePreference(gunaComboBox1.Text);
-        }
         private void SavePreference(string preset)
         {
             if (!string.IsNullOrWhiteSpace(preset)) // Si le preset n'est pas vide ou 'null'
@@ -79,6 +71,21 @@ namespace Générateur_de_mots_de_passe_3
                     MessageBox.Show("Veuillez sélectionner un préréglage"); // Si aucun préréglage n'est sélectionné
                 }
             }
+        }
+
+        private void gunaAdvenceTileButton1_Click(object sender, EventArgs e)
+        {
+            SavePreference("Simple"); // Mettre le préréglage simple
+        }
+
+        private void gunaAdvenceTileButton2_Click(object sender, EventArgs e)
+        {
+            SavePreference("Complexe"); // Mettre le préréglage complexe
+        }
+
+        private void gunaAdvenceTileButton3_Click(object sender, EventArgs e)
+        {
+            SavePreference("Personnalisé"); // Mettre le préréglage personnalisé
         }
     }
 }
