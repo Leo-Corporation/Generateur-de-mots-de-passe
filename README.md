@@ -15,14 +15,6 @@ Cliquez [ici](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/tre
 ## Documentation
 Cliquez [ici](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/wiki) pour accèder à la documentation.
 
-Vous recherchez peut-être un moyen d'employer le système de génération de mots de passe ? [LéoCorpLib](https://github.com/Leo-Corporation/LeoCorpLibrary) est la solution !
-
-# Version 3.0
-## Changelog
-- Implémentation de Guna.UI
-- Réécriture en C#
-- Nouvelle interface
-- Xalyus Updater
-- Préréglage personnalisé
-- Préréglage par défaut
-- Thème sombre et thème clair
+Vous recherchez peut-être un moyen d'employer le système de génération de mots de passe ? [LeoCorpLibrary](https://github.com/Leo-Corporation/LeoCorpLibrary) est la solution !
+## License
+Projet sous [license MPL-2.0](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/blob/master/LICENSE.md).
