@@ -216,6 +216,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PWR Generator.ico" />
+    <None Include="Resources\clipboard.png" />
     <None Include="Resources\hugo-internet-security.png" />
     <None Include="Resources\hugo-no-connection.png" />
     <None Include="Resources\hugo-fatal-error.png" />
