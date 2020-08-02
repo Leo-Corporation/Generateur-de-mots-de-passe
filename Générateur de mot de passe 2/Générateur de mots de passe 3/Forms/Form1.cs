@@ -188,5 +188,10 @@ namespace Générateur_de_mots_de_passe_3
         {
             menu1.Visible = false; // Cacher le menu
         }
+
+        private void gunaAdvenceButton7_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(gunaTextBox1.Text); // Copier le mot de passe
+        }
     }
 }
