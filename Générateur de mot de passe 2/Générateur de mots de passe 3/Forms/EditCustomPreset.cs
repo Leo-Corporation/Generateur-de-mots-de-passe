@@ -16,6 +16,7 @@ namespace Générateur_de_mots_de_passe_3
         public EditCustomPreset()
         {
             InitializeComponent();
+            Guna.UI.Lib.GraphicsHelper.ShadowForm(this); // Mettre une ombre sur la fenêtre
         }
 
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
