@@ -69,7 +69,7 @@ namespace Générateur_de_mots_de_passe_3
             menu1.Visible = false; // Cacher le menu
             // Système de génération d'un nombre aléatoire entre 9 et 20
             Random random = new Random();
-            int number = random.Next(9, 20);
+            int number = random.Next(13, 25); // Nombre qui va être généré
             gunaLineTextBox1.Text = number.ToString(); // Le nombre va dans la textbox qui demande le nombre de caractères
         }
 
