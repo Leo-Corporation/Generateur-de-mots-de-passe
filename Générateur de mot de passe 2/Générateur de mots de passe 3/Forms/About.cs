@@ -110,7 +110,7 @@ namespace Générateur_de_mots_de_passe_3
         private void LoadVersion() // Charger la version
         {
             gunaLabel3.Text = $"Version {Definitions.Version}"; // Mettre la version sur le label
-            gunaLabel3.Left = (ClientSize.Width - gunaLabel3.Width) / 2; // Centrer le label
+            gunaLabel3.Left = (gunaPanel1.Width - gunaLabel3.Width) / 2; // Centrer le label
         }
     }
 }
