@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Definitions.cs" />
     <Compile Include="Forms\About.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +217,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PWR Generator.ico" />
+    <None Include="Resources\weak password.png" />
+    <None Include="Resources\strong password.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\good password.png" />
+    <None Include="Resources\clipboard.png" />
     <None Include="Resources\hugo-internet-security.png" />
     <None Include="Resources\hugo-no-connection.png" />
     <None Include="Resources\hugo-fatal-error.png" />

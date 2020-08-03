@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using Générateur_de_mots_de_passe_3.Classes;
 
 namespace Générateur_de_mots_de_passe_3
 {
@@ -17,6 +18,7 @@ namespace Générateur_de_mots_de_passe_3
         public About()
         {
             InitializeComponent();
+            LoadVersion(); // Charger la version
         }
 
         private void gunaPanel2_Click(object sender, EventArgs e)
@@ -62,7 +64,7 @@ namespace Générateur_de_mots_de_passe_3
             }
             else
             {
-                if (UpdateAvailable("3.4.0.2007")) // Si le logiciel a besoin d'une mise à jour
+                if (UpdateAvailable(Definitions.Version)) // Si le logiciel a besoin d'une mise à jour
                 {
                     new UpdateAv().Show();
                 }
@@ -103,6 +105,12 @@ namespace Générateur_de_mots_de_passe_3
                 result = false;
             }
             return result;
+        }
+
+        private void LoadVersion() // Charger la version
+        {
+            gunaLabel3.Text = $"Version {Definitions.Version}"; // Mettre la version sur le label
+            gunaLabel3.Left = (gunaPanel1.Width - gunaLabel3.Width) / 2; // Centrer le label
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Générateur_de_mots_de_passe_3.Forms;
+﻿using Générateur_de_mots_de_passe_3.Classes;
+using Générateur_de_mots_de_passe_3.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -69,7 +70,7 @@ namespace Générateur_de_mots_de_passe_3
             menu1.Visible = false; // Cacher le menu
             // Système de génération d'un nombre aléatoire entre 9 et 20
             Random random = new Random();
-            int number = random.Next(9, 20);
+            int number = random.Next(13, 25); // Nombre qui va être généré
             gunaLineTextBox1.Text = number.ToString(); // Le nombre va dans la textbox qui demande le nombre de caractères
         }
 
@@ -187,6 +188,59 @@ namespace Générateur_de_mots_de_passe_3
         private void gunaLineTextBox1_Click(object sender, EventArgs e)
         {
             menu1.Visible = false; // Cacher le menu
+        }
+
+        private void gunaAdvenceButton7_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(gunaTextBox1.Text)) // Vérifier si la textbox n'est pas vide
+                Clipboard.SetText(gunaTextBox1.Text); // Copier le mot de passe
+        }
+
+        private void gunaAdvenceButton8_Click(object sender, EventArgs e)
+        {
+            gunaTextBox1.Text = ""; // Effacer la textbox
+        }
+
+        private void gunaLineTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(gunaLineTextBox1.Text)) // Si la textbox est vide
+            {
+                try
+                {
+                    int lenght = int.Parse(gunaLineTextBox1.Text); // Obtenir la longueur du mot de passe
+
+                    if (lenght < 13) // Si le mot de passe est < 13, il est faible
+                    {
+                        gunaLabel4.Text = Definitions.WeakPasswordMessage; // Mettre le message correspondant
+                        gunaLabel4.ForeColor = Definitions.WeakPasswordColor; // Changer la couleur
+                        gunaPictureBox2.Image = Properties.Resources.weak_password; // Changer l'image
+                    }
+                    else if (lenght >= 13 && lenght < 18) // Si le mot de passe est entre 13 et < 18, il est bon
+                    {
+                        gunaLabel4.Text = Definitions.GoodPasswordMessage; // Mettre le message correspondant
+                        gunaLabel4.ForeColor = Definitions.GoodPasswordColor; // Changer la couleur
+                        gunaPictureBox2.Image = Properties.Resources.good_password; // Changer l'image
+                    }
+                    else if (lenght >= 18) // Si le mot de passe est >= 18, il est excellent
+                    {
+                        gunaLabel4.Text = Definitions.StrongPasswordMessage; // Mettre le message correspondant
+                        gunaLabel4.ForeColor = Definitions.StrongPasswordColor; // Changer la couleur
+                        gunaPictureBox2.Image = Properties.Resources.strong_password; // Changer l'image
+                    }
+                }
+                catch
+                {
+                    gunaLabel4.Text = "La longueur que vous avez entrez est invalide"; // Mettre le message correspondant
+                    gunaLabel4.ForeColor = Color.CornflowerBlue; // Changer la couleur
+                    gunaPictureBox2.Image = Properties.Resources.info; // Changer l'image
+                }
+            }
+            else // Si non
+            {
+                gunaLabel4.Text = "Entrez une longueur de mot de passe pour connaître sa force"; // Mettre le message correspondant
+                gunaLabel4.ForeColor = Color.CornflowerBlue; // Changer la couleur
+                gunaPictureBox2.Image = Properties.Resources.info; // Changer l'image
+            }
         }
     }
 }
