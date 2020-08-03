@@ -173,6 +173,16 @@ namespace Générateur_de_mots_de_passe_3.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap good_password {
+            get {
+                object obj = ResourceManager.GetObject("good password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hugo_fatal_error {
             get {
                 object obj = ResourceManager.GetObject("hugo-fatal-error", resourceCulture);
@@ -353,6 +363,16 @@ namespace Générateur_de_mots_de_passe_3.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap info {
+            get {
+                object obj = ResourceManager.GetObject("info", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Léo_Corp_Logo {
             get {
                 object obj = ResourceManager.GetObject("Léo Corp Logo", resourceCulture);
@@ -463,9 +483,29 @@ namespace Générateur_de_mots_de_passe_3.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap strong_password {
+            get {
+                object obj = ResourceManager.GetObject("strong password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Update {
             get {
                 object obj = ResourceManager.GetObject("Update", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap weak_password {
+            get {
+                object obj = ResourceManager.GetObject("weak password", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
