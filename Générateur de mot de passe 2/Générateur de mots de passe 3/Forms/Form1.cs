@@ -194,5 +194,10 @@ namespace Générateur_de_mots_de_passe_3
             if (!string.IsNullOrEmpty(gunaTextBox1.Text)) // Vérifier si la textbox n'est pas vide
                 Clipboard.SetText(gunaTextBox1.Text); // Copier le mot de passe
         }
+
+        private void gunaAdvenceButton8_Click(object sender, EventArgs e)
+        {
+            gunaTextBox1.Text = ""; // Effacer la textbox
+        }
     }
 }
