@@ -191,7 +191,8 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton7_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(gunaTextBox1.Text); // Copier le mot de passe
+            if (!string.IsNullOrEmpty(gunaTextBox1.Text)) // Vérifier si la textbox n'est pas vide
+                Clipboard.SetText(gunaTextBox1.Text); // Copier le mot de passe
         }
     }
 }
