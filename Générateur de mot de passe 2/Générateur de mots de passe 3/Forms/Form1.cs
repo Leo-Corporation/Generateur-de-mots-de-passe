@@ -86,7 +86,14 @@ namespace Générateur_de_mots_de_passe_3
                 }
                 else
                 {
-                    MessageBox.Show("Veuillez entrer un nombre");
+                    if (Language.Curent() == Languages.frFR)
+                    {
+                        MessageBox.Show("Veuillez entrer un nombre");
+                    }
+                    else if (Language.Curent() == Languages.enUS)
+                    {
+                        MessageBox.Show("Please enter a number");
+                    }
                 }
             }
             else if (Properties.Settings.Default.DefaultPreset == "Complexe")
@@ -98,7 +105,14 @@ namespace Générateur_de_mots_de_passe_3
                 }
                 else
                 {
-                    MessageBox.Show("Veuillez entrer un nombre");
+                    if (Language.Curent() == Languages.frFR)
+                    {
+                        MessageBox.Show("Veuillez entrer un nombre");
+                    }
+                    else if (Language.Curent() == Languages.enUS)
+                    {
+                        MessageBox.Show("Please enter a number");
+                    }
                 }
             }
             else if (Properties.Settings.Default.DefaultPreset == "Personnalisé")
@@ -136,16 +150,37 @@ namespace Générateur_de_mots_de_passe_3
                 }
                 else
                 {
-                    new ErrorDialog("Le mot de passe doit être au moins long d'un caractère.", new Exception(), Properties.Resources.hugo_internet_security).Show();
+                    if (Language.Curent() == Languages.frFR)
+                    {
+                        new ErrorDialog("Le mot de passe doit être au moins long d'un caractère.", new Exception(), Properties.Resources.hugo_internet_security).Show();
+                    }
+                    else if (Language.Curent() == Languages.enUS)
+                    {
+                        new ErrorDialog("The password must, at least, be 1 characters long.", new Exception(), Properties.Resources.hugo_internet_security).Show();
+                    }      
                 }
             }
             catch (FormatException ex) // En cas d'erreur où le nombre spécifié n'est pas valide
             {
-                new ErrorDialog("Impossible de générer le mot de passe, car le nombre spécifié est invalide.", ex, Properties.Resources.hugo_internet_security).Show();
+                if (Language.Curent() == Languages.frFR)
+                {
+                    new ErrorDialog("Impossible de générer le mot de passe, car le nombre spécifié est invalide.", ex, Properties.Resources.hugo_internet_security).Show();
+                }
+                else if (Language.Curent() == Languages.enUS)
+                {
+                    new ErrorDialog("The password can't be generated because the specified number isn't valid.", ex, Properties.Resources.hugo_internet_security).Show();
+                }
             }
             catch (Exception ex) // En cas d'erreur inconnue
             {
-                new ErrorDialog("Impossibile de générer le mot de passe.", ex, Properties.Resources.hugo_fatal_error).Show();
+                if (Language.Curent() == Languages.frFR)
+                {
+                    new ErrorDialog("Impossibile de générer le mot de passe.", ex, Properties.Resources.hugo_fatal_error).Show();
+                }
+                else if (Language.Curent() == Languages.enUS)
+                {
+                    new ErrorDialog("Can't generate the password.", ex, Properties.Resources.hugo_fatal_error).Show();
+                }
             }
         }
 
@@ -230,14 +265,28 @@ namespace Générateur_de_mots_de_passe_3
                 }
                 catch
                 {
-                    gunaLabel4.Text = "La longueur que vous avez entrez est invalide"; // Mettre le message correspondant
+                    if (Language.Curent() == Languages.frFR)
+                    {
+                        gunaLabel4.Text = "La longueur que vous avez entrez est invalide"; // Mettre le message correspondant
+                    }
+                    else if (Language.Curent() == Languages.enUS)
+                    {
+                        gunaLabel4.Text = "The specified lenght isn't valid"; // Mettre le message correspondant
+                    }
                     gunaLabel4.ForeColor = Color.CornflowerBlue; // Changer la couleur
                     gunaPictureBox2.Image = Properties.Resources.info; // Changer l'image
                 }
             }
             else // Si non
             {
-                gunaLabel4.Text = "Entrez une longueur de mot de passe pour connaître sa force"; // Mettre le message correspondant
+                if (Language.Curent() == Languages.frFR)
+                {
+                    gunaLabel4.Text = "Entrez une longueur de mot de passe pour connaître sa force"; // Mettre le message correspondant
+                }
+                else if (Language.Curent() == Languages.enUS)
+                {
+                    gunaLabel4.Text = "Enter a number of characters to get the strenght of the password."; // Mettre le message correspondant
+                }
                 gunaLabel4.ForeColor = Color.CornflowerBlue; // Changer la couleur
                 gunaPictureBox2.Image = Properties.Resources.info; // Changer l'image
             }

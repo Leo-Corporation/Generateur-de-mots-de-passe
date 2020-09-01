@@ -59,41 +59,33 @@
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.gunaLabel1);
             this.panel1.Controls.Add(this.gunaControlBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(352, 36);
-            this.panel1.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.panel1, resources.GetString("panel1.ToolTip"));
             // 
             // gunaLabel1
             // 
-            this.gunaLabel1.AutoSize = true;
+            resources.ApplyResources(this.gunaLabel1, "gunaLabel1");
             this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.Location = new System.Drawing.Point(12, 7);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(83, 23);
-            this.gunaLabel1.TabIndex = 2;
-            this.gunaLabel1.Text = "A propos";
+            this.toolTip1.SetToolTip(this.gunaLabel1, resources.GetString("gunaLabel1.ToolTip"));
             // 
             // gunaControlBox1
             // 
-            this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.gunaControlBox1, "gunaControlBox1");
             this.gunaControlBox1.Animated = true;
             this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
             this.gunaControlBox1.AnimationSpeed = 0.03F;
             this.gunaControlBox1.IconColor = System.Drawing.Color.Black;
             this.gunaControlBox1.IconSize = 15F;
-            this.gunaControlBox1.Location = new System.Drawing.Point(302, 4);
             this.gunaControlBox1.Name = "gunaControlBox1";
             this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.Red;
             this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
             this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.gunaControlBox1.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.gunaControlBox1, resources.GetString("gunaControlBox1.ToolTip"));
             // 
             // gunaDragControl1
             // 
@@ -106,40 +98,32 @@
             // 
             // gunaLabel2
             // 
-            this.gunaLabel2.AutoSize = true;
+            resources.ApplyResources(this.gunaLabel2, "gunaLabel2");
             this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel2.Location = new System.Drawing.Point(0, 131);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(257, 23);
-            this.gunaLabel2.TabIndex = 2;
-            this.gunaLabel2.Text = "Générateur de mots de passe 3";
+            this.toolTip1.SetToolTip(this.gunaLabel2, resources.GetString("gunaLabel2.ToolTip"));
             // 
             // gunaLabel3
             // 
-            this.gunaLabel3.AutoSize = true;
+            resources.ApplyResources(this.gunaLabel3, "gunaLabel3");
             this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(62, 154);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(133, 20);
-            this.gunaLabel3.TabIndex = 2;
-            this.gunaLabel3.Text = "Version 3.4.0.2007";
+            this.toolTip1.SetToolTip(this.gunaLabel3, resources.GetString("gunaLabel3.ToolTip"));
             // 
             // gunaPanel1
             // 
+            resources.ApplyResources(this.gunaPanel1, "gunaPanel1");
             this.gunaPanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPanel1.Controls.Add(this.gunaAdvenceButton1);
             this.gunaPanel1.Controls.Add(this.gunaLabel2);
             this.gunaPanel1.Controls.Add(this.gunaLabel3);
             this.gunaPanel1.Controls.Add(this.gunaPictureBox1);
-            this.gunaPanel1.Location = new System.Drawing.Point(48, 43);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(257, 221);
-            this.gunaPanel1.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.gunaPanel1, resources.GetString("gunaPanel1.ToolTip"));
             // 
             // gunaAdvenceButton1
             // 
+            resources.ApplyResources(this.gunaAdvenceButton1, "gunaAdvenceButton1");
             this.gunaAdvenceButton1.Animated = true;
             this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
             this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
@@ -154,12 +138,10 @@
             this.gunaAdvenceButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
             this.gunaAdvenceButton1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.Update;
             this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(25, 25);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(4, 180);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
             this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.RoyalBlue;
             this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -168,139 +150,108 @@
             this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaAdvenceButton1.Radius = 15;
-            this.gunaAdvenceButton1.Size = new System.Drawing.Size(248, 34);
-            this.gunaAdvenceButton1.TabIndex = 4;
-            this.gunaAdvenceButton1.Text = "Rechercher des mises à jour";
             this.gunaAdvenceButton1.TextOffsetX = -4;
+            this.toolTip1.SetToolTip(this.gunaAdvenceButton1, resources.GetString("gunaAdvenceButton1.ToolTip"));
             this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
             // 
             // gunaPictureBox1
             // 
+            resources.ApplyResources(this.gunaPictureBox1, "gunaPictureBox1");
             this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.PWR_Generator;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(73, 14);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(110, 110);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox1.TabIndex = 3;
             this.gunaPictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.gunaPictureBox1, resources.GetString("gunaPictureBox1.ToolTip"));
             // 
             // gunaLabel4
             // 
-            this.gunaLabel4.AutoSize = true;
+            resources.ApplyResources(this.gunaLabel4, "gunaLabel4");
             this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(278, 297);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(58, 20);
-            this.gunaLabel4.TabIndex = 2;
-            this.gunaLabel4.Text = "© 2020";
+            this.toolTip1.SetToolTip(this.gunaLabel4, resources.GetString("gunaLabel4.ToolTip"));
             // 
             // gunaPanel2
             // 
+            resources.ApplyResources(this.gunaPanel2, "gunaPanel2");
             this.gunaPanel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaPanel2.Controls.Add(this.gunaPictureBox2);
             this.gunaPanel2.Controls.Add(this.gunaLabel5);
             this.gunaPanel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaPanel2.Location = new System.Drawing.Point(2, 284);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(117, 36);
-            this.gunaPanel2.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.gunaPanel2, "Répertoire GitHub");
+            this.toolTip1.SetToolTip(this.gunaPanel2, resources.GetString("gunaPanel2.ToolTip"));
             this.gunaPanel2.Click += new System.EventHandler(this.gunaPanel2_Click);
             // 
             // gunaPictureBox2
             // 
+            resources.ApplyResources(this.gunaPictureBox2, "gunaPictureBox2");
             this.gunaPictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaPictureBox2.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.icons8_github_100px_1;
-            this.gunaPictureBox2.Location = new System.Drawing.Point(3, 3);
             this.gunaPictureBox2.Name = "gunaPictureBox2";
-            this.gunaPictureBox2.Size = new System.Drawing.Size(30, 30);
-            this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox2.TabIndex = 3;
             this.gunaPictureBox2.TabStop = false;
-            this.toolTip1.SetToolTip(this.gunaPictureBox2, "Répertoire GitHub");
+            this.toolTip1.SetToolTip(this.gunaPictureBox2, resources.GetString("gunaPictureBox2.ToolTip"));
             this.gunaPictureBox2.Click += new System.EventHandler(this.gunaPanel2_Click);
             // 
             // gunaLabel5
             // 
-            this.gunaLabel5.AutoSize = true;
+            resources.ApplyResources(this.gunaLabel5, "gunaLabel5");
             this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.gunaLabel5.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaLabel5.Location = new System.Drawing.Point(36, 6);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(77, 25);
-            this.gunaLabel5.TabIndex = 2;
-            this.gunaLabel5.Text = "GitHub";
-            this.toolTip1.SetToolTip(this.gunaLabel5, "Répertoire GitHub");
+            this.toolTip1.SetToolTip(this.gunaLabel5, resources.GetString("gunaLabel5.ToolTip"));
             this.gunaLabel5.Click += new System.EventHandler(this.gunaPanel2_Click);
             // 
             // gunaLabel6
             // 
-            this.gunaLabel6.AutoSize = true;
+            resources.ApplyResources(this.gunaLabel6, "gunaLabel6");
             this.gunaLabel6.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.gunaLabel6.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel6.Location = new System.Drawing.Point(36, 6);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(93, 25);
-            this.gunaLabel6.TabIndex = 2;
-            this.gunaLabel6.Text = "Léo Corp";
-            this.toolTip1.SetToolTip(this.gunaLabel6, "Site Léo Corporation");
+            this.toolTip1.SetToolTip(this.gunaLabel6, resources.GetString("gunaLabel6.ToolTip"));
             this.gunaLabel6.Click += new System.EventHandler(this.gunaPictureBox3_Click);
             // 
             // panel2
             // 
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.gunaPictureBox3);
             this.panel2.Controls.Add(this.gunaLabel6);
             this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel2.Location = new System.Drawing.Point(121, 284);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(130, 36);
-            this.panel2.TabIndex = 7;
-            this.toolTip1.SetToolTip(this.panel2, "Site Léo Corporation");
+            this.toolTip1.SetToolTip(this.panel2, resources.GetString("panel2.ToolTip"));
             this.panel2.Click += new System.EventHandler(this.gunaPictureBox3_Click);
             // 
             // gunaPictureBox3
             // 
+            resources.ApplyResources(this.gunaPictureBox3, "gunaPictureBox3");
             this.gunaPictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox3.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaPictureBox3.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.logo_carre;
-            this.gunaPictureBox3.Location = new System.Drawing.Point(3, 3);
             this.gunaPictureBox3.Name = "gunaPictureBox3";
-            this.gunaPictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.gunaPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox3.TabIndex = 3;
             this.gunaPictureBox3.TabStop = false;
-            this.toolTip1.SetToolTip(this.gunaPictureBox3, "Site Léo Corporation");
+            this.toolTip1.SetToolTip(this.gunaPictureBox3, resources.GetString("gunaPictureBox3.ToolTip"));
             this.gunaPictureBox3.Click += new System.EventHandler(this.gunaPictureBox3_Click);
             // 
             // About
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(352, 326);
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaPanel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "About";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "A propos";
+            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.About_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
