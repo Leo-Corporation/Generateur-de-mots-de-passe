@@ -218,6 +218,7 @@ namespace Générateur_de_mots_de_passe_3
             Properties.Settings.Default.Reset();
             gunaWinSwitch1.Checked = false;
             gunaWinSwitch2.Checked = true;
+            gunaComboBox1.SelectedIndex = 0;
             if (Language.Curent() == Languages.frFR)
             {
                 MessageBox.Show("Le logiciel a été réinitialisé");

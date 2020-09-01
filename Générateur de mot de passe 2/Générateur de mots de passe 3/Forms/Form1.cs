@@ -247,19 +247,43 @@ namespace Générateur_de_mots_de_passe_3
 
                     if (lenght < 13) // Si le mot de passe est < 13, il est faible
                     {
-                        gunaLabel4.Text = Definitions.WeakPasswordMessage; // Mettre le message correspondant
+                        if (Language.Curent() == Languages.frFR)
+                        {
+                            gunaLabel4.Text = Definitions.WeakPasswordMessage; // Mettre le message correspondant
+                        }
+                        else if (Language.Curent() == Languages.enUS)
+                        {
+                            gunaLabel4.Text = Definitions.WeakPasswordMessageENUS; // Mettre le message correspondant
+                        }
+
                         gunaLabel4.ForeColor = Definitions.WeakPasswordColor; // Changer la couleur
                         gunaPictureBox2.Image = Properties.Resources.weak_password; // Changer l'image
                     }
                     else if (lenght >= 13 && lenght < 18) // Si le mot de passe est entre 13 et < 18, il est bon
                     {
-                        gunaLabel4.Text = Definitions.GoodPasswordMessage; // Mettre le message correspondant
+                        if (Language.Curent() == Languages.frFR)
+                        {
+                            gunaLabel4.Text = Definitions.GoodPasswordMessage; // Mettre le message correspondant
+                        }
+                        else if (Language.Curent() == Languages.enUS)
+                        {
+                            gunaLabel4.Text = Definitions.GoodPasswordMessageENUS; // Mettre le message correspondant
+                        }
+
                         gunaLabel4.ForeColor = Definitions.GoodPasswordColor; // Changer la couleur
                         gunaPictureBox2.Image = Properties.Resources.good_password; // Changer l'image
                     }
                     else if (lenght >= 18) // Si le mot de passe est >= 18, il est excellent
                     {
-                        gunaLabel4.Text = Definitions.StrongPasswordMessage; // Mettre le message correspondant
+                        if (Language.Curent() == Languages.frFR)
+                        {
+                            gunaLabel4.Text = Definitions.StrongPasswordMessage; // Mettre le message correspondant
+                        }
+                        else if (Language.Curent() == Languages.enUS)
+                        {
+                            gunaLabel4.Text = Definitions.StrongPasswordMessageENUS; // Mettre le message correspondant
+                        }
+
                         gunaLabel4.ForeColor = Definitions.StrongPasswordColor; // Changer la couleur
                         gunaPictureBox2.Image = Properties.Resources.strong_password; // Changer l'image
                     }
