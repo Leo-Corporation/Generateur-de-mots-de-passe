@@ -32,5 +32,8 @@
     <Setting Name="DefaultPreset" Type="System.String" Scope="User">
       <Value Profile="(Default)">Simple</Value>
     </Setting>
+    <Setting Name="Language" Type="System.String" Scope="User">
+      <Value Profile="(Default)">fr-FR</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
