@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -49,11 +50,20 @@ namespace Générateur_de_mots_de_passe_3
             {
                 gunaWinSwitch2.Checked = false;
             }
+
+            if (Language.Curent() == Languages.frFR)
+            {
+                gunaComboBox1.SelectedIndex = 0; // fr-FR
+            }
+            else if (Language.Curent() == Languages.enUS)
+            {
+                gunaComboBox1.SelectedIndex = 1; // en-US
+            }
         }
 
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
         {
-            Close();
+            Close(); // Close
         }
 
         private void gunaWinSwitch1_CheckedChanged(object sender, EventArgs e)
@@ -130,6 +140,8 @@ namespace Générateur_de_mots_de_passe_3
                 Properties.Settings.Default.NotifyUpdate = false;
             }
 
+            string curentLanguage = Properties.Settings.Default.Language;
+
             if (gunaComboBox1.Text.Contains("fr-FR"))
             {
                 Properties.Settings.Default.Language = "fr-FR";
@@ -137,6 +149,21 @@ namespace Générateur_de_mots_de_passe_3
             else if (gunaComboBox1.Text.Contains("en-US"))
             {
                 Properties.Settings.Default.Language = "en-US";
+            }
+
+            if (Properties.Settings.Default.Language != curentLanguage)
+            {
+                if (Language.Curent() == Languages.frFR)
+                {
+                    MessageBox.Show("La langue du logiciel a changé, le logiciel va redémarrer.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (Language.Curent() == Languages.enUS)
+                {
+                    MessageBox.Show("The software's language has changed, to apply changes, the software will restart.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                Properties.Settings.Default.Save();
+                Process.Start(Application.ExecutablePath);
+                Application.Exit();
             }
 
             Properties.Settings.Default.Save();
