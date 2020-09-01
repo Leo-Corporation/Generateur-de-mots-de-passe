@@ -1,0 +1,26 @@
+name: .NET Framework CI
+on: 
+  push:
+  pull_request:
+    branches: 
+      - master
+
+jobs:
+  build:
+    
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v1
+        name: Checkout Code
+        
+      - name: Setup MSBuild Path
+        uses: warrenbuckley/Setup-MSBuild@v1
+       
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1.0.2
+     
+      - name: Restore NuGet Packages
+        run: nuget restore "Générateur de mot de passe 2\Générateur de mots de passe 3\Générateur de mots de passe 3.csproj"
+ 
+      - name: Build and Publish App
+        run: msbuild "Générateur de mot de passe 2\Générateur de mots de passe 3\Générateur de mots de passe 3.csproj" /p:Configuration=Release
