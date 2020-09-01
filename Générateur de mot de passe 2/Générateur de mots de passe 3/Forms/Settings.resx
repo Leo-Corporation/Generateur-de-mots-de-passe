@@ -117,13 +117,74 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="gunaDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="gunaElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>170, 17</value>
-  </metadata>
+  <data name="gunaLabel7.Text" xml:space="preserve">
+    <value>Activé</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gunaLabel10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.25pt, style=Bold</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gunaLinkLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gunaLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="gunaLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaLinkLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaAdvenceButton1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt, style=Bold</value>
+  </data>
+  <data name="gunaLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 93</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;gunaAdvenceButton5.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel10.Name" xml:space="preserve">
+    <value>gunaLabel10</value>
+  </data>
+  <data name="&gt;&gt;gunaAdvenceButton5.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaAdvenceButton, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaAdvenceButton5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="gunaLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel2.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;gunaWinSwitch2.Name" xml:space="preserve">
+    <value>gunaWinSwitch2</value>
+  </data>
+  <data name="gunaLabel9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaWinSwitch2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gunaWinSwitch1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 64</value>
+  </data>
+  <data name="gunaAdvenceButton5.Text" xml:space="preserve">
+    <value>Appliquer</value>
+  </data>
   <data name="gunaAdvenceButton1.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAcJJREFUOE+V
@@ -137,18 +198,66 @@
         6s5eMBPVtjBo7f+DiY3YZtZbOQs+3xcwqLQ+pE6R4AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="gunaAdvenceButton5.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAcJJREFUOE+V
-        lEsrRGEYx0e5ZNyGlAYbC3wM5TIWWE5kYSRN+QBqyn2nLLG3YCO2iGJSWJDLVj4BJZcopPH7n3nOMOOM
-        Gb/6Nc/zvM975rznvO/x5SKRSFRhk1lp5f/BxGqcwzM8wBUzjqc4iwFr/xsa+/ECh9Bv5RSqYcR6wlb2
-        hoYYrmO5lbJCTwVu4LiV0mFgEHWxAgxhpw39grEujVvvJvbbUBIKevBaQhkG8RlfsQc7MGy2Yy9q7Anr
-        UHequd8vjGQCIxZHMV9Gbc4IxhQ7kJxgqcVjmC9Rm6MXdaRYiW457iRAPID5knp2xIfoV9CCq1ZXvofi
-        HbU9hvHDIxe7Nk3z1rBZQSs6F+S3Fj9RXDudQHzjkQv11lhNF2xRkFoyv934k0VcSoYOmbkI2VwtuUyx
-        kmOsRC3Ji3nTC50oHdXkSxEk2jbaLgHU2c3k3sxkH7WHtTPSto2Kl6iNXYQ6/I+YjQecwULUI7vC9C8R
-        BffoleAC6nn24RQum4p1UjSmnmL8ffRcGNDH4RxdbnEb9UdyB+/QRUfO++PgQsM0vqk7B+qZtGl/Q2MD
-        6s5eMBPVtjBo7f+DiY3YZtZbOQs+3xcwqLQ+pE6R4AAAAABJRU5ErkJggg==
-</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>368, 397</value>
+  </data>
+  <data name="gunaLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt, style=Bold</value>
+  </data>
+  <data name="gunaLinkLabel3.Text" xml:space="preserve">
+    <value>Réinitialiser le logiciel (irréversible)</value>
+  </data>
+  <data name="&gt;&gt;gunaComboBox1.Name" xml:space="preserve">
+    <value>gunaComboBox1</value>
+  </data>
+  <data name="gunaLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;gunaWinSwitch1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaLinkLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="gunaLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 23</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gunaAdvenceButton1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="gunaLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="gunaLabel9.Text" xml:space="preserve">
+    <value>Préréglages</value>
+  </data>
+  <data name="gunaLinkLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 17</value>
+  </data>
+  <data name="gunaAdvenceButton5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 30</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gunaLinkLabel2.Text" xml:space="preserve">
+    <value>Réinitialiser les données (irréversible)</value>
+  </data>
+  <data name="gunaComboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="gunaAdvenceButton5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="gunaWinSwitch2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 22</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2081,7 +2190,542 @@
         APgfAAD//wAA
 </value>
   </data>
+  <data name="gunaLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt, style=Bold</value>
+  </data>
+  <data name="gunaLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaLinkLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaControlBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 3</value>
+  </data>
+  <data name="gunaLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 20</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel4.Name" xml:space="preserve">
+    <value>gunaLabel4</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel9.Name" xml:space="preserve">
+    <value>gunaLabel9</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;gunaComboBox1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaComboBox, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel8.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="gunaLinkLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLinkLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaLabel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel3.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaLinkLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaLinkLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 17</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel9.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaWinSwitch1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gunaLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gunaLabel10.Text" xml:space="preserve">
+    <value>Langue</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel4.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="gunaWinSwitch2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 116</value>
+  </data>
+  <data name="gunaLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel5.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaLabel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;gunaComboBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaLinkLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel2.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLinkLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaControlBox1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaControlBox, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaAdvenceButton1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaAdvenceButton, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaComboBox1.Items1" xml:space="preserve">
+    <value>English (en-US)</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel1.Name" xml:space="preserve">
+    <value>gunaLabel1</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="gunaLabel5.Text" xml:space="preserve">
+    <value>Mises à jour</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel2.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel5.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;gunaWinSwitch1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaWinSwitch1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaWinSwitch, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel3.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="gunaLinkLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 17</value>
+  </data>
+  <data name="gunaLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="gunaLinkLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 256</value>
+  </data>
+  <data name="gunaLabel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt, style=Bold</value>
+  </data>
+  <data name="gunaLabel4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaLabel8.Text" xml:space="preserve">
+    <value>Données</value>
+  </data>
+  <data name="gunaLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel10.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaControlBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 29</value>
+  </data>
+  <data name="gunaLinkLabel4.Text" xml:space="preserve">
+    <value>Définir un préréglage par défaut</value>
+  </data>
+  <data name="gunaLinkLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt, style=Bold</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="gunaLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="gunaLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaLinkLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;gunaDragControl1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaDragControl, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaLabel6.Text" xml:space="preserve">
+    <value>Notifier des mises à jour :</value>
+  </data>
+  <data name="gunaLabel3.Text" xml:space="preserve">
+    <value>Thème sombre :</value>
+  </data>
+  <data name="gunaAdvenceButton5.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAcJJREFUOE+V
+        lEsrRGEYx0e5ZNyGlAYbC3wM5TIWWE5kYSRN+QBqyn2nLLG3YCO2iGJSWJDLVj4BJZcopPH7n3nOMOOM
+        Gb/6Nc/zvM975rznvO/x5SKRSFRhk1lp5f/BxGqcwzM8wBUzjqc4iwFr/xsa+/ECh9Bv5RSqYcR6wlb2
+        hoYYrmO5lbJCTwVu4LiV0mFgEHWxAgxhpw39grEujVvvJvbbUBIKevBaQhkG8RlfsQc7MGy2Yy9q7Anr
+        UHequd8vjGQCIxZHMV9Gbc4IxhQ7kJxgqcVjmC9Rm6MXdaRYiW457iRAPID5knp2xIfoV9CCq1ZXvofi
+        HbU9hvHDIxe7Nk3z1rBZQSs6F+S3Fj9RXDudQHzjkQv11lhNF2xRkFoyv934k0VcSoYOmbkI2VwtuUyx
+        kmOsRC3Ji3nTC50oHdXkSxEk2jbaLgHU2c3k3sxkH7WHtTPSto2Kl6iNXYQ6/I+YjQecwULUI7vC9C8R
+        BffoleAC6nn24RQum4p1UjSmnmL8ffRcGNDH4RxdbnEb9UdyB+/QRUfO++PgQsM0vqk7B+qZtGl/Q2MD
+        6s5eMBPVtjBo7f+DiY3YZtZbOQs+3xcwqLQ+pE6R4AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="gunaLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 23</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel5.Name" xml:space="preserve">
+    <value>gunaLabel5</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 302</value>
+  </data>
+  <data name="gunaAdvenceButton1.Text" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="&gt;&gt;gunaControlBox1.Name" xml:space="preserve">
+    <value>gunaControlBox1</value>
+  </data>
+  <data name="gunaLinkLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 326</value>
+  </data>
+  <data name="gunaLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gunaLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel7.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 23</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gunaWinSwitch1.Name" xml:space="preserve">
+    <value>gunaWinSwitch1</value>
+  </data>
+  <data name="gunaLabel8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaLabel2.Text" xml:space="preserve">
+    <value>Thème</value>
+  </data>
+  <data name="&gt;&gt;gunaElipse1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaElipse, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaAdvenceButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 30</value>
+  </data>
+  <data name="gunaLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 64</value>
+  </data>
+  <data name="gunaLinkLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 275</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel6.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="gunaLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 64</value>
+  </data>
+  <data name="gunaLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 23</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel7.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;gunaWinSwitch2.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaWinSwitch, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 37</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel2.Name" xml:space="preserve">
+    <value>gunaLinkLabel2</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel1.Name" xml:space="preserve">
+    <value>gunaLinkLabel1</value>
+  </data>
+  <data name="gunaComboBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt, style=Bold</value>
+  </data>
+  <data name="gunaLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="gunaLabel6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gunaAdvenceButton5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaAdvenceButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;gunaAdvenceButton1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;gunaAdvenceButton1.Name" xml:space="preserve">
+    <value>gunaAdvenceButton1</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel10.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gunaComboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 28</value>
+  </data>
+  <data name="&gt;&gt;gunaComboBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gunaWinSwitch1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 22</value>
+  </data>
+  <data name="&gt;&gt;gunaAdvenceButton1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel3.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLinkLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 213</value>
+  </data>
+  <data name="gunaAdvenceButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 359</value>
+  </data>
+  <data name="gunaLinkLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt, style=Bold</value>
+  </data>
+  <data name="gunaAdvenceButton5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 359</value>
+  </data>
+  <data name="&gt;&gt;gunaAdvenceButton5.Name" xml:space="preserve">
+    <value>gunaAdvenceButton5</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gunaControlBox1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="gunaLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 116</value>
+  </data>
+  <data name="&gt;&gt;gunaDragControl2.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaDragControl, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaLinkLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 237</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel2.Name" xml:space="preserve">
+    <value>gunaLabel2</value>
+  </data>
+  <data name="&gt;&gt;gunaDragControl1.Name" xml:space="preserve">
+    <value>gunaDragControl1</value>
+  </data>
+  <data name="gunaLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 116</value>
+  </data>
+  <data name="&gt;&gt;gunaWinSwitch2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="gunaLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.25pt, style=Bold</value>
+  </data>
+  <data name="gunaLabel10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gunaLabel4.Text" xml:space="preserve">
+    <value>Désactivé</value>
+  </data>
+  <data name="gunaLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel8.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;gunaControlBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gunaLinkLabel1.Text" xml:space="preserve">
+    <value>Voir les données</value>
+  </data>
+  <data name="gunaLinkLabel4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt, style=Bold</value>
+  </data>
+  <data name="gunaComboBox1.Items" xml:space="preserve">
+    <value>Français (fr-FR)</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 149</value>
+  </data>
+  <data name="&gt;&gt;gunaWinSwitch2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaControlBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel7.Name" xml:space="preserve">
+    <value>gunaLabel7</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel4.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLinkLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaElipse1.Name" xml:space="preserve">
+    <value>gunaElipse1</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gunaAdvenceButton5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="gunaLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 6</value>
+  </data>
+  <data name="gunaLabel7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel3.Name" xml:space="preserve">
+    <value>gunaLinkLabel3</value>
+  </data>
+  <data name="gunaLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12.25pt, style=Bold</value>
+  </data>
+  <data name="gunaLinkLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="gunaLinkLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 17</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaComboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 175</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel6.Name" xml:space="preserve">
+    <value>gunaLabel6</value>
+  </data>
+  <data name="&gt;&gt;gunaDragControl2.Name" xml:space="preserve">
+    <value>gunaDragControl2</value>
+  </data>
+  <data name="&gt;&gt;gunaLinkLabel4.Name" xml:space="preserve">
+    <value>gunaLinkLabel4</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel8.Name" xml:space="preserve">
+    <value>gunaLabel8</value>
+  </data>
+  <data name="gunaLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 23</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel6.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel3.Name" xml:space="preserve">
+    <value>gunaLabel3</value>
+  </data>
+  <data name="&gt;&gt;gunaLabel4.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.8.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>368, 34</value>
+  </data>
+  <data name="gunaLabel1.Text" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="gunaControlBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <metadata name="gunaDragControl2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>287, 17</value>
+  </metadata>
+  <metadata name="gunaDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="gunaElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>170, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en-US</value>
   </metadata>
 </root>

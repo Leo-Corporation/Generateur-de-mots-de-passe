@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Générateur_de_mots_de_passe_3.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +22,14 @@ namespace Générateur_de_mots_de_passe_3
         private void UpdateAv_Load(object sender, EventArgs e)
         {
             Guna.UI.Lib.GraphicsHelper.ShadowForm(this);
-            gunaLabel3.Text += CheckVersion(); // Le label += dernière version (ex : 3.0.0.0)
+            if (Language.Curent() == Languages.frFR)
+            {
+                gunaLabel3.Text = $"Version : {CheckVersion()}"; // Le label += dernière version (ex : 3.0.0.0)
+            }
+            else if (Language.Curent() == Languages.enUS)
+            {
+                gunaLabel3.Text = $"Version: {CheckVersion()}"; // Le label += dernière version (ex : 3.0.0.0)
+            }
             if (Properties.Settings.Default.DarkTheme)
             {
                 ChangeTheme(1); // Mettre le thème sombre

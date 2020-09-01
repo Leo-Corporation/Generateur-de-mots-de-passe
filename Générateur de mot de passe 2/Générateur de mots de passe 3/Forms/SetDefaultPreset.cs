@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Générateur_de_mots_de_passe_3.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -62,13 +63,27 @@ namespace Générateur_de_mots_de_passe_3
                     }
                     else
                     {
-                        MessageBox.Show("Pas de préréglage personnalisé trouvé, veuillez en créer un."); // Lors que le preset perso n'est pas set
+                        if (Language.Curent() == Languages.frFR)
+                        {
+                            MessageBox.Show("Pas de préréglage personnalisé trouvé, veuillez en créer un."); // Lors que le preset perso n'est pas set
+                        }
+                        else if (Language.Curent() == Languages.enUS)
+                        {
+                            MessageBox.Show("No custom preset found, please create one."); // Lors que le preset perso n'est pas set
+                        }
                         new EditCustomPreset().Show();
                     }
                 }
                 else // Si aucun preset n'est sélectionné
                 {
-                    MessageBox.Show("Veuillez sélectionner un préréglage"); // Si aucun préréglage n'est sélectionné
+                    if (Language.Curent() == Languages.frFR)
+                    {
+                        MessageBox.Show("Veuillez sélectionner un préréglage"); // Si aucun préréglage n'est sélectionné
+                    }
+                    else if (Language.Curent() == Languages.enUS)
+                    {
+                        MessageBox.Show("Please select a preset"); // Si aucun préréglage n'est sélectionné
+                    }
                 }
             }
         }

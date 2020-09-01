@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Générateur_de_mots_de_passe_3.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,7 +50,7 @@ namespace Générateur_de_mots_de_passe_3
         {
             Invoke(new MethodInvoker(delegate ()
             {
-                if (new About().UpdateAvailable("3.1.0.2004"))
+                if (new About().UpdateAvailable(Definitions.Version))
                 {
                     new UpdateAv().Show();
                     Close();
@@ -85,7 +86,14 @@ namespace Générateur_de_mots_de_passe_3
             }
             else
             {
-                MessageBox.Show("Des mises à jour pour un des services de Xalyus Store sont disponibles" + Environment.NewLine + "L'application va redémarrer en tant qu'administrateur.", "Mise à jour d'un service", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (Language.Curent() == Languages.frFR)
+                {
+                    MessageBox.Show("Des mises à jour pour un des services de Xalyus Store sont disponibles" + Environment.NewLine + "L'application va redémarrer en tant qu'administrateur.", "Mise à jour d'un service", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (Language.Curent() == Languages.enUS)
+                {
+                    MessageBox.Show("Updates for one of Xalyus Store services are availables" + Environment.NewLine + "The app will restart in admin mode.", "Service update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
                 Application.Exit();
                 ExecuteAsAdmin(Application.StartupPath + "/Générateur de mots de passe 3.exe");
             }

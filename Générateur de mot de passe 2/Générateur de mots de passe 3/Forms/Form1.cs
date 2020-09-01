@@ -21,6 +21,7 @@ namespace Générateur_de_mots_de_passe_3
         int Number = 0;
         public Form1()
         {
+            Language.Change(this);
             InitializeComponent();
         }
 
