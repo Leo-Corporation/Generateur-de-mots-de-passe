@@ -324,7 +324,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Générateur de mots de passe 3"
         "ProductCode" = "8:{22FB7C69-4604-4E78-816F-7B0760BADD81}"
-        "PackageCode" = "8:{E7ECE651-04F2-4441-A776-C729417F3CBD}"
+        "PackageCode" = "8:{A7947424-723D-417C-B980-83094BC856D6}"
         "UpgradeCode" = "8:{AEA91FBC-2575-44C1-AD3D-E4568ABD3641}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -871,6 +871,34 @@
         }
         "ProjectOutput"
         {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_04A8037A6B5C47EDA6535D7096F0A3EC"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_0138529737AB4D7BA6C3C2081F3ACA37"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:LocalizedResourceDlls"
+            "OutputProjectGuid" = "8:{014BAB7C-4C33-427E-8A73-242A45EBA9C5}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3632E0646A0B4FF0951ED2479672B307"
             {
             "SourcePath" = "8:..\\Générateur de mots de passe 3\\obj\\Release\\Générateur de mots de passe 3.exe"
