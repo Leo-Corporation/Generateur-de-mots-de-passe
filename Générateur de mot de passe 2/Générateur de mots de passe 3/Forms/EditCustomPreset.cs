@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Générateur_de_mots_de_passe_3.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -65,21 +66,50 @@ namespace Générateur_de_mots_de_passe_3
                         }
                         else // En cas d'erreur
                         {
-                            MessageBox.Show("Le premier nombre doit être inférieur au second", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            if (Language.Curent() == Languages.frFR)
+                            {
+                                MessageBox.Show("Le premier nombre doit être inférieur au second", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            else if (Language.Curent() == Languages.enUS)
+                            {
+                                MessageBox.Show("The first number must be lower than the second", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
                         }
                     }
                     else // En cas d'erreur
                     {
-                        MessageBox.Show("Le nombre sélectionné doit être plus grand que 0.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        if (Language.Curent() == Languages.frFR)
+                        {
+                            MessageBox.Show("Le nombre sélectionné doit être plus grand que 0.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else if (Language.Curent() == Languages.enUS)
+                        {
+                            MessageBox.Show("The selected number must higher than 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        } 
                     }
                 }
                 catch (FormatException ex) // En cas d'erreur
                 {
-                    MessageBox.Show("Veuillez spécifier un nombre valide." + Environment.NewLine + "Détails :" + Environment.NewLine + ex, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (Language.Curent() == Languages.frFR)
+                    {
+                        MessageBox.Show("Veuillez spécifier un nombre valide." + Environment.NewLine + "Détails :" + Environment.NewLine + ex, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (Language.Curent() == Languages.enUS)
+                    {
+                        MessageBox.Show("Please specify a valid number." + Environment.NewLine + "Details:" + Environment.NewLine + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                   
                 }
                 catch (Exception ex) // En cas d'erreur
                 {
-                    MessageBox.Show("Erreur :" + Environment.NewLine + ex, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (Language.Curent() == Languages.frFR)
+                    {
+                        MessageBox.Show("Erreur :" + Environment.NewLine + ex, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (Language.Curent() == Languages.enUS)
+                    {
+                        MessageBox.Show("Error:" + Environment.NewLine + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
             else // Si la génération n'est pas aléatoire
@@ -101,16 +131,37 @@ namespace Générateur_de_mots_de_passe_3
                     }
                     else // En cas d'erreur
                     {
-                        MessageBox.Show("La longueur du mot de passe doit être plus grande que 0.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        if (Language.Curent() == Languages.frFR)
+                        {
+                            MessageBox.Show("La longueur du mot de passe doit être plus grande que 0.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else if (Language.Curent() == Languages.enUS)
+                        {
+                            MessageBox.Show("The lenght of the password must higher than 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
                 catch (FormatException ex) // En cas d'erreur
                 {
-                    MessageBox.Show("Veuillez spécifier un nombre valide." + Environment.NewLine + "Détails :" + Environment.NewLine + ex, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (Language.Curent() == Languages.frFR)
+                    {
+                        MessageBox.Show("Veuillez spécifier un nombre valide." + Environment.NewLine + "Détails :" + Environment.NewLine + ex, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (Language.Curent() == Languages.enUS)
+                    {
+                        MessageBox.Show("Please specify a valid number." + Environment.NewLine + "Details:" + Environment.NewLine + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }   
                 }
                 catch (Exception ex) // En cas d'erreur
                 {
-                    MessageBox.Show("Erreur :" + Environment.NewLine + ex, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (Language.Curent() == Languages.frFR)
+                    {
+                        MessageBox.Show("Erreur :" + Environment.NewLine + ex, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (Language.Curent() == Languages.enUS)
+                    {
+                        MessageBox.Show("Error:" + Environment.NewLine + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }

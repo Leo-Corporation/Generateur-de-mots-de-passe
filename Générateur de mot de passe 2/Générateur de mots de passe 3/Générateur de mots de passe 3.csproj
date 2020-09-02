@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Definitions.cs" />
+    <Compile Include="Classes\Language.cs" />
     <Compile Include="Forms\About.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,20 +125,80 @@
     <Compile Include="UserControls\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\About.en-US.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\About.fr-FR.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\About.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditCustomPreset.en-US.resx">
+      <DependentUpon>EditCustomPreset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditCustomPreset.fr-FR.resx">
+      <DependentUpon>EditCustomPreset.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditCustomPreset.resx">
       <DependentUpon>EditCustomPreset.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.en-US.resx">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorDialog.fr-FR.resx">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ErrorDialog.resx">
       <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.en-US.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.fr-FR.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Presets.en-US.resx">
+      <DependentUpon>Presets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Presets.fr-FR.resx">
+      <DependentUpon>Presets.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Presets.resx">
       <DependentUpon>Presets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SetDefaultPreset.en-US.resx">
+      <DependentUpon>SetDefaultPreset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SetDefaultPreset.fr-FR.resx">
+      <DependentUpon>SetDefaultPreset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.en-US.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.fr-FR.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateAv.en-US.resx">
+      <DependentUpon>UpdateAv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateAv.fr-FR.resx">
+      <DependentUpon>UpdateAv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateUn.en-US.resx">
+      <DependentUpon>UpdateUn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateUn.fr-FR.resx">
+      <DependentUpon>UpdateUn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateXalyusUpdater.en-US.resx">
+      <DependentUpon>UpdateXalyusUpdater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateXalyusUpdater.fr-FR.resx">
+      <DependentUpon>UpdateXalyusUpdater.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -163,6 +224,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UpdateXalyusUpdater.resx">
       <DependentUpon>UpdateXalyusUpdater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Menu.en-US.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Menu.fr-FR.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
