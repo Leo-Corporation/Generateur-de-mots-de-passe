@@ -2,33 +2,37 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
-using System.Net;
-using System.Threading;
-using System.Diagnostics;
 
 namespace Xalyus_Updater
 {
-    public partial class Form1 : Form
+    public partial class DownloadEN : Form
     {
-        WebClient client;
-        public Form1()
+        WebClient client = new WebClient();
+        public DownloadEN()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void DownloadEN_Load(object sender, EventArgs e)
         {
-            string path = Application.StartupPath + "/Générateur de mots de passe 3.exe";
+            string path = Application.StartupPath + "/en-US/Générateur de mots de passe 3.resources.dll";
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(Application.StartupPath + "/en-US");
+            }
             File.Delete(path);
             client = new WebClient();
             WebClient maj = new WebClient();
-            string link = maj.DownloadString("https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Liens/Update%20System/G%C3%A9n%C3%A9rateur%20de%20mots%20de%20passe%203/Download.txt");
+            string link = maj.DownloadString("https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Liens/Update%20System/G%C3%A9n%C3%A9rateur%20de%20mots%20de%20passe%203/downloadFR.txt");
             client.DownloadProgressChanged += Client_DownloadProgressChanged;
             client.DownloadFileCompleted += Client_DownloadFileCompleted;
             if (!string.IsNullOrEmpty(link))
@@ -46,6 +50,7 @@ namespace Xalyus_Updater
         {
             Invoke(new MethodInvoker(delegate ()
             {
+                Process.Start(Application.StartupPath + "/Générateur de mots de passe 3.exe");
                 Close();
             }));
         }
