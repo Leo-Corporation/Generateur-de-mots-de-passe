@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using Générateur_de_mots_de_passe_3.Classes;
+using System.IO;
+using Générateur_de_mots_de_passe_3.Forms;
 
 namespace Générateur_de_mots_de_passe_3
 {
@@ -91,20 +93,31 @@ namespace Générateur_de_mots_de_passe_3
         }
         public bool IsUpdaterNeedUpdate()
         {
-            bool result;
-            WebClient webClient = new WebClient();
-            var fileVersionInfo =  FileVersionInfo.GetVersionInfo(Application.StartupPath + "/Xalyus Updater.exe");
-            string version = fileVersionInfo.FileVersion;
-            string lastVersion = webClient.DownloadString("https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Liens/Update%20System/G%C3%A9n%C3%A9rateur%20de%20mots%20de%20passe%203/Xalyus%20Updater/Version.txt");
-            if (version != lastVersion)
+            bool result = false;
+            try
             {
-                result = true;
+
+                WebClient webClient = new WebClient();
+                var fileVersionInfo = FileVersionInfo.GetVersionInfo(Application.StartupPath + "/Xalyus Updater.exe");
+                string version = fileVersionInfo.FileVersion;
+                string lastVersion = webClient.DownloadString("https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Liens/Update%20System/G%C3%A9n%C3%A9rateur%20de%20mots%20de%20passe%203/Xalyus%20Updater/Version.txt");
+                if (version != lastVersion)
+                {
+                    result = true;
+                }
+                else
+                {
+                    result = false;
+                }
+                return result;
+
             }
-            else
+            catch (Exception ex)
             {
-                result = false;
+                new ErrorDialog(ex.Message, ex, Properties.Resources.hugo_fatal_error).Show();
+                return false;
             }
-            return result;
+
         }
 
         private void LoadVersion() // Charger la version
