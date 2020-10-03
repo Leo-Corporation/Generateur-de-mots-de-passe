@@ -89,11 +89,11 @@ namespace Générateur_de_mots_de_passe_3
                 {
                     if (Language.Curent() == Languages.frFR)
                     {
-                        MessageBox.Show("Veuillez entrer un nombre");
+                        MessageBox.Show("Veuillez entrer un nombre.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else if (Language.Curent() == Languages.enUS)
                     {
-                        MessageBox.Show("Please enter a number");
+                        MessageBox.Show("Please enter a number.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
@@ -108,11 +108,11 @@ namespace Générateur_de_mots_de_passe_3
                 {
                     if (Language.Curent() == Languages.frFR)
                     {
-                        MessageBox.Show("Veuillez entrer un nombre");
+                        MessageBox.Show("Veuillez entrer un nombre.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else if (Language.Curent() == Languages.enUS)
                     {
-                        MessageBox.Show("Please enter a number");
+                        MessageBox.Show("Please enter a number.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
