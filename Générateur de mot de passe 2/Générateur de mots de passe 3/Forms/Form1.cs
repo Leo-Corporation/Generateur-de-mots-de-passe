@@ -82,8 +82,15 @@ namespace Générateur_de_mots_de_passe_3
             {
                 if (!string.IsNullOrWhiteSpace(gunaLineTextBox1.Text))
                 {
-                    int textBoxNumber = int.Parse(gunaLineTextBox1.Text); // Conversion de 'string' en 'int'
-                    GeneratePassword(textBoxNumber, 60, CharList);
+                    try
+                    {
+                        int textBoxNumber = int.Parse(gunaLineTextBox1.Text); // Conversion de 'string' en 'int'
+                        GeneratePassword(textBoxNumber, 60, CharList);
+                    }
+                    catch (FormatException ex)
+                    {
+                        new ErrorDialog(ex.Message, ex, Properties.Resources.hugo_fatal_error).Show();
+                    }
                 }
                 else
                 {
