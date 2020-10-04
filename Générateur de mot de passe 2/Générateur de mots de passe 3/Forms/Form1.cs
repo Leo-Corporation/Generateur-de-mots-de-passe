@@ -37,6 +37,13 @@ namespace Générateur_de_mots_de_passe_3
             {
                 ChangeTheme(0);
             }
+            GeneratePasswordOnStart();
+        }
+
+        private void GeneratePasswordOnStart()
+        {
+            int lenght = new Random().Next(13, 25); // Generate a random number
+            GeneratePassword(lenght, 60, CharList); // Generate Password
         }
 
         public void ChangeTheme(int themeID)
