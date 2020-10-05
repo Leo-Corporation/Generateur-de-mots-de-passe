@@ -58,22 +58,16 @@ namespace Générateur_de_mots_de_passe_3
             }
         }
 
-        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        private async void gunaAdvenceButton1_Click(object sender, EventArgs e)
         {
-            if (IsUpdaterNeedUpdate()) // SI Xalyus Updater a besoin d'une mise à jour
+            if (await IsUpdaterNeedUpdate()) // SI Xalyus Updater a besoin d'une mise à jour
             {
                 new UpdateXalyusUpdater(false).Show();
             }
             else
             {
-                if (UpdateAvailable(Definitions.Version)) // Si le logiciel a besoin d'une mise à jour
-                {
-                    new UpdateAv().Show();
-                }
-                else
-                {
-                    new UpdateUn().Show();
-                }
+                string lastVersion = await LeoCorpLibrary.Update.GetLastVersionAsync("https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Liens/Update%20System/G%C3%A9n%C3%A9rateur%20de%20mots%20de%20passe%203/Version.txt");
+                LeoCorpLibrary.Update.Check(Definitions.Version, lastVersion, new UpdateAv(), new UpdateUn());
             }
         }
         public bool UpdateAvailable(string version)
@@ -91,7 +85,7 @@ namespace Générateur_de_mots_de_passe_3
             }
             return res;
         }
-        public bool IsUpdaterNeedUpdate()
+        public async Task<bool> IsUpdaterNeedUpdate()
         {
             bool result = false;
             try
@@ -100,7 +94,7 @@ namespace Générateur_de_mots_de_passe_3
                 WebClient webClient = new WebClient();
                 var fileVersionInfo = FileVersionInfo.GetVersionInfo(Application.StartupPath + "/Xalyus Updater.exe");
                 string version = fileVersionInfo.FileVersion;
-                string lastVersion = webClient.DownloadString("https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Liens/Update%20System/G%C3%A9n%C3%A9rateur%20de%20mots%20de%20passe%203/Xalyus%20Updater/Version.txt");
+                string lastVersion = await LeoCorpLibrary.Update.GetLastVersionAsync("https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Liens/Update%20System/G%C3%A9n%C3%A9rateur%20de%20mots%20de%20passe%203/Xalyus%20Updater/Version.txt");
                 if (version != lastVersion)
                 {
                     result = true;
