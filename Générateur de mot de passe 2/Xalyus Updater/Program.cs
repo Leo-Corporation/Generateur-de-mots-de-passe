@@ -17,6 +17,7 @@ namespace Xalyus_Updater
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            Application.Run(new DownloadLCL());
             Application.Run(new DownloadFR());
             Application.Run(new DownloadEN());
         }

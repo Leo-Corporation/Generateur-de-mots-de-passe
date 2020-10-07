@@ -1,4 +1,5 @@
 ﻿using Générateur_de_mots_de_passe_3.Classes;
+using Générateur_de_mots_de_passe_3.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -71,8 +72,15 @@ namespace Générateur_de_mots_de_passe_3
 
         private void gunaAdvenceButton5_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(Application.StartupPath + "/Xalyus Updater.exe");
-            Application.Exit();
+            try
+            {
+                System.Diagnostics.Process.Start(Application.StartupPath + "/Xalyus Updater.exe");
+                Application.Exit();
+            }
+            catch (Exception ex)
+            {
+                new ErrorDialog(ex.Message, ex, Properties.Resources.hugo_fatal_error).Show();
+            }
         }
     }
 }

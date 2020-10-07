@@ -37,6 +37,13 @@ namespace Générateur_de_mots_de_passe_3
             {
                 ChangeTheme(0);
             }
+            GeneratePasswordOnStart();
+        }
+
+        private void GeneratePasswordOnStart()
+        {
+            int lenght = new Random().Next(13, 25); // Generate a random number
+            GeneratePassword(lenght, 60, CharList); // Generate Password
         }
 
         public void ChangeTheme(int themeID)
@@ -82,18 +89,25 @@ namespace Générateur_de_mots_de_passe_3
             {
                 if (!string.IsNullOrWhiteSpace(gunaLineTextBox1.Text))
                 {
-                    int textBoxNumber = int.Parse(gunaLineTextBox1.Text); // Conversion de 'string' en 'int'
-                    GeneratePassword(textBoxNumber, 60, CharList);
+                    try
+                    {
+                        int textBoxNumber = int.Parse(gunaLineTextBox1.Text); // Conversion de 'string' en 'int'
+                        GeneratePassword(textBoxNumber, 60, CharList);
+                    }
+                    catch (FormatException ex)
+                    {
+                        new ErrorDialog(ex.Message, ex, Properties.Resources.hugo_fatal_error).Show();
+                    }
                 }
                 else
                 {
                     if (Language.Curent() == Languages.frFR)
                     {
-                        MessageBox.Show("Veuillez entrer un nombre");
+                        MessageBox.Show("Veuillez entrer un nombre.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else if (Language.Curent() == Languages.enUS)
                     {
-                        MessageBox.Show("Please enter a number");
+                        MessageBox.Show("Please enter a number.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
@@ -108,11 +122,11 @@ namespace Générateur_de_mots_de_passe_3
                 {
                     if (Language.Curent() == Languages.frFR)
                     {
-                        MessageBox.Show("Veuillez entrer un nombre");
+                        MessageBox.Show("Veuillez entrer un nombre.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else if (Language.Curent() == Languages.enUS)
                     {
-                        MessageBox.Show("Please enter a number");
+                        MessageBox.Show("Please enter a number.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }

@@ -204,11 +204,11 @@ namespace Générateur_de_mots_de_passe_3
             Properties.Settings.Default.DefaultPreset = "Simple";
             if (Language.Curent() == Languages.frFR)
             {
-                MessageBox.Show("Données réinitialisées");
+                MessageBox.Show("Données réinitialisées", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (Language.Curent() == Languages.enUS)
             {
-                MessageBox.Show("Data reinitialized");
+                MessageBox.Show("Data reinitialized", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -221,11 +221,11 @@ namespace Générateur_de_mots_de_passe_3
             gunaComboBox1.SelectedIndex = 0;
             if (Language.Curent() == Languages.frFR)
             {
-                MessageBox.Show("Le logiciel a été réinitialisé");
+                MessageBox.Show("Le logiciel a été réinitialisé", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (Language.Curent() == Languages.enUS)
             {
-                MessageBox.Show("The spftware has been reinitialized");
+                MessageBox.Show("The spftware has been reinitialized", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

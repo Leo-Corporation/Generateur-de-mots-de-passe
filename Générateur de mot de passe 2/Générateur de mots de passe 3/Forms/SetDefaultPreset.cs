@@ -65,11 +65,11 @@ namespace Générateur_de_mots_de_passe_3
                     {
                         if (Language.Curent() == Languages.frFR)
                         {
-                            MessageBox.Show("Pas de préréglage personnalisé trouvé, veuillez en créer un."); // Lors que le preset perso n'est pas set
+                            MessageBox.Show("Pas de préréglage personnalisé trouvé, veuillez en créer un.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information); // Lors que le preset perso n'est pas set
                         }
                         else if (Language.Curent() == Languages.enUS)
                         {
-                            MessageBox.Show("No custom preset found, please create one."); // Lors que le preset perso n'est pas set
+                            MessageBox.Show("No custom preset found, please create one.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information); // Lors que le preset perso n'est pas set
                         }
                         new EditCustomPreset().Show();
                     }

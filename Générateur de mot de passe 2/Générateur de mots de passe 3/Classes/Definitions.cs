@@ -9,7 +9,7 @@ namespace Générateur_de_mots_de_passe_3.Classes
 {
     public static class Definitions
     {
-        public static readonly string Version = "3.6.0.2009"; // Version du logiciel
+        public static readonly string Version = "3.7.0.2010"; // Version du logiciel
         public static readonly Color WeakPasswordColor = Color.FromArgb(255, 50, 0); // Couleur si le mot de passe est faible
         public static readonly Color GoodPasswordColor = Color.FromArgb(140, 223, 23); // Couleur si le mot de passe est bon
         public static readonly Color StrongPasswordColor = Color.FromArgb(29, 225, 55); // Couleur si le mot de passe est faible
