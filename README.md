@@ -5,7 +5,7 @@ Il existe deux branches :
 * master ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Leo-Corporation/Generateur-de-mots-de-passe)
 * Version_Next ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Leo-Corporation/Generateur-de-mots-de-passe?include_prereleases)
 
-master est la branche de base, tandis que la branche Version_Next sert à héberger les versions instables, qui sont destinées à remplacer la version stable.
+``master`` est la branche de base, tandis que la branche ``Version_Next`` sert à héberger les versions instables, qui sont destinées à remplacer la version stable.
 
 ## Contribuer
 ### Règles
@@ -16,5 +16,10 @@ Cliquez [ici](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/tre
 Cliquez [ici](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/wiki) pour accèder à la documentation.
 
 Vous recherchez peut-être un moyen d'employer le système de génération de mots de passe ? [LeoCorpLibrary](https://github.com/Leo-Corporation/LeoCorpLibrary) est la solution !
+
+## Bugs
+* [Bugs connus](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
+* [Reporter un bug](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/issues/new/choose)
+
 ## License
 Projet sous [license MPL-2.0](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/blob/master/LICENSE.md).
