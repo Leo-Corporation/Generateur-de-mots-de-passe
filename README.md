@@ -1,5 +1,9 @@
 # Password Generator ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Leo-Corporation/Generateur-de-mots-de-passe) ![GitHub issues](https://img.shields.io/github/issues-raw/Leo-Corporation/Generateur-de-mots-de-passe?label=issues)
 Password Generator allows you to generate complex passwords within a click!
+
+## The future of Password Generator
+Password Generator will evolve next year into a new project: [Passliss](https://github.com/Leo-Corporation/Passliss). When Passliss will be release, the support for Password Generator is going to stop and this repository will no longer be maintained anymore.
+
 ## Branches
 There is two branches:
 * master ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Leo-Corporation/Generateur-de-mots-de-passe)
