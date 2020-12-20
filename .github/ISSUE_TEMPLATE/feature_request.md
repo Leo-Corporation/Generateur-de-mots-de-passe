@@ -1,18 +1,18 @@
 ---
-name: Suggérer une fonctionnalité
-about: Suggérer une idée pour le projet.
-title: "[Suggestion] "
-labels: suggestion
+name: Suggest a feature
+about: Suggest an idea for the project
+title: "[Enhancement] "
+labels: suggestion enhancement
 assignees: ''
 
 ---
-<!---Vous pouvez supprimer les sections non-nécessaires--->
+<!---You can remove all the sections that aren't needed--->
 
-<!---Une description claire et précise de problème/suggestion Ex: Je suis frustré lorsque [...] ou J'aimerai voir [...]--->
-**Suggestion :**
+<!---A clear description of your idea, ex: I'd like to see...--->
+**Enhancement:**
 
-<!---Description claire de la solution.--->
-**Décrire la solution que vous voulez :**
+<!---A clear description of the solution.--->
+**Describe the solution:**
 
-<!---Ajoutez des informations supplémentaires ici.--->
-**Autres informations :**
+<!---Add misc informations here.--->
+**Other informations :**
