@@ -6,10 +6,10 @@ Password Generator will evolve next year into a new project: [Passliss](https://
 
 ## Branches
 There is two branches:
-* master ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Leo-Corporation/Generateur-de-mots-de-passe)
+* main ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Leo-Corporation/Generateur-de-mots-de-passe)
 * Version_Next ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Leo-Corporation/Generateur-de-mots-de-passe?include_prereleases)
 
-``master`` is the default branch. ``Version_Next`` is where the next versions are "hosted". In this branch, the code can contain bugs and other issues.
+``main`` is the default branch. ``Version_Next`` is where the next versions are "hosted". In this branch, the code can contain bugs and other issues.
 
 ## Contribute
 [Contribute to this project](https://github.com/Leo-Corporation/Generateur-de-mots-de-passe/blob/master/CONTRIBUTING.md).
