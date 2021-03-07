@@ -393,6 +393,16 @@ namespace Générateur_de_mots_de_passe_3.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Léo_Corporation {
+            get {
+                object obj = ResourceManager.GetObject("Léo Corporation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lighthub {
             get {
                 object obj = ResourceManager.GetObject("lighthub", resourceCulture);
