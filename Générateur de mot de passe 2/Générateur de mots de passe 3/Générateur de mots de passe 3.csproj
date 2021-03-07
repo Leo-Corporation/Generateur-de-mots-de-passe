@@ -290,6 +290,7 @@
   <ItemGroup>
     <Content Include="Lib\Guna.UI.dll" />
     <Content Include="PWR Generator.ico" />
+    <None Include="Resources\Léo Corporation.png" />
     <None Include="Resources\weak password.png" />
     <None Include="Resources\strong password.png" />
     <None Include="Resources\info.png" />
