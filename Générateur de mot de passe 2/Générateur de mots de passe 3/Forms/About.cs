@@ -119,5 +119,10 @@ namespace Générateur_de_mots_de_passe_3
             gunaLabel3.Text = $"Version {Definitions.Version}"; // Mettre la version sur le label
             gunaLabel3.Left = (gunaPanel1.Width - gunaLabel3.Width) / 2; // Centrer le label
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://bit.ly/DownloadPassliss");
+        }
     }
 }

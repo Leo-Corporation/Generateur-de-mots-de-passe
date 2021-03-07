@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -38,6 +39,11 @@ namespace Générateur_de_mots_de_passe_3
                 ChangeTheme(0);
             }
             GeneratePasswordOnStart();
+            string msg = (Language.Curent() == Languages.frFR) ? "Générateur de mots de passe devient Passliss.\nVoulez-vous télécharger Passliss ?" : "Password Generator is now Passliss.\nDo you wanna download Passliss?";
+            if (MessageBox.Show(msg, "Passliss", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                Process.Start("https://bit.ly/DownloadPassliss");
+            }
         }
 
         private void GeneratePasswordOnStart()

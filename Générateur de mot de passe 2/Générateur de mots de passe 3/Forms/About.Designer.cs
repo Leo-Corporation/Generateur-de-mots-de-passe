@@ -48,6 +48,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
@@ -231,17 +232,27 @@
             this.gunaPictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox3.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaPictureBox3.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.logo_carre;
+            this.gunaPictureBox3.Image = global::Générateur_de_mots_de_passe_3.Properties.Resources.Léo_Corporation;
             this.gunaPictureBox3.Name = "gunaPictureBox3";
             this.gunaPictureBox3.TabStop = false;
             this.toolTip1.SetToolTip(this.gunaPictureBox3, resources.GetString("gunaPictureBox3.ToolTip"));
             this.gunaPictureBox3.Click += new System.EventHandler(this.gunaPictureBox3_Click);
+            // 
+            // linkLabel1
+            // 
+            resources.ApplyResources(this.linkLabel1, "linkLabel1");
+            this.linkLabel1.LinkColor = System.Drawing.Color.CornflowerBlue;
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.TabStop = true;
+            this.toolTip1.SetToolTip(this.linkLabel1, resources.GetString("linkLabel1.ToolTip"));
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // About
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.gunaLabel4);
@@ -289,5 +300,6 @@
         private System.Windows.Forms.Panel panel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

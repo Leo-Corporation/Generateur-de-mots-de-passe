@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Léo Corporation")]
 [assembly: AssemblyProduct("Générateur de mots de passe 3")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("Léo Corporation")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // Vous pouvez spécifier toutes les valeurs ou indiquer les numéros de build et de révision par défaut
 // en utilisant '*', comme indiqué ci-dessous :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("3.7.0.2010")]
-[assembly: AssemblyFileVersion("3.7.0.2010")]
+[assembly: AssemblyVersion("3.7.1.2103")]
+[assembly: AssemblyFileVersion("3.7.1.2103")]
